@@ -2,25 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b966173-5f7a-422a-92af-ea0415d5fb51" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_data/metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/_data/metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/assets/css/inline.css" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/assets/css/inline.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eleventy.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eleventy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/regenrek-blog-11ty.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/regenrek-blog-11ty.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/assets/css/inline.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.pcss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_includes/components/head.njk" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/components/head.njk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/layouts/blog.njk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/layouts/contact.njk" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/_includes/layouts/home.njk" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/layouts/home.njk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/preview-templates/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/preview-templates/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/about.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/blog.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/contact.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/home.md" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/firstpost.md" beforeDir="false" afterPath="$PROJECT_DIR$/posts/firstpost.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/fourthpost.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/secondpost.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/thirdpost.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/logo.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,122 +29,125 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="2" />
-          <entry key="js" value="4" />
-          <entry key="json" value="7" />
-          <entry key="md" value="10" />
-          <entry key="njk" value="16" />
+          <entry key="css" value="5" />
+          <entry key="js" value="8" />
+          <entry key="json" value="8" />
+          <entry key="md" value="11" />
+          <entry key="njk" value="17" />
           <entry key="nvmrc" value="1" />
+          <entry key="pcss" value="1" />
           <entry key="png" value="2" />
           <entry key="svg" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="2" />
+          <entry key="CSS" value="6" />
           <entry key="Image" value="2" />
-          <entry key="JSON" value="7" />
-          <entry key="JavaScript" value="4" />
-          <entry key="Markdown" value="10" />
-          <entry key="PLAIN_TEXT" value="17" />
+          <entry key="JSON" value="8" />
+          <entry key="JavaScript" value="8" />
+          <entry key="Markdown" value="11" />
+          <entry key="PLAIN_TEXT" value="18" />
           <entry key="SVG" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="96" />
-          <entry key="js" value="2" />
-          <entry key="json" value="194" />
-          <entry key="md" value="431" />
-          <entry key="njk" value="5" />
+          <entry key="js" value="16" />
+          <entry key="json" value="248" />
+          <entry key="md" value="444" />
+          <entry key="njk" value="86" />
+          <entry key="pcss" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="96" />
-          <entry key="JSON" value="194" />
-          <entry key="JavaScript" value="2" />
-          <entry key="Markdown" value="431" />
-          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="CSS" value="115" />
+          <entry key="JSON" value="248" />
+          <entry key="JavaScript" value="16" />
+          <entry key="Markdown" value="444" />
+          <entry key="PLAIN_TEXT" value="74" />
+          <entry key="Twig" value="12" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/components/head.njk">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/components/nav.njk">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/components/postslist.njk">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/assets/js/inline.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_data/metadata.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/layouts/page.njk">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/layouts/home.njk">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/layouts/base.njk">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/components/footer.njk">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/components/form.njk">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/_includes/components/head.njk">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="150">
+                  <caret line="10" column="22" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="22" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/pages/home.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                <state split_layout="SPLIT">
+                  <first_editor relative-caret-position="150">
+                    <caret line="10" selection-start-line="10" selection-end-line="10" />
+                  </first_editor>
+                  <second_editor />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/_includes/layouts/home.njk">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="135">
+                  <caret line="8" column="94" selection-start-line="8" selection-start-column="94" selection-end-line="8" selection-end-column="94" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/.eleventy.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="465">
+                  <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/postcss.config.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="225">
+                  <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/package.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="90">
+                  <caret line="6" column="73" selection-start-line="6" selection-start-column="73" selection-end-line="6" selection-end-column="73" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>inline.cs</find>
       <find>inline.css</find>
       <find>menco</find>
+      <find>inlin</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -168,12 +161,15 @@
       <list>
         <option value="$PROJECT_DIR$/posts/firstpost.md" />
         <option value="$PROJECT_DIR$/admin/preview-templates/index.js" />
-        <option value="$PROJECT_DIR$/_includes/components/head.njk" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/_includes/assets/css/inline.css" />
+        <option value="$PROJECT_DIR$/_data/metadata.json" />
+        <option value="$PROJECT_DIR$/postcss.config.js" />
+        <option value="$PROJECT_DIR$/_includes/assets/css/style.pcss" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/.eleventy.js" />
+        <option value="$PROJECT_DIR$/_includes/components/head.njk" />
         <option value="$PROJECT_DIR$/pages/home.md" />
         <option value="$PROJECT_DIR$/_includes/layouts/home.njk" />
-        <option value="$PROJECT_DIR$/_data/metadata.json" />
       </list>
     </option>
   </component>
@@ -216,32 +212,7 @@
             <path>
               <item name="regenrek-blog-11ty" type="b2602c69:ProjectViewProjectNode" />
               <item name="regenrek-blog-11ty" type="462c0819:PsiDirectoryNode" />
-              <item name="_data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="regenrek-blog-11ty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="regenrek-blog-11ty" type="462c0819:PsiDirectoryNode" />
               <item name="_includes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="regenrek-blog-11ty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="regenrek-blog-11ty" type="462c0819:PsiDirectoryNode" />
-              <item name="_includes" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="regenrek-blog-11ty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="regenrek-blog-11ty" type="462c0819:PsiDirectoryNode" />
-              <item name="_includes" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="regenrek-blog-11ty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="regenrek-blog-11ty" type="462c0819:PsiDirectoryNode" />
-              <item name="_includes" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="regenrek-blog-11ty" type="b2602c69:ProjectViewProjectNode" />
@@ -258,17 +229,34 @@
             <path>
               <item name="regenrek-blog-11ty" type="b2602c69:ProjectViewProjectNode" />
               <item name="regenrek-blog-11ty" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="regenrek-blog-11ty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="regenrek-blog-11ty" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="regenrek-blog-11ty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="regenrek-blog-11ty" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="regenrek-blog-11ty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="regenrek-blog-11ty" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="regenrek-blog-11ty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="regenrek-blog-11ty" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="regenrek-blog-11ty" type="b2602c69:ProjectViewProjectNode" />
               <item name="regenrek-blog-11ty" type="462c0819:PsiDirectoryNode" />
               <item name="posts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="regenrek-blog-11ty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="regenrek-blog-11ty" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -282,6 +270,13 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_includes/assets" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -305,12 +300,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554119387554</updated>
-      <workItem from="1554119388944" duration="5389000" />
+      <workItem from="1554119388944" duration="8176000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5389000" />
+    <option name="totallyTimeSpent" value="8176000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1119" extended-state="0" />
@@ -352,11 +347,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.eleventy.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-535" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/about.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -379,9 +369,6 @@
           <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/preview-templates/page.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/preview-templates/index.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -439,32 +426,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/assets/css/inline.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/home.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="135">
-            <caret line="9" selection-start-line="9" selection-end-line="9" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_includes/layouts/contact.njk">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="3" lean-forward="true" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_includes/layouts/blog.njk">
       <provider selected="true" editor-type-id="text-editor">
@@ -479,15 +442,57 @@
     <entry file="file://$PROJECT_DIR$/_includes/layouts/page.njk">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/layouts/home.njk">
+    <entry file="file://$PROJECT_DIR$/_includes/layouts/base.njk">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/preview-templates/page.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_site/_includes/assets/css/inline.pcss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/style.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state>
+          <folding>
+            <element signature="e#36663#36794#1" expanded="true" />
+            <element signature="e#36844#37015#1" expanded="true" />
+            <element signature="e#37063#37162#1" expanded="true" />
+            <element signature="e#37211#37334#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/layouts/base.njk">
+    <entry file="file://$PROJECT_DIR$/_includes/assets/js/inline.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_data/metadata.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/style.pcss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/components/postslist.njk">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/postcss.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_includes/components/footer.njk">
       <provider selected="true" editor-type-id="text-editor" />
@@ -495,30 +500,51 @@
     <entry file="file://$PROJECT_DIR$/_includes/components/form.njk">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/components/head.njk">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_includes/components/nav.njk">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/components/postslist.njk">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/assets/js/inline.js">
+    <entry file="file://$PROJECT_DIR$/dist/css/style.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="363">
+          <caret line="2" column="11283" lean-forward="true" selection-start-line="2" selection-start-column="11283" selection-end-line="2" selection-end-column="11283" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_data/metadata.json">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+          <caret line="6" column="73" selection-start-line="6" selection-start-column="73" selection-end-line="6" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.eleventy.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/components/head.njk">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/home.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="150">
+            <caret line="10" selection-start-line="10" selection-end-line="10" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/layouts/home.njk">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="8" column="94" selection-start-line="8" selection-start-column="94" selection-end-line="8" selection-end-column="94" />
         </state>
       </provider>
     </entry>
