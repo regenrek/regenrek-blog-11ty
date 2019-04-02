@@ -1,20 +1,21 @@
 {
-  "name": "eleventy-netlify-boilerplate",
+  "name": "regenrek-blog-11ty",
   "version": "1.0.1",
-  "description": "A boilerplate for building a fast static website with the Eleventy static site generator, for deployment to Netlify.",
+  "description": "My personal regenrek.at Blog",
   "scripts": {
     "build": "npx eleventy",
     "watch": "npx eleventy --watch",
+    "dev": "npx eleventy --serve",
     "debug": "DEBUG=* npx eleventy"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/danurbanowicz/eleventy-netlify-boilerplate"
+    "url": "https://github.com/regenrek/regenrek-blog-11ty"
   },
   "author": {
-    "name": "Dan Urbanowicz",
-    "email": "dan.urbanowicz@gmail.com",
-    "url": "https://www.danurbanowicz.com/"
+    "name": "Kevin Regenrek",
+    "email": "hello@regenrek.at",
+    "url": "https://www.regenrek.at/"
   },
   "license": "MIT",
   "bugs": {
