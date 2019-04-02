@@ -4,8 +4,10 @@
   "description": "My personal regenrek.at Blog",
   "scripts": {
     "build": "npx eleventy",
+    "now-build": "postcss assets/css/style.pcss -o dist/css/style.min.css && npx eleventy",
     "watch": "npx eleventy --watch",
     "dev": "npx eleventy --serve",
+    "build-css": "postcss assets/css/style.pcss -o  dist/css/style.min.css -w",
     "debug": "DEBUG=* npx eleventy"
   },
   "repository": {
@@ -24,13 +26,22 @@
   "homepage": "https://github.com/danurbanowicz/eleventy-netlify-boilerplate",
   "devDependencies": {
     "@11ty/eleventy": "^0.7.1",
+    "autoprefixer": "^9.5.0",
+    "cssnano": "^4.1.10",
     "luxon": "^1.11.0",
     "markdown-it": "^8.4.1",
-    "markdown-it-anchor": "^4.0.0"
+    "markdown-it-anchor": "^4.0.0",
+    "postcss": "^7.0.14",
+    "postcss-cli": "^6.1.2",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-each": "^0.10.0",
+    "postcss-import": "^12.0.1",
+    "postcss-nested": "^4.1.2"
   },
   "dependencies": {
     "clean-css": "^4.2.1",
     "html-minifier": "^3.5.21",
+    "tachyons": "^4.11.1",
     "uglify-es": "^3.3.9"
   }
 }
