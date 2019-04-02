@@ -7,4 +7,3 @@ navtitle: Home
 tags:
   - nav
 ---
-# Welcome

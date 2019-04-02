@@ -1,3 +1,5 @@
-_site/
+dist
 node_modules/
 package-lock.json
+src/_data/manifest.json
+yarn.lock
