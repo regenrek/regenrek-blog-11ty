@@ -1,0 +1,129 @@
+body {
+    font-family: menco,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background-color: #fff;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: interstate,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+p {
+    /* --font-size-4: 1.25rem; */
+    font-size: 1.25rem;
+}
+
+h1 {
+    font-size: 1.25rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.tags > span > a,
+.time{
+    font-family: interstate;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.date {
+    font-size: 12px;
+    margin-left: 20px;
+    position: relative;
+}
+
+.date:before {
+    content: '';
+    background-color: #eee;
+    width: 2px;
+    height: 100%;
+    top: 0;
+    left: -10px;
+    bottom: 0;
+    position: absolute;
+}
+
+.fonts {
+    font-family: brandon-grotesque,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-family: brandon-grotesque,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+    font-family: menco,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+    font-family: menco,sans-serif;
+    font-weight: 300;
+    font-style: italic;
+
+    font-family: menco,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+    font-family: menco,sans-serif;
+    font-weight: 700;
+    font-style: italic;
+
+
+
+    font-family: interstate,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-family: interstate,sans-serif;
+    font-weight: 400;
+    font-style: italic;
+
+    font-family: interstate,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+    font-family: interstate,sans-serif;
+    font-weight: 700;
+    font-style: italic;
+
+    font-family: interstate-compressed,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+
+    font-family: interstate-compressed,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+    font-family: interstate-condensed,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-family: interstate-condensed,sans-serif;
+    font-weight: 400;
+    font-style: italic;
+
+
+    font-family: interstate-condensed,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+    font-family: interstate-condensed,sans-serif;
+    font-weight: 700;
+    font-style: italic;
+
+}

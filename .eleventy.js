@@ -1,6 +1,17 @@
 const { DateTime } = require("luxon");
+const markdownItAttrs = require('markdown-it-attrs');
+const markdownItFootnote = require('markdown-it-footnote');
+const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
+const installPrismLanguages = require('./prism-languages.js');
+
 
 module.exports = function(eleventyConfig) {
+  eleventyConfig.addPlugin(pluginSyntaxHighlight, {
+      init: function({ Prism }) {
+          installPrismLanguages(Prism);
+      },
+  });
+
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
 
   // Date formatting (human readable)
@@ -22,6 +33,7 @@ module.exports = function(eleventyConfig) {
 
   /* Markdown Plugins */
   let markdownIt = require("markdown-it");
+
   let markdownItAnchor = require("markdown-it-anchor");
   let options = {
     html: true,
@@ -33,6 +45,8 @@ module.exports = function(eleventyConfig) {
   };
 
   eleventyConfig.setLibrary("md", markdownIt(options)
+    .use(markdownItFootnote)
+    .use(markdownItAttrs)
     .use(markdownItAnchor, opts)
   );
 
