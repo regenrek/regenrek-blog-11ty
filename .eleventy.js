@@ -16,7 +16,7 @@ module.exports = function(eleventyConfig) {
   // only content in the `posts/` directory
   eleventyConfig.addCollection("posts", function(collection) {
     return collection.getAllSorted().filter(function(item) {
-      return item.inputPath.match(/^\.\/posts\//) !== null;
+      return item.inputPath.match(/^\.\/src\/posts\//) !== null;
     });
   });
 
@@ -35,6 +35,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setLibrary("md", markdownIt(options)
     .use(markdownItAnchor, opts)
   );
+
+  eleventyConfig.addPassthroughCopy("src/assets/");
+  eleventyConfig.addPassthroughCopy("src/admin");
 
   return {
     templateFormats: ["md", "njk", "html", "liquid"],

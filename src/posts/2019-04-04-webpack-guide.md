@@ -3,8 +3,8 @@ title: Webpack Guide
 summary: 
 date: 2019-04-10
 tags:
+  - stack
   - post
-  - tech
 ---
 
 

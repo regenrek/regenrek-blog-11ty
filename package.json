@@ -1,7 +1,7 @@
 {
   "name": "eleventy-tachyons-starter",
   "version": "1.0.1",
-  "description": "Starter Project for Eleventy SSR with Tachyons and postcss",
+  "description": "Starter Project for Eleventy (11ty) SSG with Tachyons and postcss",
   "scripts": {
     "11": "npx eleventy",
     "dev": "npm-run-all clean:project dev:webpack dev:server",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/regenrek/regenrek-blog-11ty"
+    "url": "https://github.com/regenrek/eleventy-tachyons-starter"
   },
   "author": {
     "name": "Kevin Regenrek",
@@ -28,9 +28,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/danurbanowicz/eleventy-netlify-boilerplate/issues"
+    "url": "https://github.com/regenrek/eleventy-tachyons-starter/issues"
   },
-  "homepage": "https://github.com/danurbanowicz/eleventy-netlify-boilerplate",
+  "homepage": "https://github.com/regenrek/eleventy-tachyons-starter",
   "devDependencies": {
     "@11ty/eleventy": "^0.7.1",
     "@babel/core": "^7.4.0",
