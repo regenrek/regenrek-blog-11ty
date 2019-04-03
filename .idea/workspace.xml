@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b966173-5f7a-422a-92af-ea0415d5fb51" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack/webpack.common.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack/webpack.common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nvmrc" beforeDir="false" afterPath="$PROJECT_DIR$/.nvmrc" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +37,7 @@
           <entry key="map" value="1" />
           <entry key="md" value="31" />
           <entry key="njk" value="50" />
-          <entry key="nvmrc" value="2" />
+          <entry key="nvmrc" value="3" />
           <entry key="pcss" value="4" />
           <entry key="png" value="2" />
           <entry key="svg" value="1" />
@@ -55,7 +52,7 @@
           <entry key="JSON" value="24" />
           <entry key="JavaScript" value="57" />
           <entry key="Markdown" value="31" />
-          <entry key="PLAIN_TEXT" value="28" />
+          <entry key="PLAIN_TEXT" value="29" />
           <entry key="SVG" value="1" />
           <entry key="SourceMap" value="1" />
           <entry key="Twig" value="33" />
@@ -71,6 +68,7 @@
           <entry key="json" value="810" />
           <entry key="md" value="911" />
           <entry key="njk" value="923" />
+          <entry key="nvmrc" value="4" />
           <entry key="pcss" value="119" />
         </counts>
       </usages-collector>
@@ -80,7 +78,7 @@
           <entry key="JSON" value="810" />
           <entry key="JavaScript" value="1245" />
           <entry key="Markdown" value="911" />
-          <entry key="PLAIN_TEXT" value="194" />
+          <entry key="PLAIN_TEXT" value="198" />
           <entry key="Twig" value="849" />
         </counts>
       </usages-collector>
@@ -142,7 +140,7 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/package.json">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="249">
@@ -156,6 +154,15 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="15">
                   <caret line="1" selection-start-line="1" selection-end-line="1" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/.nvmrc">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret column="4" selection-start-column="4" selection-end-column="4" />
                 </state>
               </provider>
             </entry>
@@ -197,7 +204,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_includes/components/head.njk" />
         <option value="$PROJECT_DIR$/pages/home.md" />
         <option value="$PROJECT_DIR$/_includes/layouts/base.njk" />
         <option value="$PROJECT_DIR$/_includes/layouts/home.njk" />
@@ -248,6 +254,7 @@
         <option value="$PROJECT_DIR$/src/assets/styles/style.css" />
         <option value="$PROJECT_DIR$/webpack/webpack.common.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/.nvmrc" />
       </list>
     </option>
   </component>
@@ -411,12 +418,12 @@
       <option name="presentableId" value="Default" />
       <updated>1554119387554</updated>
       <workItem from="1554119388944" duration="36898000" />
-      <workItem from="1554277584572" duration="7885000" />
+      <workItem from="1554277584572" duration="7941000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44783000" />
+    <option name="totallyTimeSpent" value="44839000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1113" extended-state="6" />
@@ -548,9 +555,6 @@
           <second_editor />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.nvmrc">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
@@ -813,6 +817,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
           <caret line="46" column="12" selection-start-line="46" selection-start-column="12" selection-end-line="59" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.nvmrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="4" selection-start-column="4" selection-end-column="4" />
         </state>
       </provider>
     </entry>
