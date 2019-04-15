@@ -1,4 +1,8 @@
-@import 'tachyons';
-@import './_vars.css';
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
 @import './_prism.css';
 @import './_site.css';
