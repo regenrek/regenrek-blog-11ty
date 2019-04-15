@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b966173-5f7a-422a-92af-ea0415d5fb51" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/posts/2019-04-02-relaunch.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/posts/2019-04-10-Gotblog.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/posts/2019-05-10-aws-amplify.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eleventy.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eleventy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_includes/components/head.njk" beforeDir="false" afterPath="$PROJECT_DIR$/src/_includes/components/head.njk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_includes/layouts/base.njk" beforeDir="false" afterPath="$PROJECT_DIR$/src/_includes/layouts/base.njk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_includes/layouts/home.njk" beforeDir="false" afterPath="$PROJECT_DIR$/src/_includes/layouts/home.njk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_includes/layouts/post.njk" beforeDir="false" afterPath="$PROJECT_DIR$/src/_includes/layouts/post.njk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/styles/_site.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/_site.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/posts/2019-04-03-from-wordpress-to-11ty.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/posts/2019-04-03-from-wordpress-to-11ty.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,7 +32,7 @@
           <entry key="gitignore" value="1" />
           <entry key="gitkeep" value="1" />
           <entry key="html" value="13" />
-          <entry key="js" value="62" />
+          <entry key="js" value="63" />
           <entry key="json" value="22" />
           <entry key="log" value="1" />
           <entry key="map" value="1" />
@@ -64,7 +52,7 @@
           <entry key="HTML" value="13" />
           <entry key="Image" value="2" />
           <entry key="JSON" value="26" />
-          <entry key="JavaScript" value="62" />
+          <entry key="JavaScript" value="63" />
           <entry key="Markdown" value="36" />
           <entry key="PLAIN_TEXT" value="30" />
           <entry key="SVG" value="1" />
@@ -116,7 +104,7 @@
             <entry file="file://$PROJECT_DIR$/.eleventy.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="448">
-                  <caret line="68" column="30" lean-forward="true" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
+                  <caret line="68" column="30" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
                 </state>
               </provider>
             </entry>
@@ -171,7 +159,7 @@
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="SPLIT">
                   <first_editor relative-caret-position="240">
-                    <caret line="14" column="144" lean-forward="true" selection-start-line="14" selection-start-column="144" selection-end-line="14" selection-end-column="144" />
+                    <caret line="14" column="144" selection-start-line="14" selection-start-column="144" selection-end-line="14" selection-end-column="144" />
                   </first_editor>
                   <second_editor />
                 </state>
@@ -196,11 +184,20 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/package.json">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="349">
-                  <caret line="51" column="35" lean-forward="true" selection-start-line="51" selection-end-line="52" />
+                  <caret line="51" column="35" selection-start-line="51" selection-end-line="52" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/tailwind.config.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="699">
+                  <caret line="445" column="1" selection-start-line="445" selection-start-column="1" selection-end-line="445" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
@@ -246,7 +243,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/webpack/loaders.js" />
         <option value="$PROJECT_DIR$/assets/js/inline.js" />
         <option value="$PROJECT_DIR$/.eslintrc" />
         <option value="$PROJECT_DIR$/.browserlistrc" />
@@ -297,6 +293,7 @@
         <option value="$PROJECT_DIR$/src/posts/2019-04-10-Gotblog.md" />
         <option value="$PROJECT_DIR$/src/posts/2019-05-10-aws-amplify.md" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/tailwind.config.js" />
       </list>
     </option>
   </component>
@@ -387,12 +384,12 @@
       <option name="presentableId" value="Default" />
       <updated>1554119387554</updated>
       <workItem from="1554119388944" duration="36898000" />
-      <workItem from="1554277584572" duration="21465000" />
+      <workItem from="1554277584572" duration="21666000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58363000" />
+    <option name="totallyTimeSpent" value="58564000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1113" extended-state="0" />
@@ -449,13 +446,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/webpack/webpack.config.dev.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="25" selection-start-line="40" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webpack/webpack.config.prod.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -790,7 +780,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="240">
-            <caret line="14" column="144" lean-forward="true" selection-start-line="14" selection-start-column="144" selection-end-line="14" selection-end-column="144" />
+            <caret line="14" column="144" selection-start-line="14" selection-start-column="144" selection-end-line="14" selection-end-column="144" />
           </first_editor>
           <second_editor />
         </state>
@@ -816,14 +806,21 @@
     <entry file="file://$PROJECT_DIR$/.eleventy.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
-          <caret line="68" column="30" lean-forward="true" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
+          <caret line="68" column="30" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="349">
-          <caret line="51" column="35" lean-forward="true" selection-start-line="51" selection-end-line="52" />
+          <caret line="51" column="35" selection-start-line="51" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tailwind.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="699">
+          <caret line="445" column="1" selection-start-line="445" selection-start-column="1" selection-end-line="445" selection-end-column="1" />
         </state>
       </provider>
     </entry>
