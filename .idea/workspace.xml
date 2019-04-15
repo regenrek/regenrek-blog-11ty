@@ -2,7 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b966173-5f7a-422a-92af-ea0415d5fb51" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/netlify.toml" beforeDir="false" afterPath="$PROJECT_DIR$/netlify.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/posts/2019-04-02-relaunch.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/posts/2019-04-10-Gotblog.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/posts/2019-05-10-aws-amplify.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eleventy.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eleventy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_includes/components/head.njk" beforeDir="false" afterPath="$PROJECT_DIR$/src/_includes/components/head.njk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_includes/layouts/base.njk" beforeDir="false" afterPath="$PROJECT_DIR$/src/_includes/layouts/base.njk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_includes/layouts/home.njk" beforeDir="false" afterPath="$PROJECT_DIR$/src/_includes/layouts/home.njk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_includes/layouts/post.njk" beforeDir="false" afterPath="$PROJECT_DIR$/src/_includes/layouts/post.njk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/_site.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/_site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/posts/2019-04-03-from-wordpress-to-11ty.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/posts/2019-04-03-from-wordpress-to-11ty.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,18 +38,18 @@
           <entry key="LICENSE" value="1" />
           <entry key="babelrc" value="3" />
           <entry key="browserlistrc" value="2" />
-          <entry key="css" value="26" />
+          <entry key="css" value="27" />
           <entry key="eleventyignore" value="2" />
           <entry key="eslintrc" value="1" />
           <entry key="gitignore" value="1" />
           <entry key="gitkeep" value="1" />
           <entry key="html" value="13" />
-          <entry key="js" value="60" />
-          <entry key="json" value="21" />
+          <entry key="js" value="62" />
+          <entry key="json" value="22" />
           <entry key="log" value="1" />
           <entry key="map" value="1" />
-          <entry key="md" value="32" />
-          <entry key="njk" value="53" />
+          <entry key="md" value="36" />
+          <entry key="njk" value="59" />
           <entry key="nvmrc" value="3" />
           <entry key="pcss" value="4" />
           <entry key="png" value="2" />
@@ -47,28 +60,28 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="30" />
+          <entry key="CSS" value="31" />
           <entry key="HTML" value="13" />
           <entry key="Image" value="2" />
-          <entry key="JSON" value="25" />
-          <entry key="JavaScript" value="60" />
-          <entry key="Markdown" value="32" />
+          <entry key="JSON" value="26" />
+          <entry key="JavaScript" value="62" />
+          <entry key="Markdown" value="36" />
           <entry key="PLAIN_TEXT" value="30" />
           <entry key="SVG" value="1" />
           <entry key="SourceMap" value="1" />
-          <entry key="Twig" value="36" />
+          <entry key="Twig" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="LICENSE" value="14" />
-          <entry key="css" value="776" />
+          <entry key="css" value="936" />
           <entry key="eleventyignore" value="97" />
           <entry key="gitignore" value="9" />
-          <entry key="js" value="1276" />
-          <entry key="json" value="810" />
-          <entry key="md" value="922" />
-          <entry key="njk" value="997" />
+          <entry key="js" value="1314" />
+          <entry key="json" value="812" />
+          <entry key="md" value="3894" />
+          <entry key="njk" value="1096" />
           <entry key="nvmrc" value="4" />
           <entry key="pcss" value="119" />
           <entry key="toml" value="17" />
@@ -76,12 +89,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="895" />
-          <entry key="JSON" value="810" />
-          <entry key="JavaScript" value="1276" />
-          <entry key="Markdown" value="922" />
+          <entry key="CSS" value="1055" />
+          <entry key="JSON" value="812" />
+          <entry key="JavaScript" value="1314" />
+          <entry key="Markdown" value="3894" />
           <entry key="PLAIN_TEXT" value="215" />
-          <entry key="Twig" value="923" />
+          <entry key="Twig" value="1022" />
         </counts>
       </usages-collector>
     </session>
@@ -90,13 +103,39 @@
     <splitter split-orientation="horizontal" split-proportion="0.3475266">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/assets/styles/_site.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="420">
-                  <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+                <state relative-caret-position="281">
+                  <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
                 </state>
               </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/.eleventy.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="448">
+                  <caret line="68" column="30" lean-forward="true" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/posts/2019-05-10-aws-amplify.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                <state split_layout="SPLIT">
+                  <first_editor relative-caret-position="255">
+                    <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+                  </first_editor>
+                  <second_editor />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/assets/styles/style.css">
+              <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
         </leaf>
@@ -106,9 +145,9 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/posts/2019-04-03-from-wordpress-to-11ty.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-                <state split_layout="SPLIT">
-                  <first_editor relative-caret-position="501">
-                    <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+                <state split_layout="FIRST">
+                  <first_editor>
+                    <caret selection-end-line="7" selection-end-column="3" />
                   </first_editor>
                   <second_editor />
                 </state>
@@ -116,81 +155,52 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/.eleventy.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                  <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <entry file="file://$PROJECT_DIR$/src/posts/2019-04-02-relaunch.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                <state split_layout="SPLIT">
+                  <first_editor relative-caret-position="345">
+                    <caret line="16" selection-start-line="16" selection-end-line="16" />
+                  </first_editor>
+                  <second_editor />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/assets/styles/_prism.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="699">
-                  <caret line="159" column="1" selection-start-line="159" selection-start-column="1" selection-end-line="159" selection-end-column="1" />
+            <entry file="file://$PROJECT_DIR$/src/posts/2019-04-10-Gotblog.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                <state split_layout="SPLIT">
+                  <first_editor relative-caret-position="240">
+                    <caret line="14" column="144" lean-forward="true" selection-start-line="14" selection-start-column="144" selection-end-line="14" selection-end-column="144" />
+                  </first_editor>
+                  <second_editor />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/assets/styles/style.css">
+            <entry file="file://$PROJECT_DIR$/src/_includes/components/head.njk">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                  <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+                <state relative-caret-position="90">
+                  <caret line="6" column="129" selection-start-line="6" selection-start-column="129" selection-end-line="6" selection-end-column="129" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/_includes/components/postslist.njk">
+            <entry file="file://$PROJECT_DIR$/src/_includes/layouts/post.njk">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="330">
-                  <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/package.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="43" column="26" lean-forward="true" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+                <state relative-caret-position="195">
+                  <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/netlify.toml">
+            <entry file="file://$PROJECT_DIR$/package.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="15">
-                  <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/node_modules/tachyons/src/_typography.css">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/pages/home.md">
-              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-                <state split_layout="SPLIT">
-                  <first_editor relative-caret-position="135">
-                    <caret line="9" selection-start-line="9" selection-end-line="9" />
-                  </first_editor>
-                  <second_editor />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/assets/styles/_vars.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="152">
-                  <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+                <state relative-caret-position="349">
+                  <caret line="51" column="35" lean-forward="true" selection-start-line="51" selection-end-line="52" />
                 </state>
               </provider>
             </entry>
@@ -236,9 +246,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/gulpfile.babel.js/index.js" />
-        <option value="$PROJECT_DIR$/gulpfile.babel.js/tasks/styles.js" />
-        <option value="$PROJECT_DIR$/webpack/webpack.config.js" />
         <option value="$PROJECT_DIR$/webpack/loaders.js" />
         <option value="$PROJECT_DIR$/assets/js/inline.js" />
         <option value="$PROJECT_DIR$/.eslintrc" />
@@ -268,25 +275,28 @@
         <option value="$PROJECT_DIR$/src/posts/posts.json" />
         <option value="$PROJECT_DIR$/src/posts/firstpost.md" />
         <option value="$PROJECT_DIR$/src/tags.njk" />
-        <option value="$PROJECT_DIR$/src/_includes/layouts/home.njk" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/posts/2019-04-04-webpack-guide.md" />
         <option value="$PROJECT_DIR$/src/pages/home.md" />
         <option value="$PROJECT_DIR$/webpack/webpack.common.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/.nvmrc" />
-        <option value="$PROJECT_DIR$/src/_includes/layouts/post.njk" />
-        <option value="$PROJECT_DIR$/src/_includes/components/head.njk" />
         <option value="$PROJECT_DIR$/src/_includes/components/postslist.njk" />
         <option value="$PROJECT_DIR$/src/assets/styles/_vars.css" />
-        <option value="$PROJECT_DIR$/src/assets/styles/_site.css" />
         <option value="$PROJECT_DIR$/prism-languages.js" />
-        <option value="$PROJECT_DIR$/.eleventy.js" />
-        <option value="$PROJECT_DIR$/src/_includes/layouts/base.njk" />
-        <option value="$PROJECT_DIR$/src/posts/2019-04-03-from-wordpress-to-11ty.md" />
         <option value="$PROJECT_DIR$/src/assets/styles/_prism.css" />
-        <option value="$PROJECT_DIR$/src/assets/styles/style.css" />
         <option value="$PROJECT_DIR$/netlify.toml" />
+        <option value="$PROJECT_DIR$/src/_includes/layouts/base.njk" />
+        <option value="$PROJECT_DIR$/src/_includes/layouts/home.njk" />
+        <option value="$PROJECT_DIR$/src/_includes/components/head.njk" />
+        <option value="$PROJECT_DIR$/src/assets/styles/style.css" />
+        <option value="$PROJECT_DIR$/src/_includes/layouts/post.njk" />
+        <option value="$PROJECT_DIR$/src/posts/2019-04-03-from-wordpress-to-11ty.md" />
+        <option value="$PROJECT_DIR$/src/assets/styles/_site.css" />
+        <option value="$PROJECT_DIR$/.eleventy.js" />
+        <option value="$PROJECT_DIR$/src/posts/2019-04-02-New-Blog.md" />
+        <option value="$PROJECT_DIR$/src/posts/2019-04-10-Gotblog.md" />
+        <option value="$PROJECT_DIR$/src/posts/2019-05-10-aws-amplify.md" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -306,9 +316,9 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1937" />
+    <option name="width" value="1920" />
     <option name="height" value="1113" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -327,24 +337,6 @@
               <item name="regenrek-blog-11ty" type="b2602c69:ProjectViewProjectNode" />
               <item name="regenrek-blog-11ty" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="regenrek-blog-11ty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="regenrek-blog-11ty" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="regenrek-blog-11ty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="regenrek-blog-11ty" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="regenrek-blog-11ty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="regenrek-blog-11ty" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -361,6 +353,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/posts" />
       <recent name="$PROJECT_DIR$/src/pages" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -394,15 +387,15 @@
       <option name="presentableId" value="Default" />
       <updated>1554119387554</updated>
       <workItem from="1554119388944" duration="36898000" />
-      <workItem from="1554277584572" duration="10776000" />
+      <workItem from="1554277584572" duration="21465000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47674000" />
+    <option name="totallyTimeSpent" value="58363000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1113" extended-state="6" />
+    <frame x="0" y="23" width="1920" height="1113" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14962727" />
@@ -456,22 +449,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dist/styles/main.min.css" />
-    <entry file="file://$PROJECT_DIR$/dist/scripts/main.js" />
-    <entry file="file://$PROJECT_DIR$/src/_includes/components/footer.njk">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="84" selection-start-line="5" selection-start-column="84" selection-end-line="5" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/scripts/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="54" lean-forward="true" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webpack/webpack.config.dev.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
@@ -641,13 +618,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/_includes/layouts/home.njk">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/_includes/components/nav.njk">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -659,13 +629,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_includes/layouts/blog.njk">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="10" selection-start-line="3" selection-end-line="4" />
         </state>
       </provider>
     </entry>
@@ -706,13 +669,6 @@
     <entry file="file://$PROJECT_DIR$/node_modules/tachyons/src/_typography.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/_includes/layouts/post.njk">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webpack/webpack.common.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -720,41 +676,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/home.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="135">
-            <caret line="9" selection-start-line="9" selection-end-line="9" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/styles/_vars.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/styles/_site.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_includes/components/head.njk">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_includes/layouts/base.njk">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -772,20 +697,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/posts/2019-04-03-from-wordpress-to-11ty.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="501">
-            <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.eleventy.js">
+    <entry file="file://$PROJECT_DIR$/netlify.toml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
@@ -796,24 +711,119 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/styles/style.css">
+    <entry file="file://$PROJECT_DIR$/src/_includes/layouts/base.njk">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_includes/layouts/home.njk">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="4" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/home.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" selection-start-line="9" selection-end-line="9" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_includes/layouts/blog.njk">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="10" selection-start-line="3" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_includes/components/head.njk">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="129" selection-start-line="6" selection-start-column="129" selection-end-line="6" selection-end-column="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/styles/style.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_includes/layouts/post.njk">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/styles/_site.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/posts/2019-04-03-from-wordpress-to-11ty.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor>
+            <caret selection-end-line="7" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/posts/2019-04-02-relaunch.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="345">
+            <caret line="16" selection-start-line="16" selection-end-line="16" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/posts/2019-04-10-Gotblog.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="240">
+            <caret line="14" column="144" lean-forward="true" selection-start-line="14" selection-start-column="144" selection-end-line="14" selection-end-column="144" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/posts/2019-05-10-aws-amplify.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="255">
+            <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack/postcss.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.eleventy.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="68" column="30" lean-forward="true" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="43" column="26" lean-forward="true" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netlify.toml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        <state relative-caret-position="349">
+          <caret line="51" column="35" lean-forward="true" selection-start-line="51" selection-end-line="52" />
         </state>
       </provider>
     </entry>

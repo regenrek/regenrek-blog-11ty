@@ -1,11 +1,18 @@
 body {
-    font-family: menco,sans-serif;
+    font-family: capitolium-news-2,sans-serif;
     font-weight: 300;
     font-style: normal;
     background-color: #fff;
 }
 
-h1,h2,h3,h4,h5,h6 {
+.heading {
+    font-family: interstate-condensed, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h1,h2,h3,h4,h5,h6,
+h3 > a{
     font-family: interstate,sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -16,9 +23,17 @@ a {
     text-decoration: none;
 }
 
-p {
+a, p, ul > li {
     /* --font-size-4: 1.25rem; */
-    font-size: 1.25rem;
+    font-size: 1.15rem;
+    line-height: 1.65;
+    font-family: capitolium-news-2, serif;
+    font-weight: 300;
+    color: #222;
+}
+
+p {
+    max-width: 30em;
 }
 
 h1 {
@@ -26,7 +41,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 h3 {
@@ -55,75 +70,4 @@ h3 {
     left: -10px;
     bottom: 0;
     position: absolute;
-}
-
-.fonts {
-    font-family: brandon-grotesque,sans-serif;
-    font-weight: 400;
-    font-style: normal;
-
-    font-family: brandon-grotesque,sans-serif;
-    font-weight: 700;
-    font-style: normal;
-
-    font-family: menco,sans-serif;
-    font-weight: 300;
-    font-style: normal;
-
-    font-family: menco,sans-serif;
-    font-weight: 300;
-    font-style: italic;
-
-    font-family: menco,sans-serif;
-    font-weight: 700;
-    font-style: normal;
-
-    font-family: menco,sans-serif;
-    font-weight: 700;
-    font-style: italic;
-
-
-
-    font-family: interstate,sans-serif;
-    font-weight: 400;
-    font-style: normal;
-
-    font-family: interstate,sans-serif;
-    font-weight: 400;
-    font-style: italic;
-
-    font-family: interstate,sans-serif;
-    font-weight: 700;
-    font-style: normal;
-
-    font-family: interstate,sans-serif;
-    font-weight: 700;
-    font-style: italic;
-
-    font-family: interstate-compressed,sans-serif;
-    font-weight: 400;
-    font-style: normal;
-
-
-    font-family: interstate-compressed,sans-serif;
-    font-weight: 700;
-    font-style: normal;
-
-    font-family: interstate-condensed,sans-serif;
-    font-weight: 400;
-    font-style: normal;
-
-    font-family: interstate-condensed,sans-serif;
-    font-weight: 400;
-    font-style: italic;
-
-
-    font-family: interstate-condensed,sans-serif;
-    font-weight: 700;
-    font-style: normal;
-
-    font-family: interstate-condensed,sans-serif;
-    font-weight: 700;
-    font-style: italic;
-
 }

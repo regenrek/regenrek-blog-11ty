@@ -1,6 +1,7 @@
 const { DateTime } = require("luxon");
 const markdownItAttrs = require('markdown-it-attrs');
 const markdownItFootnote = require('markdown-it-footnote');
+const markdownItLinkTarget = require('markdown-it-link-target');
 const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const installPrismLanguages = require('./prism-languages.js');
 
@@ -47,6 +48,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setLibrary("md", markdownIt(options)
     .use(markdownItFootnote)
     .use(markdownItAttrs)
+    .use(markdownItLinkTarget)
     .use(markdownItAnchor, opts)
   );
 

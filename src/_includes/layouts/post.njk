@@ -3,15 +3,25 @@ layout: layouts/base.njk
 section: post
 ---
 
-<article class="center contain w-90 mh-6 ph-6 w-60-l">
-  <h1>{{ title }}</h1>
-  <p>
-    <small>
-      <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time> by {{ metadata.author.name }}
-    </small>
-  </p>
+<article>
+  <header class="bg-white sans-serif">
+    <div class="mw9 center pa4 pt5-ns ph7-l">
+      <time datetime="{{ date | machineDate }}"><small>{{ date | readableDate }}</small></time>
+      <h1 class="f2 f1-m f-headline-l measure-narrow lh-title mv0">
+        <span class="lh-copy pa1 tracked-tight">
+          {{ title }}
+        </span>
+      </h1>
+    </div>
+  </header>
 
-  {{ layoutContent | safe }}
+  <div class="pa4 ph7-l mw9-l center">
+    <p class="f5 f4-ns lh-copy measure">
+      {{ summary }}
+    </p>
+    {{ layoutContent | safe }}
+  </div>
+
 
   {% if tags %}
     <p>

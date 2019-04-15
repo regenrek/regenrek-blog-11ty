@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/regenrek/eleventy-tachyons-starter",
   "devDependencies": {
-    "@11ty/eleventy": "^0.7.1",
+    "@11ty/eleventy": "^0.8.2",
     "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.1",
     "@babel/core": "^7.4.0",
     "@babel/plugin-proposal-class-properties": "^7.4.0",
@@ -52,6 +52,7 @@
     "markdown-it-anchor": "^4.0.0",
     "markdown-it-attrs": "^2.3.2",
     "markdown-it-footnote": "^3.0.1",
+    "markdown-it-link-target": "^1.0.2",
     "mini-css-extract-plugin": "^0.5.0",
     "npm-run-all": "^4.1.5",
     "postcss": "^7.0.14",

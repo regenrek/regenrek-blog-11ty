@@ -3,17 +3,18 @@ layout: layouts/base.njk
 section: home
 ---
 
-<section class="mw5 mw7-ns center pa3 ph5-ns">
-    <h1 class="mt0">.regenrek</h1>
-    <p class="lh-copy measure">
-        Hey! I write about my personal experiences and challenges with building saas products.
-    </p>
-</section>
+<div class="center contain mb5 relative">
+    <section class="mw5 mw7-ns center pa3 ph5-ns">
+        <h1 class="mt0">.regenrek</h1>
+        <p class="lh-copy measure">
+            Hey! I write about my personal experiences and challenges with building saas products.
+        </p>
+    </section>
 
 
-{{ layoutContent | safe }}
+    {{ layoutContent | safe }}
 
-{% set postslist = collections.posts %}
-{{ collection.posts }}
-{% include "components/postslist.njk" %}
-
+    {% set postslist = collections.posts %}
+    {{ collection.posts }}
+    {% include "components/postslist.njk" %}
+</div>
