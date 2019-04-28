@@ -2,11 +2,11 @@
 	{% for post in postslist | reverse %}
 		<article class="mv3 pv3 bb b--light-gray
 " {% if post.url == url %} data-current="current item"{% endif %}>
-			<div class="flex flex-row">
-				<div class="w-40">
-					<img src="http://placekitten.com/300/200" class="db" />
+			<div class="flex flex-column flex-row-ns">
+				<div class="w-40-ns">
+					<img src="/assets/images/{{ post.data.image }}.png" class="w-100" alt="{{ post.data.image_alt }}" />
 				</div>
-				<div class="w-60 ph3">
+				<div class="w-60-ns ph3">
 					<div class="meta">
 						<div class="tags dib">
 							{% if post.data.tags %}
@@ -24,7 +24,7 @@
 							{{ post.date | readableDate }}
 						</time>
 					</div>
-					<h3>
+					<h3 class="f4 f3-ns lh-title lh-copy-ns">
 						<a href="{{ post.url | url }}">
                             {% if post.data.title %}
                                 {{ post.data.title }}

@@ -3,39 +3,37 @@ layout: layouts/base.njk
 section: post
 ---
 
-<article>
+<nav class="pa4">
+  <span class="logo h1 mt0"><a href="/">.regenrek</a></span>
+</nav>
+
+<div class="mw9 ph6-l center">
+  <figure data-aspect-ratio="16:9">
+    <img src="/assets/images/{{ image }}@2x.png" alt="{{ image_alt }}" />
+  </figure>
+</div>
+
+<article class="post-single">
   <header class="bg-white sans-serif">
-    <div class="mw9 center pa4 pt5-ns ph7-l">
+    <div class="mw9 center ph4 pt2 pt4-m pt4-ns ph7-l">
       <time datetime="{{ date | machineDate }}"><small>{{ date | readableDate }}</small></time>
-      <h1 class="f2 f1-m f-headline-l measure-narrow lh-title mv0">
-        <span class="lh-copy pa1 tracked-tight">
+      <h1 class="f3 f2-m f1-l measure-narrow lh-title mv0">
+        <span class="lh-title tracked-tight">
           {{ title }}
         </span>
       </h1>
     </div>
   </header>
 
-  <div class="pa4 ph7-l mw9-l center">
+  <div class="pv2 ph4 pa4-m ph7-l mw9-l center">
     <p class="f5 f4-ns lh-copy measure">
       {{ summary }}
     </p>
     {{ layoutContent | safe }}
   </div>
 
-
-  {% if tags %}
-    <p>
-    {% for tag in tags %}
-      {%- if tag != "post" -%}
-        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-        <a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
-      {%- endif -%}
-    {% endfor %}
-    </p>
-  {% endif %}
-
 </article>
 
-<nav>
-  <a href="{{ '/blog/' | url }}">← Blog index</a>
+<nav class="pv2 ph4 pa4-m ph7-l mw9-l center">
+  <a href="{{ '/' | url }}">← Blog index</a>
 </nav>

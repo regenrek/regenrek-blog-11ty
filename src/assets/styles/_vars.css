@@ -7,8 +7,15 @@
 @custom-media --breakpoint-not-small screen and (min-width: 30em);
 @custom-media --breakpoint-medium screen and (min-width: 30em) and (max-width: 60em);
 @custom-media --breakpoint-large screen and (min-width: 60em);
+@custom-media --breakpoint-xl (min-width: 90em);
+
 
 :root {
+    --primary: #CB356B;
+    --primary-gradient-1: #CB356B;
+    --primary-gradient-2: #BD3F32;
+    --link-color: #0073FB;
+    --text-color: #222;
 
     --sans-serif: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
     --serif: georgia, serif;

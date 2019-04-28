@@ -1,8 +1,10 @@
 body {
-    font-family: capitolium-news-2,sans-serif;
+    background-color: #fff;
+    font-family: capitolium-news-2, serif;
     font-weight: 300;
     font-style: normal;
-    background-color: #fff;
+    font-size: 1.15rem;
+    line-height: 1.65;
 }
 
 .heading {
@@ -11,11 +13,19 @@ body {
     font-style: normal;
 }
 
-h1,h2,h3,h4,h5,h6,
+h1,.h1, h2,h3,h4,h5,h6,
 h3 > a{
     font-family: interstate,sans-serif;
     font-weight: 700;
     font-style: normal;
+}
+
+.logo {
+    font-size: 1.4rem;
+}
+
+h2 {
+    margin-top: 2rem;
 }
 
 a {
@@ -23,17 +33,54 @@ a {
     text-decoration: none;
 }
 
+code {
+    background-color: #eee;
+}
+
 a, p, ul > li {
-    /* --font-size-4: 1.25rem; */
-    font-size: 1.15rem;
-    line-height: 1.65;
-    font-family: capitolium-news-2, serif;
     font-weight: 300;
     color: #222;
 }
 
-p {
+article.post-single a, .link, footer a {
+    position: relative;
+    color: var(--link-color);
+}
+
+article.post-single a:after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    height: 2px;
+    left: 0;
+    background-color: var(--link-color);
+    transition: all 100ms ease-out;
+    width: 100%;
+    opacity: 0;
+}
+
+article a:hover:after {
+    opacity: 1;
+    /*background-image: linear-gradient(90deg,*/
+        /*var(--primary-gradient-1),*/
+        /*var(--primary-gradient-2)*/
+    /*);*/
+}
+
+
+@media (--breakpoint-xl) {
+    .f-headline-xl {
+        font-size: var(--font-size-subheadline);
+    }
+}
+
+article p {
     max-width: 30em;
+}
+
+pre {
+    max-width: 50em;
+    font-size: 14px;
 }
 
 h1 {
@@ -46,6 +93,10 @@ h2 {
 
 h3 {
     font-size: 1.5rem;
+}
+
+strong {
+    font-weight: 600;
 }
 
 .tags > span > a,
@@ -70,4 +121,45 @@ h3 {
     left: -10px;
     bottom: 0;
     position: absolute;
+}
+
+footer {
+    font-size: .85rem;
+}
+
+/**
+    IMAGES
+ */
+
+figure {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    margin: 0;
+}
+
+figure > :first-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    transform: translate3d(-50%,-50%,0);
+}
+
+@mixin aspect-ratio($ratio-or-width, $height: 1) {
+    &:before { content:''; float: left; padding-bottom: percentage($height/$ratio-or-width); }
+    &:after  { content:''; display: table; clear: both;  }
+}
+
+[data-aspect-ratio="3:2"] {
+    @include aspect-ratio(3,2);
+}
+
+[data-aspect-ratio="1:1"] {
+    @include aspect-ratio(1,1);
+}
+
+[data-aspect-ratio="16:9"] {
+    @include aspect-ratio(16,8);
 }
