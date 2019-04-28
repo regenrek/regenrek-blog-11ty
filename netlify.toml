@@ -1,3 +1,7 @@
 [build]
   publish = "dist"
-  command = "npm run build"
+  command = "npm run prod"
+
+[[redirects]]
+    from = "/blog/*"
+    to = "https://legacy.regenrek.at/blog/"
