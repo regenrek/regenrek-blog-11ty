@@ -3,5 +3,66 @@
   command = "npm run prod"
 
 [[redirects]]
-    from = "/blog/*"
+    from = "/blog/angularjs-schnelleinstieg-deutsch/"
+    to = "https://legacy.regenrek.at/angularjs-schnelleinstieg-deutsch/"
+    status = 301
+
+[[redirects]]
+    from = "/blog/yeoman-der-webapp-generator/"
+    to = "https://legacy.regenrek.at/blog/yeoman-der-webapp-generator/"
+    status = 301
+
+[[redirects]]
+    from = "/blog/mac-osx-festplatte-aufraeumen/"
+    to = "https://legacy.regenrek.at/blog/mac-osx-festplatte-aufraeumen/"
+    status = 301
+
+[[redirects]]
+    from = "/blog/phpstorm-web-deploy-remote-edit/"
+    to = "https://legacy.regenrek.at/blog/phpstorm-web-deploy-remote-edit/"
+    status = 301
+
+[[redirects]]
+    from = "/blog/vagrant-box-update-outdated-upgrade/"
+    to = "https://legacy.regenrek.at/blog/vagrant-box-update-outdated-upgrade/"
+    status = 301
+
+[[redirects]]
+    from = "/blog/laravel-homestead-entwicklungsumgebung-als-vagrant-box/"
+    to = "https://legacy.regenrek.at/blog/laravel-homestead-entwicklungsumgebung-als-vagrant-box/"
+    status = 301
+
+[[redirects]]
+    from = "/blog/laravel-5-und-angularjs-architektur-beispiel/"
+    to = "https://legacy.regenrek.at/blog/laravel-5-und-angularjs-architektur-beispiel/"
+    status = 301
+
+[[redirects]]
+    from = "/blog/phpstorm-web-deploy-remote-edit"
+    to = "https://legacy.regenrek.at/blog/phpstorm-web-deploy-remote-edit"
+    status = 301
+
+[[redirects]]
+    from = "/blog/installation-nvm-node-npm-yeoman-yosemite"
+    to = "https://legacy.regenrek.at/blog/installation-nvm-node-npm-yeoman-yosemite"
+    status = 301
+
+[[redirects]]
+    from = "/blog/vagrant-workflow-mehrere-projekte-in-einer-vagrant-box"
+    to = "https://legacy.regenrek.at/blog/vagrant-workflow-mehrere-projekte-in-einer-vagrant-box"
+    status = 301
+
+[[redirects]]
+    from = "/blog/ionic-framework-native-apps-html5-css-javascript/"
+    to = "https://legacy.regenrek.at/blog/ionic-framework-native-apps-html5-css-javascript/"
+    status = 301
+
+[[redirects]]
+    from = "/blog/"
     to = "https://legacy.regenrek.at/blog/"
+    status = 301
+
+[[redirects]]
+    from = "/category/*"
+    to = "https://legacy.regenrek.at/blog/"
+    status = 301
