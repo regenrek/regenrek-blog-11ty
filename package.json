@@ -24,7 +24,7 @@
   "author": {
     "name": "Kevin Regenrek",
     "email": "hello@regenrek.at",
-    "url": "https://www.regenrek.at/"
+    "url": "https://www.regenrek.com/"
   },
   "license": "MIT",
   "bugs": {
@@ -75,6 +75,7 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
+    "cookieconsent": "^3.1.0",
     "markdown-it-link-attributes": "^2.1.0",
     "postcss-simple-vars": "^5.0.2",
     "tachyons": "^4.11.1",

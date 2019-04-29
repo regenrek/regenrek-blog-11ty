@@ -2,7 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b966173-5f7a-422a-92af-ea0415d5fb51" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/_includes/layouts/privacy-policy.njk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_includes/layouts/terms-of-service.njk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/pp.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/tos.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/netlify.toml" beforeDir="false" afterPath="$PROJECT_DIR$/netlify.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_includes/components/footer.njk" beforeDir="false" afterPath="$PROJECT_DIR$/src/_includes/components/footer.njk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_includes/components/head.njk" beforeDir="false" afterPath="$PROJECT_DIR$/src/_includes/components/head.njk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scripts/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/_site.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/_site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,18 +48,18 @@
           <entry key="adoc" value="1" />
           <entry key="babelrc" value="3" />
           <entry key="browserlistrc" value="2" />
-          <entry key="css" value="30" />
+          <entry key="css" value="31" />
           <entry key="eleventyignore" value="2" />
           <entry key="eslintrc" value="1" />
           <entry key="gitignore" value="1" />
           <entry key="gitkeep" value="1" />
           <entry key="html" value="14" />
-          <entry key="js" value="69" />
+          <entry key="js" value="70" />
           <entry key="json" value="27" />
           <entry key="log" value="1" />
           <entry key="map" value="1" />
-          <entry key="md" value="52" />
-          <entry key="njk" value="71" />
+          <entry key="md" value="54" />
+          <entry key="njk" value="74" />
           <entry key="nvmrc" value="3" />
           <entry key="pcss" value="4" />
           <entry key="png" value="3" />
@@ -58,42 +71,42 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="AsciiDoc" value="1" />
-          <entry key="CSS" value="34" />
+          <entry key="CSS" value="35" />
           <entry key="HTML" value="14" />
           <entry key="Image" value="3" />
           <entry key="JSON" value="31" />
-          <entry key="JavaScript" value="69" />
-          <entry key="Markdown" value="50" />
+          <entry key="JavaScript" value="70" />
+          <entry key="Markdown" value="52" />
           <entry key="PLAIN_TEXT" value="34" />
           <entry key="SVG" value="1" />
           <entry key="SourceMap" value="1" />
-          <entry key="Twig" value="54" />
+          <entry key="Twig" value="57" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="LICENSE" value="14" />
-          <entry key="css" value="2339" />
+          <entry key="css" value="2542" />
           <entry key="eleventyignore" value="97" />
           <entry key="gitignore" value="9" />
-          <entry key="js" value="1650" />
-          <entry key="json" value="812" />
-          <entry key="md" value="20740" />
-          <entry key="njk" value="1839" />
+          <entry key="js" value="1758" />
+          <entry key="json" value="815" />
+          <entry key="md" value="20849" />
+          <entry key="njk" value="1999" />
           <entry key="nvmrc" value="4" />
           <entry key="pcss" value="119" />
-          <entry key="toml" value="120" />
+          <entry key="toml" value="132" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Bash" value="25" />
-          <entry key="CSS" value="2458" />
-          <entry key="JSON" value="812" />
-          <entry key="JavaScript" value="1650" />
-          <entry key="Markdown" value="20715" />
-          <entry key="PLAIN_TEXT" value="318" />
-          <entry key="Twig" value="1765" />
+          <entry key="CSS" value="2661" />
+          <entry key="JSON" value="815" />
+          <entry key="JavaScript" value="1758" />
+          <entry key="Markdown" value="20824" />
+          <entry key="PLAIN_TEXT" value="330" />
+          <entry key="Twig" value="1925" />
         </counts>
       </usages-collector>
     </session>
@@ -114,8 +127,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/_includes/layouts/home.njk">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="297">
-                  <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+                <state>
+                  <caret selection-end-line="3" selection-end-column="3" />
                 </state>
               </provider>
             </entry>
@@ -124,46 +137,46 @@
             <entry file="file://$PROJECT_DIR$/README.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="SPLIT">
-                  <first_editor relative-caret-position="633">
-                    <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+                  <first_editor relative-caret-position="540">
+                    <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
                   </first_editor>
                   <second_editor />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/netlify.toml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="495">
-                  <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+                <state relative-caret-position="306">
+                  <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/_includes/components/head.njk">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="189">
-                  <caret line="6" column="129" selection-start-line="6" selection-start-column="129" selection-end-line="6" selection-end-column="129" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/_includes/layouts/post.njk">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="436">
-                  <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/_includes/components/footer.njk">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="27">
-                  <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+                <state relative-caret-position="81">
+                  <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/_includes/layouts/terms-of-service.njk">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="108">
+                  <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/_includes/layouts/privacy-policy.njk">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="162">
+                  <caret line="6" column="18" lean-forward="true" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
                 </state>
               </provider>
             </entry>
@@ -172,7 +185,9 @@
             <entry file="file://$PROJECT_DIR$/src/pages/home.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="SPLIT">
-                  <first_editor />
+                  <first_editor relative-caret-position="189">
+                    <caret line="7" column="7" lean-forward="true" selection-end-line="9" />
+                  </first_editor>
                   <second_editor />
                 </state>
               </provider>
@@ -182,11 +197,20 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/assets/styles/_site.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="339">
-                  <caret line="159" column="26" selection-start-line="159" selection-start-column="26" selection-end-line="159" selection-end-column="26" />
+                <state relative-caret-position="283">
+                  <caret line="129" column="19" selection-start-line="129" selection-start-column="19" selection-end-line="129" selection-end-column="19" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/assets/styles/style.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="135">
+                  <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
                 </state>
               </provider>
             </entry>
@@ -200,7 +224,7 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/package.json">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="452">
@@ -224,11 +248,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Path</find>
-      <find>usebui</find>
-      <find>cssmin</find>
-      <find>build</find>
-      <find>background-color</find>
       <find>menco</find>
       <find>Webpack</find>
       <find>port</find>
@@ -254,11 +273,19 @@
       <find>condit</find>
       <find>plugin</find>
       <find>past</find>
+      <find>re</find>
+      <find>http://</find>
+      <find>Kevin Kernegger</find>
+      <find>cookie</find>
+      <find>regenrek.at</find>
     </findStrings>
     <replaceStrings>
       <replace>path</replace>
       <replace>webpack</replace>
       <replace />
+      <replace>https://</replace>
+      <replace>regenrek.at</replace>
+      <replace>regenrek.com</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/</dir>
@@ -270,12 +297,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/.eleventyignore" />
-        <option value="$PROJECT_DIR$/clean.js" />
-        <option value="$PROJECT_DIR$/src/assets/styles/style.pcss" />
         <option value="$PROJECT_DIR$/dist/styles/main.min.css" />
-        <option value="$PROJECT_DIR$/src/assets/scripts/main.js" />
         <option value="$PROJECT_DIR$/webpack/webpack.config.prod.js" />
         <option value="$PROJECT_DIR$/src/_includes/layouts/page.njk" />
         <option value="$PROJECT_DIR$/src/_includes/layouts/blog.njk" />
@@ -296,7 +318,6 @@
         <option value="$PROJECT_DIR$/.nvmrc" />
         <option value="$PROJECT_DIR$/prism-languages.js" />
         <option value="$PROJECT_DIR$/src/assets/styles/_prism.css" />
-        <option value="$PROJECT_DIR$/src/_includes/components/head.njk" />
         <option value="$PROJECT_DIR$/src/posts/2019-04-03-from-wordpress-to-11ty.md" />
         <option value="$PROJECT_DIR$/src/posts/2019-04-02-New-Blog.md" />
         <option value="$PROJECT_DIR$/src/posts/2019-05-10-aws-amplify.md" />
@@ -304,7 +325,6 @@
         <option value="$PROJECT_DIR$/tailwind.config.js" />
         <option value="$PROJECT_DIR$/src/posts/2019-04-25-how-to-finish-sideprojects.md" />
         <option value="$PROJECT_DIR$/src/posts/2019-04-10-Gotblog.md" />
-        <option value="$PROJECT_DIR$/src/assets/styles/style.css" />
         <option value="$PROJECT_DIR$/webpack/webpack.config.dev.js" />
         <option value="$PROJECT_DIR$/src/posts/2019-04-23-how-to-upgrade-10-tailwind.adoc" />
         <option value="$PROJECT_DIR$/src/assets/styles/_vars.css" />
@@ -312,15 +332,22 @@
         <option value="$PROJECT_DIR$/src/posts/2019-04-27-angularjs-schnelleinstieg.md" />
         <option value="$PROJECT_DIR$/src/posts/2019-04-23-how-to-upgrade-10-tailwind.md" />
         <option value="$PROJECT_DIR$/webpack/postcss.config.js" />
-        <option value="$PROJECT_DIR$/src/assets/styles/_site.css" />
         <option value="$PROJECT_DIR$/src/posts/2019-04-27-how-to-upgrade-10-tailwind.md" />
         <option value="$PROJECT_DIR$/src/_includes/layouts/base.njk" />
         <option value="$PROJECT_DIR$/src/_includes/layouts/post.njk" />
-        <option value="$PROJECT_DIR$/src/_includes/components/footer.njk" />
         <option value="$PROJECT_DIR$/src/_includes/components/postslist.njk" />
         <option value="$PROJECT_DIR$/src/_includes/layouts/home.njk" />
-        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/_includes/components/head.njk" />
+        <option value="$PROJECT_DIR$/src/assets/styles/style.css" />
+        <option value="$PROJECT_DIR$/src/assets/scripts/main.js" />
+        <option value="$PROJECT_DIR$/src/_includes/layouts/privacy-policy.njk" />
         <option value="$PROJECT_DIR$/netlify.toml" />
+        <option value="$PROJECT_DIR$/src/_includes/layouts/terms-of-service.njk" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/pages/tos.md" />
+        <option value="$PROJECT_DIR$/src/pages/pp.md" />
+        <option value="$PROJECT_DIR$/src/_includes/components/footer.njk" />
+        <option value="$PROJECT_DIR$/src/assets/styles/_site.css" />
       </list>
     </option>
   </component>
@@ -385,6 +412,52 @@
               <item name="regenrek-blog-11ty" type="b2602c69:ProjectViewProjectNode" />
               <item name="regenrek-blog-11ty" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="_includes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="regenrek-blog-11ty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="regenrek-blog-11ty" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="_includes" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="regenrek-blog-11ty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="regenrek-blog-11ty" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="_includes" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="regenrek-blog-11ty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="regenrek-blog-11ty" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="regenrek-blog-11ty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="regenrek-blog-11ty" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="regenrek-blog-11ty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="regenrek-blog-11ty" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="regenrek-blog-11ty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="regenrek-blog-11ty" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="regenrek-blog-11ty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="regenrek-blog-11ty" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="posts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -402,17 +475,17 @@
     <property name="settings.editor.selected.configurable" value="settings.css.dialects" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages" />
+      <recent name="$PROJECT_DIR$/src/assets/images/2019" />
+      <recent name="$PROJECT_DIR$/src/posts" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/webpack" />
       <recent name="$PROJECT_DIR$/src/assets/styles" />
       <recent name="$PROJECT_DIR$/assets/js" />
       <recent name="$PROJECT_DIR$/gulpfile.babel.js/tasks" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/assets/images/2019" />
-      <recent name="$PROJECT_DIR$/src/posts" />
-      <recent name="$PROJECT_DIR$/src/pages" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -459,18 +532,18 @@
       <workItem from="1556248393713" duration="224000" />
       <workItem from="1556248639242" duration="2549000" />
       <workItem from="1556277066611" duration="20802000" />
-      <workItem from="1556435503540" duration="6256000" />
+      <workItem from="1556435503540" duration="10014000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111184000" />
+    <option name="totallyTimeSpent" value="114942000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1113" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23269436" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23269436" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -485,7 +558,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2605289" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2605289" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -521,31 +594,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/_includes/components/nav.njk">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_data/metadata.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tach">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/.gitkeep" />
-    <entry file="file://$PROJECT_DIR$/.nvmrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/tachyons/src/_type-scale.css" />
     <entry file="file://$PROJECT_DIR$/node_modules/tachyons/src/_typography.css" />
     <entry file="file://$PROJECT_DIR$/webpack/webpack.common.js">
@@ -578,13 +626,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/posts/2019-05-10-aws-amplify.md" />
     <entry file="file://$PROJECT_DIR$/src/posts/2019-04-03-from-wordpress-to-11ty.md" />
-    <entry file="file://$PROJECT_DIR$/src/assets/styles/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webpack/webpack.config.prod.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-201" />
@@ -657,56 +698,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/styles/_site.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="159" column="26" selection-start-line="159" selection-start-column="26" selection-end-line="159" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_includes/layouts/post.njk">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_includes/components/postslist.njk">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_includes/components/head.njk">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="6" column="129" selection-start-line="6" selection-start-column="129" selection-end-line="6" selection-end-column="129" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/home.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_includes/layouts/home.njk">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_includes/layouts/base.njk">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/posts-draft/2019-04-02-relaunch.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -767,16 +758,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="633">
-            <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/posts/2019-04-27-how-to-upgrade-10-tailwind.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -789,13 +770,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_includes/components/footer.njk">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -812,6 +786,13 @@
     <entry file="file://$PROJECT_DIR$/_redirects">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/_includes/layouts/base.njk">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="452">
@@ -819,10 +800,120 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/styles/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/scripts/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="30" column="14" lean-forward="true" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_includes/layouts/post.njk">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_includes/components/head.njk">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_includes/components/postslist.njk">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/home.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="189">
+            <caret line="7" column="7" lean-forward="true" selection-end-line="9" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_includes/layouts/home.njk">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/netlify.toml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+        <state relative-caret-position="306">
+          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="540">
+            <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/pp.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="162">
+            <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/tos.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="108">
+            <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_includes/layouts/terms-of-service.njk">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_includes/layouts/privacy-policy.njk">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="18" lean-forward="true" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_includes/components/footer.njk">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/styles/_site.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="129" column="19" selection-start-line="129" selection-start-column="19" selection-end-line="129" selection-end-column="19" />
         </state>
       </provider>
     </entry>

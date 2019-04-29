@@ -1,4 +1,4 @@
-# regenrek.at Eleventy Blog
+# regenrek.com Eleventy Blog
 
 My personal blog.
 

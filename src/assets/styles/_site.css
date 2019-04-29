@@ -125,6 +125,12 @@ strong {
 
 footer {
     font-size: .85rem;
+    .divider {
+        display: inline-block;
+        color: #999;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
 }
 
 /**
@@ -162,4 +168,13 @@ figure > :first-child {
 
 [data-aspect-ratio="16:9"] {
     @include aspect-ratio(16,8);
+}
+
+
+/**
+    Cookie Banner
+ */
+
+.cc-window {
+    font-size: 12px;
 }

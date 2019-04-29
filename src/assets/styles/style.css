@@ -1,4 +1,5 @@
 @import 'tachyons';
+@import 'cookieconsent/build/cookieconsent.min.css';
 @import './_vars.css';
 @import './_prism.css';
 @import './_site.css';
