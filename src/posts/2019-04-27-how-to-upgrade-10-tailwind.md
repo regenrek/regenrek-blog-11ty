@@ -1,6 +1,6 @@
 ---
 title: How to use Tailwind CSS 1.0.0 in Nuxt today
-summary: Since Tailwind announced the 1.0.0 beta recently the final release doesn't seem to be far away. Time to integrate the next Tailwind version into nuxt and vue.js 
+summary: Since Adam Wathan recently announced the 1.0.0 beta of his Tailwind CSS Toolkit the final release doesn't seem to be far away. Time to integrate the next Tailwind version into nuxt and vue.js 
 date: 2019-04-27
 tags:
   - post
@@ -35,11 +35,11 @@ yarn add -D tailwindcss@next
 
 ## 2. Rename your Tailwind Config file to `tailwind.config.js`
 
-If you don't have a `tailwind.js` config file in your project root directory then create a file called `tailwind.config.js` or rename your existing config file. In the official Tailwind [documentation](https://next.tailwindcss.com/docs/upgrading-to-v1#3-rename-tailwind-js-to-tailwind-config-js){target="_blank" rel="noopener"} you can read that the rename part is entirely **optional** but **recommended**.
+If you don't have a `tailwind.js` config file in your project root directory then create a file called `tailwind.config.js` or rename your existing config file. In the official Tailwind [documentation](https://next.tailwindcss.com/docs/upgrading-to-v1#3-rename-tailwind-js-to-tailwind-config-js){target="_blank" rel="noopener"}, you can read that the rename part is entirely **optional** but **recommended**.
 
 ## 3. New default Config structure
 
-Put the following code snippet in the `tailwind.config.js` or adjust your existing file according the new defaults which you can read up [here](https://next.tailwindcss.com/docs/upgrading-to-v1#2-update-your-config-file){target="_blank" rel="noopener"}.
+Put the following code snippet in the `tailwind.config.js` or adjust your existing file according to the new defaults which you can read up [here](https://next.tailwindcss.com/docs/upgrading-to-v1#2-update-your-config-file){target="_blank" rel="noopener"}.
 
 ```bash
 module.exports = {
@@ -87,9 +87,9 @@ The following parts are useful additions to the basic config.
 ## [BONUS] Use `purgecss` to remove unused css in the production build
 
 
-The big advantage of purgecss is that you production website will get stripped of unused css which results in small css outputs.
+The big advantage of purgecss is that your production website will get stripped of unused css which results in small css outputs.
 
-First we're going to install the `nuxt-purgecss` module
+First, we're going to install the `nuxt-purgecss` module
 
 ```bash
 npm install nuxt-purgecss --save-dev
@@ -97,7 +97,7 @@ npm install nuxt-purgecss --save-dev
 yarn add -D nuxt-purgecss
 ```
 
-Enable this module inside the `modules` section of your `nuxt.config.js`. You don't need to write an specific Tailwind Extractor since nuxt-purgecss does this by [default](https://github.com/Developmint/nuxt-purgecss#defaults){target="_blank" rel="noopener"}.
+Enable this module inside the `modules` section of your `nuxt.config.js`. You don't need to write a specific Tailwind Extractor since nuxt-purgecss does this by [default](https://github.com/Developmint/nuxt-purgecss#defaults){target="_blank" rel="noopener"}.
 
 ```bash
 {

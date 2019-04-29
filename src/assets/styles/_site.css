@@ -3,8 +3,15 @@ body {
     font-family: capitolium-news-2, serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 1.15rem;
+    font-size: .95rem;
     line-height: 1.65;
+}
+
+@media screen and (min-width: 29em) {
+    body {
+        font-size: 1.10rem;
+        line-height: 1.7;
+    }
 }
 
 .heading {
@@ -34,7 +41,7 @@ a {
 }
 
 code {
-    background-color: #eee;
+    background-color: #f6f6f6;
 }
 
 a, p, ul > li {
@@ -42,7 +49,7 @@ a, p, ul > li {
     color: #222;
 }
 
-article.post-single a, .link, footer a {
+article.post-single a, .content a, .link, footer a {
     position: relative;
     color: var(--link-color);
 }

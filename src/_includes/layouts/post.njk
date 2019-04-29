@@ -3,11 +3,11 @@ layout: layouts/base.njk
 section: post
 ---
 
-<nav class="pa4">
+<nav class="pa2 ph0-l mw7-ns mw8-l center">
   <span class="logo h1 mt0"><a href="/">.regenrek</a></span>
 </nav>
 
-<div class="mw9 ph6-l center">
+<div class="mw7-ns mw8-l center">
   <figure data-aspect-ratio="16:9">
     <img src="/assets/images/{{ image }}@2x.png" alt="{{ image_alt }}" />
   </figure>
@@ -15,7 +15,7 @@ section: post
 
 <article class="post-single">
   <header class="bg-white sans-serif">
-    <div class="mw9 center ph4 pt2 pt4-m pt4-ns ph7-l">
+    <div class="center ph3 ph0-l mw7-ns pt2 pt4-ns">
       <time datetime="{{ date | machineDate }}"><small>{{ date | readableDate }}</small></time>
       <h1 class="f3 f2-m f1-l measure-narrow lh-title mv0">
         <span class="lh-title tracked-tight">
@@ -25,8 +25,8 @@ section: post
     </div>
   </header>
 
-  <div class="pv2 ph4 pa4-m ph7-l mw9-l center">
-    <p class="f5 f4-ns lh-copy measure">
+  <div class="center ph3 ph0-l mw7-ns">
+    <p>
       {{ summary }}
     </p>
     {{ layoutContent | safe }}
@@ -34,6 +34,6 @@ section: post
 
 </article>
 
-<nav class="pv2 ph4 pa4-m ph7-l mw9-l center">
+<nav class="center ph3 ph0-l mw7-ns">
   <a href="{{ '/' | url }}">← Blog index</a>
 </nav>

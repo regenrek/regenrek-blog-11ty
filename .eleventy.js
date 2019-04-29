@@ -1,7 +1,7 @@
 const { DateTime } = require("luxon");
 const markdownItAttrs = require('markdown-it-attrs');
 const markdownItFootnote = require('markdown-it-footnote');
-const markdownItLinkAttributes = require('markdown-it-link-attributes');
+// const markdownItLinkAttributes = require('markdown-it-link-attributes');
 const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const installPrismLanguages = require('./prism-languages.js');
 
