@@ -2,10 +2,6 @@
   publish = "dist"
   command = "npm run prod"
 
-# These rules will change if you change your site’s custom domains or HTTPS settings
-
-
-# Redirect domain aliases to primary domain
 [[redirects]]
     from = "https://regenrek.at/*"
     to = " https://regenrek.com/:splat"
