@@ -3,18 +3,6 @@
   command = "npm run prod"
 
 [[redirects]]
-    from = "https://regenrek.at/*"
-    to = " https://regenrek.com/:splat"
-    status = 301
-
-# Optional: Redirect default Netlify subdomain to primary domain
-[[redirects]]
-    from = "https://regenrek-blog.netlify.com/*"
-    to = "https://regenrek.com/:splat"
-    status = 301
-
-
-[[redirects]]
     from = "/blog/angularjs-schnelleinstieg-deutsch/"
     to = "https://legacy.regenrek.at/angularjs-schnelleinstieg-deutsch/"
     status = 301
@@ -79,3 +67,23 @@
     to = "https://legacy.regenrek.at/blog/"
     status = 301
 
+[[redirects]]
+    from = "https://regenrek.at"
+    to = "https://regenrek.com"
+    status = 301
+
+[[redirects]]
+    from = "https://regenrek.at/*"
+    to = "https://regenrek.com/:splat"
+    status = 301
+
+
+[[redirects]]
+    from = "https://regenrek-blog.netlify.com"
+    to = "https://regenrek.com"
+    status = 301
+
+[[redirects]]
+    from = "https://regenrek-blog.netlify.com/*"
+    to = "https://regenrek.com/:splat"
+    status = 301
