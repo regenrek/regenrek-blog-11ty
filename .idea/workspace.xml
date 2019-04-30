@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b966173-5f7a-422a-92af-ea0415d5fb51" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/netlify.toml" beforeDir="false" afterPath="$PROJECT_DIR$/netlify.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/posts/2019-04-27-how-to-upgrade-10-tailwind.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/posts/2019-04-27-how-to-upgrade-10-tailwind.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +41,7 @@
           <entry key="gitignore" value="1" />
           <entry key="gitkeep" value="1" />
           <entry key="html" value="14" />
-          <entry key="js" value="73" />
+          <entry key="js" value="76" />
           <entry key="json" value="28" />
           <entry key="log" value="1" />
           <entry key="map" value="1" />
@@ -63,7 +63,7 @@
           <entry key="HTML" value="14" />
           <entry key="Image" value="3" />
           <entry key="JSON" value="32" />
-          <entry key="JavaScript" value="73" />
+          <entry key="JavaScript" value="76" />
           <entry key="Markdown" value="61" />
           <entry key="PLAIN_TEXT" value="35" />
           <entry key="SVG" value="1" />
@@ -80,7 +80,7 @@
           <entry key="gitignore" value="9" />
           <entry key="js" value="1761" />
           <entry key="json" value="815" />
-          <entry key="md" value="21039" />
+          <entry key="md" value="21051" />
           <entry key="njk" value="2332" />
           <entry key="nvmrc" value="4" />
           <entry key="pcss" value="119" />
@@ -93,7 +93,7 @@
           <entry key="CSS" value="2779" />
           <entry key="JSON" value="815" />
           <entry key="JavaScript" value="1761" />
-          <entry key="Markdown" value="21014" />
+          <entry key="Markdown" value="21026" />
           <entry key="PLAIN_TEXT" value="340" />
           <entry key="Twig" value="2258" />
         </counts>
@@ -140,23 +140,23 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/posts/2019-04-27-how-to-upgrade-10-tailwind.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="FIRST">
-                  <first_editor relative-caret-position="243">
-                    <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+                  <first_editor relative-caret-position="-3728">
+                    <caret line="58" column="163" selection-start-line="58" selection-start-column="163" selection-end-line="58" selection-end-column="163" />
                   </first_editor>
                   <second_editor />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/netlify.toml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="523">
-                  <caret line="82" column="30" selection-start-line="82" selection-start-column="30" selection-end-line="82" selection-end-column="30" />
+                <state relative-caret-position="472">
+                  <caret line="86" column="48" lean-forward="true" selection-start-line="86" selection-start-column="48" selection-end-line="86" selection-end-column="48" />
                 </state>
               </provider>
             </entry>
@@ -204,7 +204,7 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/assets/styles/_site.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="211">
@@ -252,13 +252,34 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/package.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="452">
-                  <caret line="21" column="66" selection-start-line="21" selection-start-column="66" selection-end-line="21" selection-end-column="66" />
+                <state relative-caret-position="1851">
+                  <caret line="81" column="9" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="9" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/webpack/webpack.config.dev.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="135">
+                  <caret line="5" selection-start-line="5" selection-end-line="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/webpack/webpack.config.prod.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-48" />
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/webpack/webpack.common.js">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/webpack/postcss.config.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="81">
@@ -273,8 +294,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>lh-copy</find>
-      <find>@custom-media --breakpoint-large screen and (min-width: 60em);</find>
       <find>tach</find>
       <find>primary</find>
       <find>target</find>
@@ -303,6 +322,8 @@
       <find>bou</find>
       <find>ua-</find>
       <find>#</find>
+      <find>#eee</find>
+      <find>tail</find>
     </findStrings>
     <replaceStrings>
       <replace>path</replace>
@@ -371,9 +392,9 @@
         <option value="$PROJECT_DIR$/src/_includes/components/footer.njk" />
         <option value="$PROJECT_DIR$/src/_includes/layouts/privacy-policy.njk" />
         <option value="$PROJECT_DIR$/src/assets/styles/_site.css" />
-        <option value="$PROJECT_DIR$/src/posts/2019-04-27-how-to-upgrade-10-tailwind.md" />
         <option value="$PROJECT_DIR$/src/_includes/components/head.njk" />
         <option value="$PROJECT_DIR$/netlify.toml" />
+        <option value="$PROJECT_DIR$/src/posts/2019-04-27-how-to-upgrade-10-tailwind.md" />
       </list>
     </option>
   </component>
@@ -432,26 +453,7 @@
             <path>
               <item name="regenrek-blog-11ty" type="b2602c69:ProjectViewProjectNode" />
               <item name="regenrek-blog-11ty" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="regenrek-blog-11ty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="regenrek-blog-11ty" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="_includes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="regenrek-blog-11ty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="regenrek-blog-11ty" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="_includes" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="regenrek-blog-11ty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="regenrek-blog-11ty" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="webpack" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -525,18 +527,18 @@
       <workItem from="1556248393713" duration="224000" />
       <workItem from="1556248639242" duration="2549000" />
       <workItem from="1556277066611" duration="20802000" />
-      <workItem from="1556435503540" duration="19354000" />
+      <workItem from="1556435503540" duration="20683000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124282000" />
+    <option name="totallyTimeSpent" value="125611000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1113" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23269436" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23269436" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -551,7 +553,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2605289" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2605289" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -587,13 +589,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/posts/2019-05-10-aws-amplify.md" />
     <entry file="file://$PROJECT_DIR$/src/posts/2019-04-03-from-wordpress-to-11ty.md" />
-    <entry file="file://$PROJECT_DIR$/webpack/webpack.config.prod.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-201" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/posts/2019-04-25-how-to-finish-sideprojects.md" />
     <entry file="file://$PROJECT_DIR$/src/posts/2019-04-23-how-to-upgrade-10-tailwind.adoc" />
     <entry file="file://$PROJECT_DIR$/src/posts/2019-04-10-Gotblog.md" />
@@ -627,20 +623,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="316">
           <caret line="44" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack/webpack.config.dev.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-167">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack/postcss.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -716,13 +698,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_redirects">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="21" column="66" selection-start-line="21" selection-start-column="66" selection-end-line="21" selection-end-column="66" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/styles/style.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -895,32 +870,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/styles/_site.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="43" column="29" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/_includes/layouts/privacy-policy.njk">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
           <caret line="3" column="3" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/posts/2019-04-27-how-to-upgrade-10-tailwind.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="243">
-            <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -931,10 +884,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/styles/_site.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="43" column="29" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1851">
+          <caret line="81" column="9" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack/webpack.config.dev.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack/webpack.config.prod.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-48" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack/webpack.common.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack/postcss.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/netlify.toml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="82" column="30" selection-start-line="82" selection-start-column="30" selection-end-line="82" selection-end-column="30" />
+        <state relative-caret-position="472">
+          <caret line="86" column="48" lean-forward="true" selection-start-line="86" selection-start-column="48" selection-end-line="86" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/posts/2019-04-27-how-to-upgrade-10-tailwind.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="-3728">
+            <caret line="58" column="163" selection-start-line="58" selection-start-column="163" selection-end-line="58" selection-end-column="163" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>

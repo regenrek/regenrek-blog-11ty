@@ -58,7 +58,7 @@ Click here for an example of the new  [default config file](https://github.com/t
 
 Lets start with the nuxt changes here. Instead of creating a separate file for `postcss` put the configuration inside the `nuxt.config.js`. If you have an existing `postcss.config.js` file which is usually inside your project root - *remove it.*
 
-```bash
+```js
 css: [
     '~assets/css/tailwind.css',
 ],
@@ -99,7 +99,7 @@ yarn add -D nuxt-purgecss
 
 Enable this module inside the `modules` section of your `nuxt.config.js`. You don't need to write a specific Tailwind Extractor since nuxt-purgecss does this by [default](https://github.com/Developmint/nuxt-purgecss#defaults){target="_blank" rel="noopener"}.
 
-```bash
+```js
 {
   modules: [
     'nuxt-purgecss',
@@ -122,7 +122,7 @@ yarn add -D node-sass sass-loader
 
 Rename the prefix of your `.css` files to `.scss`. Update your nuxt.config.js to new paths and filenames and you're done.
 
-```bash
+```js
   css: [
     '~assets/scss/tailwind.scss', 
     '~assets/scss/my-custom.scss',
@@ -135,7 +135,7 @@ _Hint:_ I would first examine if sass is really necessary for the given use case
 
 Here is the final nuxt.config.js. Feel free to copy paste and adapt.
 
-```bash
+```js
 import pkg from './package'
 const path = require('path')
 const glob = require('glob-all')
