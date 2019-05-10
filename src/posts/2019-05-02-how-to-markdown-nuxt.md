@@ -1,7 +1,7 @@
 ---
 title: Create a frontmatter Markdown powered Blog with nuxt js in 2019
 summary: 
-date: 2019-05-02
+date: 2019-05-10
 tags:
   - post
   - nuxt
@@ -198,7 +198,7 @@ Test it:
 http://localhost:8080/posts/
 ```
 
-## Generate routes dynamicly for Static Site hosting
+## Generate routes dynamically for Static Site hosting
 
 
 Since we're using dynamic routing we can't guess which routes are necessary. So we need to make this work on the live hosting server with the nuxt `generate` option. That means iif we're going deploy and compile the project on the server for example on netlify with `npm run generate` or `nuxt generate` it will handle dynamic post generation inside the content folder 

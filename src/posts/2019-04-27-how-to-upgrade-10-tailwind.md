@@ -20,8 +20,9 @@ I would like to mention that there is already an official upgrade guide which yo
 4. [Configure postcss in `nuxt.config.js`](#4-configure-postcss-in-nuxtconfigjs)
 5. [Replace @tailwind preflight with @tailwind base](#5-replace-tailwind-preflight-with-tailwind-base)
 6. [Use purgecss to remove unused css in the production build](#bonus-use-purgecss-to-remove-unused-css-in-the-production-build)
-7. [How to use sass with Tailwind 1.0.0](#bonus-how-to-use-sass-with-tailwind-100)
-8. [Summary](#summary)
+7. [Use Google Fonts with nuxt js and Tailwind CSS](#bonus-use-google-fonts-with-nuxt-js-and-tailwind)
+8. [How to use sass with Tailwind 1.0.0](#bonus-how-to-use-sass-with-tailwind-100)
+9. [Summary](#summary)
 
 ## 1. Install Tailwind 1.0.0 Beta
 
@@ -115,6 +116,68 @@ build: {
     extractCSS: true
 }
 ```
+
+## [BONUS] Use Google Fonts with nuxt js and Tailwind 
+
+If you want to use Google Fonts or maybe Adobe Typekit its really easy to achieve it with this setup. We will use the [nuxt-webfontloader](https://github.com/Developmint/nuxt-webfontloader){target="_blank" rel="noopener"}.
+
+```bash
+npm install --save-dev nuxt-webfontloader
+# or
+yarn add -D node-sass nuxt-webfontloader
+```
+Include the `nuxt-webfontloader` to `module` section of `nuxt.config.js`
+
+```js
+{
+  modules: [
+    'nuxt-webfontloader',
+  ],
+}
+```
+
+Add your Google Fonts you want to use inside `nuxt.config.js`
+
+```js
+export default {
+  webfontloader: {
+    google: {
+      families: ['Lato:400,700'] //Loads Lato font with weights 400 and 700
+    }
+  },
+}
+```
+
+The next part is really up to you on how you want to handle fonts inside your app.
+Here are some tips to use it with the `tailwind.config.js`. 
+
+What we're going todo is to add `Lato` font to the default `sans` Font Family Stack. 
+
+```js
+// load default theme settings
+const defaultTheme = require('tailwindcss/defaultTheme')
+
+module.exports = {
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: [
+          'Lato',
+          ...defaultTheme.fontFamily.sans,
+        ]
+      },
+    }
+  }
+}
+```
+
+And then `apply` this default fontFamily style to the `html` tag.
+
+```css
+html {
+  font-family: @apply font-sans;
+}
+``` 
 
 
 ## [BONUS] How to use sass with Tailwind 1.0.0
