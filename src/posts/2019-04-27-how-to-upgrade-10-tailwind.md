@@ -4,7 +4,7 @@ summary: Since Adam Wathan recently announced the 1.0.0 beta of his Tailwind CSS
 date: 2019-04-27
 tags:
   - post
-  - tech
+  - nuxt
   - css
 image: 2019/02-post-tailwind-1_0_0-nuxt
 image_alt: tailwind-1.0.0-nuxt
@@ -108,6 +108,15 @@ Enable this module inside the `modules` section of your `nuxt.config.js`. You do
 }
 ```
 
+You will need also `extractCSS` option for `purgeCSS`.
+
+```js
+build: {
+    extractCSS: true
+}
+```
+
+
 ## [BONUS] How to use sass with Tailwind 1.0.0
 
 If you would like to use sass in combination with postcss here are the steps to enable it. 
@@ -162,6 +171,7 @@ export default {
   ],
   purgeCSS: {},
   build: {
+    extractCSS: true, // if you use purgeCSS
     postcss: {
       plugins: {
         tailwindcss: path.resolve(__dirname, './tailwind.config.js'),
