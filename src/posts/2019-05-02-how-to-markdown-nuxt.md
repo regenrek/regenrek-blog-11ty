@@ -168,7 +168,6 @@ Now lets read all blogposts in the `content` folder and output and loop through 
         <h1>My blog posts</h1>
         <ul>
             <li v-for="post in posts" :key="post.attributes.title">
-                >
                 <nuxt-link to="#">{{ post.attributes.title }}</nuxt-link>
             </li>
         </ul>
