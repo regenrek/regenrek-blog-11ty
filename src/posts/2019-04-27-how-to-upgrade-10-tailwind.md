@@ -1,6 +1,6 @@
 ---
-title: How to use Tailwind CSS 1.0.0 in Nuxt today
-summary: Since Adam Wathan recently announced the 1.0.0 beta of his Tailwind CSS Toolkit the final release doesn't seem to be far away. Time to integrate the next Tailwind version into nuxt and vue.js 
+title: How to use Tailwind CSS 1.0.1 in Nuxt
+summary: The final release of Tailwind CSS 1.0.1 is here. Time to integrate the next Tailwind version into nuxt and vue.js 
 date: 2019-04-27
 tags:
   - post
@@ -14,33 +14,33 @@ I would like to mention that there is already an official upgrade guide which yo
 
 ## Table of contents
 
-1. [Install Tailwind 1.0.0 Beta](#1-install-tailwind-100-beta)
+1. [Install Tailwind 1.0.1](#1-install-tailwind-css-101)
 2. [Rename your Tailwind Config file to `tailwind.config.js`](#2-rename-your-tailwind-config-file-to-tailwindconfigjs)
 3. [New default Config structure](#3-new-default-config-structure)
 4. [Configure postcss in `nuxt.config.js`](#4-configure-postcss-in-nuxtconfigjs)
 5. [Replace @tailwind preflight with @tailwind base](#5-replace-tailwind-preflight-with-tailwind-base)
 6. [Use purgecss to remove unused css in the production build](#bonus-use-purgecss-to-remove-unused-css-in-the-production-build)
 7. [Use Google Fonts with nuxt js and Tailwind CSS](#bonus-use-google-fonts-with-nuxt-js-and-tailwind)
-8. [How to use sass with Tailwind 1.0.0](#bonus-how-to-use-sass-with-tailwind-100)
+8. [How to use sass with Tailwind 1.0.1](#bonus-how-to-use-sass-with-tailwind-100)
 9. [Summary](#summary)
 
-## 1. Install Tailwind 1.0.0 Beta
+## 1. Install Tailwind CSS 1.0.1
 
 Start your terminal. `cd` to your project and upgrade to the latest tailwind build.
 
 ```bash
-npm install tailwindcss@next --save-dev
+npm install tailwindcss --save-dev
 # or
-yarn add -D tailwindcss@next
+yarn add -D tailwindcss
 ```
 
 ## 2. Rename your Tailwind Config file to `tailwind.config.js`
 
-If you don't have a `tailwind.js` config file in your project root directory then create a file called `tailwind.config.js` or rename your existing config file. In the official Tailwind [documentation](https://next.tailwindcss.com/docs/upgrading-to-v1#3-rename-tailwind-js-to-tailwind-config-js){target="_blank" rel="noopener"}, you can read that the rename part is entirely **optional** but **recommended**.
+If you don't have a `tailwind.js` config file in your project root directory then create a file called `tailwind.config.js` or rename your existing config file. In the official Tailwind [documentation](https://tailwindcss.com/docs/upgrading-to-v1#3-rename-tailwind-js-to-tailwind-config-js){target="_blank" rel="noopener"}, you can read that the rename part is entirely **optional** but **recommended**.
 
 ## 3. New default Config structure
 
-Put the following code snippet in the `tailwind.config.js` or adjust your existing file according to the new defaults which you can read up [here](https://next.tailwindcss.com/docs/upgrading-to-v1#2-update-your-config-file){target="_blank" rel="noopener"}.
+Put the following code snippet in the `tailwind.config.js` or adjust your existing file according to the new defaults which you can read up [here](https://tailwindcss.com/docs/upgrading-to-v1#2-update-your-config-file){target="_blank" rel="noopener"}.
 
 ```bash
 module.exports = {
@@ -53,7 +53,7 @@ module.exports = {
 }
 ```
 
-Click here for an example of the new  [default config file](https://github.com/tailwindcss/tailwindcss/blob/next/stubs/defaultConfig.stub.js){target="_blank" rel="noopener"}.
+Click here for an example of the new  [default config file](https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js){target="_blank" rel="noopener"}.
 
 ## 4. Configure `postcss` in `nuxt.config.js`
 
@@ -66,7 +66,7 @@ css: [
 build: {
     postcss: {
       plugins: {
-        tailwindcss: path.resolve(__dirname, './tailwind.config.js'),
+        tailwindcss: path.resolve(__dirname, './tailwind.config.js')
       }
     }
 }
@@ -81,7 +81,7 @@ Look for your `tailwind.css` file where you make the basic includes and update t
 + @tailwind base
 ``` 
 
-You're now **finished** with your **Tailwind 1.0.0** setup. 🎉 
+You're now **finished** with your **Tailwind CSS 1.0.1** setup. 🎉 
  
 The following parts are useful additions to the basic config.
 
@@ -180,7 +180,7 @@ html {
 ``` 
 
 
-## [BONUS] How to use sass with Tailwind 1.0.0
+## [BONUS] How to use sass with Tailwind 1.0.1
 
 If you would like to use sass in combination with postcss here are the steps to enable it. 
 
