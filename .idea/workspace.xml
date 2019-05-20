@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b966173-5f7a-422a-92af-ea0415d5fb51" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/posts/2019-04-27-how-to-upgrade-10-tailwind.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/posts/2019-04-27-how-to-upgrade-10-tailwind.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netlify.toml" beforeDir="false" afterPath="$PROJECT_DIR$/netlify.toml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +54,7 @@
           <entry key="png" value="4" />
           <entry key="svg" value="1" />
           <entry key="tach" value="1" />
-          <entry key="toml" value="3" />
+          <entry key="toml" value="4" />
           <entry key="yml" value="1" />
         </counts>
       </usages-collector>
@@ -68,7 +67,7 @@
           <entry key="JSON" value="32" />
           <entry key="JavaScript" value="77" />
           <entry key="Markdown" value="66" />
-          <entry key="PLAIN_TEXT" value="36" />
+          <entry key="PLAIN_TEXT" value="37" />
           <entry key="SVG" value="1" />
           <entry key="SourceMap" value="1" />
           <entry key="Twig" value="68" />
@@ -87,7 +86,7 @@
           <entry key="njk" value="2398" />
           <entry key="nvmrc" value="4" />
           <entry key="pcss" value="119" />
-          <entry key="toml" value="142" />
+          <entry key="toml" value="181" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -98,7 +97,7 @@
           <entry key="JSON" value="815" />
           <entry key="JavaScript" value="1795" />
           <entry key="Markdown" value="34734" />
-          <entry key="PLAIN_TEXT" value="340" />
+          <entry key="PLAIN_TEXT" value="379" />
           <entry key="Twig" value="2324" />
         </counts>
       </usages-collector>
@@ -117,14 +116,23 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/posts/2019-04-27-how-to-upgrade-10-tailwind.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="SPLIT">
-                  <first_editor relative-caret-position="81">
-                    <caret line="2" column="123" lean-forward="true" selection-start-line="2" selection-start-column="123" selection-end-line="2" selection-end-column="123" />
+                  <first_editor relative-caret-position="243">
+                    <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
                   </first_editor>
                   <second_editor />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/netlify.toml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="135">
+                  <caret line="6" column="75" selection-start-line="6" selection-start-column="75" selection-end-line="6" selection-end-column="75" />
                 </state>
               </provider>
             </entry>
@@ -210,8 +218,8 @@
             <entry file="file://$PROJECT_DIR$/src/posts/2019-05-02-how-to-markdown-nuxt.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="FIRST">
-                  <first_editor relative-caret-position="129">
-                    <caret line="159" column="7" selection-start-line="159" selection-start-column="7" selection-end-line="159" selection-end-column="7" />
+                  <first_editor relative-caret-position="398">
+                    <caret line="168" column="12" lean-forward="true" selection-start-line="168" selection-start-column="12" selection-end-line="168" selection-end-column="12" />
                   </first_editor>
                   <second_editor />
                 </state>
@@ -248,7 +256,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>condit</find>
       <find>plugin</find>
       <find>past</find>
       <find>re</find>
@@ -278,6 +285,7 @@
       <find>vuejs</find>
       <find>&lt;/body</find>
       <find>&lt;script</find>
+      <find>beta</find>
     </findStrings>
     <replaceStrings>
       <replace>path</replace>
@@ -342,13 +350,13 @@
         <option value="$PROJECT_DIR$/src/_includes/components/head.njk" />
         <option value="$PROJECT_DIR$/src/posts/2019-05-02-how-to-nuxtdown.md" />
         <option value="$PROJECT_DIR$/src/posts/2019-05-05-netlify-cms-nuxt.md" />
-        <option value="$PROJECT_DIR$/netlify.toml" />
         <option value="$PROJECT_DIR$/src/_includes/layouts/base.njk" />
         <option value="$PROJECT_DIR$/src/_includes/components/footer.njk" />
         <option value="$PROJECT_DIR$/src/assets/scripts/main.js" />
         <option value="$PROJECT_DIR$/src/_includes/layouts/post.njk" />
         <option value="$PROJECT_DIR$/src/posts/2019-05-02-how-to-markdown-nuxt.md" />
         <option value="$PROJECT_DIR$/src/posts/2019-04-27-how-to-upgrade-10-tailwind.md" />
+        <option value="$PROJECT_DIR$/netlify.toml" />
       </list>
     </option>
   </component>
@@ -530,15 +538,15 @@
       <workItem from="1556435503540" duration="27140000" />
       <workItem from="1556821563289" duration="13939000" />
       <workItem from="1557299158083" duration="9519000" />
-      <workItem from="1557825596581" duration="748000" />
+      <workItem from="1557825596581" duration="3345000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="156274000" />
+    <option name="totallyTimeSpent" value="158871000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1113" extended-state="6" />
+    <frame x="0" y="23" width="1920" height="1113" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21086262" />
@@ -728,13 +736,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/netlify.toml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/admin/config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="636">
@@ -848,16 +849,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/posts/2019-05-02-how-to-markdown-nuxt.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="129">
-            <caret line="159" column="7" selection-start-line="159" selection-start-column="7" selection-end-line="159" selection-end-column="7" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/_includes/layouts/post.njk">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
@@ -865,11 +856,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/posts/2019-05-02-how-to-markdown-nuxt.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="398">
+            <caret line="168" column="12" lean-forward="true" selection-start-line="168" selection-start-column="12" selection-end-line="168" selection-end-column="12" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/posts/2019-04-27-how-to-upgrade-10-tailwind.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="81">
-            <caret line="2" column="123" lean-forward="true" selection-start-line="2" selection-start-column="123" selection-end-line="2" selection-end-column="123" />
+          <first_editor relative-caret-position="243">
+            <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
           </first_editor>
           <second_editor />
         </state>
@@ -877,6 +878,13 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netlify.toml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="6" column="75" selection-start-line="6" selection-start-column="75" selection-end-line="6" selection-end-column="75" />
         </state>
       </provider>
     </entry>
