@@ -1,7 +1,7 @@
 ---
 title: How to create an animated Vue Sidebar menu with Vue.Observable
 summary: Hey Everyone in this post I will guide you through the process of creating a smooth slideout menu for your website in vuejs
-date: 2019-05-10
+date: 2019-05-28
 tags:
   - post
   - nuxt
