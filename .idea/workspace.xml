@@ -83,7 +83,7 @@
           <entry key="gitignore" value="9" />
           <entry key="js" value="1765" />
           <entry key="json" value="815" />
-          <entry key="md" value="47668" />
+          <entry key="md" value="47671" />
           <entry key="njk" value="2398" />
           <entry key="nvmrc" value="4" />
           <entry key="pcss" value="119" />
@@ -97,7 +97,7 @@
           <entry key="HTML" value="21" />
           <entry key="JSON" value="815" />
           <entry key="JavaScript" value="1803" />
-          <entry key="Markdown" value="47578" />
+          <entry key="Markdown" value="47581" />
           <entry key="PLAIN_TEXT" value="379" />
           <entry key="Twig" value="2324" />
         </counts>
@@ -112,8 +112,8 @@
             <entry file="file://$PROJECT_DIR$/src/posts/2019-06-06-how-to-nuxt-vuejs-side-navigation.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="FIRST">
-                  <first_editor relative-caret-position="108">
-                    <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+                  <first_editor relative-caret-position="189">
+                    <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
                   </first_editor>
                   <second_editor />
                 </state>
@@ -385,12 +385,12 @@
       <workItem from="1557299158083" duration="9519000" />
       <workItem from="1557825596581" duration="6898000" />
       <workItem from="1558630403970" duration="599000" />
-      <workItem from="1558646721056" duration="35667000" />
+      <workItem from="1558646721056" duration="35738000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198690000" />
+    <option name="totallyTimeSpent" value="198761000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1113" extended-state="0" />
@@ -734,8 +734,8 @@
     <entry file="file://$PROJECT_DIR$/src/posts/2019-06-06-how-to-nuxt-vuejs-side-navigation.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="108">
-            <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <first_editor relative-caret-position="189">
+            <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
           </first_editor>
           <second_editor />
         </state>

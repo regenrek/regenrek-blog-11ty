@@ -4,7 +4,7 @@ summary: Hey Everyone in this post I will guide you through the process of creat
 date: 2019-05-28
 tags:
   - post
-  - nuxt
+  - vue
 image: 2019/03-post-vue-sidebar
 image_alt: vue-sidebar-menu-burger
 permalink: posts/how-to-create-an-animated-vue-sidebar-menu-with-vue-observable/
