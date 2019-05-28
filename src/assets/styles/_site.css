@@ -140,6 +140,38 @@ footer {
     }
 }
 
+.tip:before {
+  content: "!";
+  background-color: #0984e3;
+  position: absolute;
+  top: 14px;
+  left: -12px;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 20px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.tip {
+  padding: 12px 24px 12px 30px;
+  margin: 2em 0;
+  border-left-width: 4px;
+  border-left-style: solid;
+  background-color: #f8f8f8;
+  border-left-color: #0984e3;
+  position: relative;
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.shadow {
+  box-shadow: 0 3px 8px rgba(0,0,0,.35);
+}
+
 /**
     IMAGES
  */
@@ -176,6 +208,8 @@ figure > :first-child {
 [data-aspect-ratio="16:9"] {
     @include aspect-ratio(16,8);
 }
+
+
 
 
 /**
