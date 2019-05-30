@@ -363,7 +363,7 @@ Ok fine the UI is finished. What's missing here is that the burger button doesn'
 If you have just started with vue, react, angularjs, ... you mostly need a bit time to understand how you can *share data between two components* or *share global state between components*. Just google around if you need more info on that. Mostly you will find solving these problems with `vuex`. {.tip}
 
 
-In fact, there is just one `variable` which we need to share between these two components: isBurgerActive or isPanelOpen (isPanelopen) @TODO. With this information, we can build our `store` with `Vue.observable()`
+In fact, there is just one prop which we need to share between these two components. This means we can replace - isBurgerActive inside Burger and isPanelOpen inside Sidebar with . With this information, we can build our `store` with `Vue.observable()`
 
 ### 6.1 Creating the store with `Vue.observable`
 

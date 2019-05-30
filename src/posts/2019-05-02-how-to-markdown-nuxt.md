@@ -68,7 +68,7 @@ If you not familiar with webpack here is an explanation of the above snippet:
 * Finally we tell webpack that we want to use a custom loader called `frontmatter-markdown-loader`. This loader is like a predefined "task" which is **responsible** for **transforming** our **markdown code to json** so we can process and use it in our nuxt project.
 
 
-## Lets create yur first blog post
+## Lets create your first blog post
 
 In the loader configuration above we defined that all our markdown files will be inside a `content` folder. So please create this folder now: 
 
