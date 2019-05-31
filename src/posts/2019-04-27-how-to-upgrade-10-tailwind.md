@@ -74,7 +74,17 @@ build: {
 
 ## 5. Replace `@tailwind preflight` with `@tailwind base`
 
-Look for your `tailwind.css` file where you make the basic includes and update the code to the following:
+Look for your `tailwind.css` file where you make the basic includes and add the `@tailwind` directive to inject the base styles.
+
+```css
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+```
+
+Or if you have an existing tailwind project update the code to the following
 
 ```diff
 - @tailwind preflight

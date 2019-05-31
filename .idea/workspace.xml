@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b966173-5f7a-422a-92af-ea0415d5fb51" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/posts/2019-05-02-how-to-markdown-nuxt.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/posts/2019-05-02-how-to-markdown-nuxt.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/posts/2019-06-06-how-to-nuxt-vuejs-side-navigation.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/posts/2019-06-06-how-to-nuxt-vuejs-side-navigation.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/posts/2019-04-27-how-to-upgrade-10-tailwind.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/posts/2019-04-27-how-to-upgrade-10-tailwind.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +83,7 @@
           <entry key="gitignore" value="9" />
           <entry key="js" value="1765" />
           <entry key="json" value="815" />
-          <entry key="md" value="47755" />
+          <entry key="md" value="47993" />
           <entry key="njk" value="2398" />
           <entry key="nvmrc" value="4" />
           <entry key="pcss" value="119" />
@@ -98,7 +97,7 @@
           <entry key="HTML" value="21" />
           <entry key="JSON" value="815" />
           <entry key="JavaScript" value="1803" />
-          <entry key="Markdown" value="47665" />
+          <entry key="Markdown" value="47903" />
           <entry key="PLAIN_TEXT" value="379" />
           <entry key="Twig" value="2324" />
         </counts>
@@ -121,24 +120,24 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/posts/2019-04-27-how-to-upgrade-10-tailwind.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="SPLIT">
-                  <first_editor relative-caret-position="-1252">
-                    <caret line="8" column="28" selection-start-line="8" selection-end-line="9" />
+                  <first_editor relative-caret-position="600">
+                    <caret line="83" column="20" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="20" />
                   </first_editor>
                   <second_editor />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/posts/2019-05-02-how-to-markdown-nuxt.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="FIRST">
-                  <first_editor relative-caret-position="303">
-                    <caret line="70" column="17" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
+                  <first_editor relative-caret-position="276">
+                    <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
                   </first_editor>
                   <second_editor />
                 </state>
@@ -164,8 +163,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>#</find>
-      <find>#eee</find>
       <find>tail</find>
       <find>target</find>
       <find>img</find>
@@ -194,6 +191,8 @@
       <find>summarize</find>
       <find>@TODO</find>
       <find>@todo</find>
+      <find>yur</find>
+      <find>preflight</find>
     </findStrings>
     <replaceStrings>
       <replace>path</replace>
@@ -259,12 +258,12 @@
         <option value="$PROJECT_DIR$/src/_includes/components/footer.njk" />
         <option value="$PROJECT_DIR$/src/assets/scripts/main.js" />
         <option value="$PROJECT_DIR$/src/_includes/layouts/post.njk" />
-        <option value="$PROJECT_DIR$/src/posts/2019-04-27-how-to-upgrade-10-tailwind.md" />
         <option value="$PROJECT_DIR$/netlify.toml" />
         <option value="$PROJECT_DIR$/src/posts-drafts/2019-06-06-how-to-nuxt-vuejs-side-navigation.md" />
         <option value="$PROJECT_DIR$/src/assets/styles/_site.css" />
         <option value="$PROJECT_DIR$/src/posts/2019-06-06-how-to-nuxt-vuejs-side-navigation.md" />
         <option value="$PROJECT_DIR$/src/posts/2019-05-02-how-to-markdown-nuxt.md" />
+        <option value="$PROJECT_DIR$/src/posts/2019-04-27-how-to-upgrade-10-tailwind.md" />
       </list>
     </option>
   </component>
@@ -318,17 +317,6 @@
             <path>
               <item name="regenrek-blog-11ty" type="b2602c69:ProjectViewProjectNode" />
               <item name="regenrek-blog-11ty" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="regenrek-blog-11ty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="regenrek-blog-11ty" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="regenrek-blog-11ty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="regenrek-blog-11ty" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="posts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -410,12 +398,12 @@
       <workItem from="1557299158083" duration="9519000" />
       <workItem from="1557825596581" duration="6898000" />
       <workItem from="1558630403970" duration="599000" />
-      <workItem from="1558646721056" duration="36519000" />
+      <workItem from="1558646721056" duration="37856000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="199542000" />
+    <option name="totallyTimeSpent" value="200879000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1113" extended-state="6" />
@@ -741,6 +729,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/posts/2019-05-02-how-to-markdown-nuxt.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="276">
+            <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/posts/2019-04-27-how-to-upgrade-10-tailwind.md">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -749,18 +747,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-1252">
-            <caret line="8" column="28" selection-start-line="8" selection-end-line="9" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/posts/2019-05-02-how-to-markdown-nuxt.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="303">
-            <caret line="70" column="17" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
+          <first_editor relative-caret-position="600">
+            <caret line="83" column="20" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="20" />
           </first_editor>
           <second_editor />
         </state>
