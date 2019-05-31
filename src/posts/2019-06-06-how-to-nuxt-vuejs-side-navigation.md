@@ -15,7 +15,7 @@ permalink: posts/how-to-create-an-animated-vue-sidebar-menu-with-vue-observable/
 
 ## Demo
 
-[CodeSandbox Demo](https://codesandbox.io/embed/codesandbox-iv1zc){target="_blank" rel="noopener"}
+[CodeSandbox Demo](https://codesandbox.io/s/vuejssidebarmenuburgerobservable-iv1zc){target="_blank" rel="noopener"}
 [Codepen Demo](https://codepen.io/kkern/pen/zQLKQM){target="_blank" rel="noopener"}
 [Source on Github](https://github.com/regenrek/vue-sidebar-menu-example){target="_blank" rel="noopener"}
 
@@ -523,4 +523,4 @@ If you could follow until here you already can guess how we will implement the s
 
 ## Summary
 
-You can find the source on [github](https://github.com/regenrek/vue-sidebar-menu-example){target="_blank" rel="noopener"} and a demo [here](https://codesandbox.io/embed/codesandbox-iv1zc) {target="_blank" rel="noopener"} 
+You can find the source on [github](https://github.com/regenrek/vue-sidebar-menu-example){target="_blank" rel="noopener"} and a demo [here](https://codesandbox.io/s/vuejssidebarmenuburgerobservable-iv1zc) {target="_blank" rel="noopener"} 
