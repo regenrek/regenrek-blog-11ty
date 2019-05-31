@@ -59,10 +59,20 @@ Click here for an example of the new  [default config file](https://github.com/t
 
 Lets start with the nuxt changes here. Instead of creating a separate file for `postcss` put the configuration inside the `nuxt.config.js`. If you have an existing `postcss.config.js` file which is usually inside your project root - *remove it.*
 
+*nuxt.config.js
+
+Add the `path` lib to the top of the config. 
 ```js
+const path = require('path')
+```
+
+```js
+// you will need to include the @tailwind directives inside this
+// css file.  
 css: [
-    '~assets/css/tailwind.css',
+    '~assets/css/tailwind.css', 
 ],
+// this is necessary
 build: {
     postcss: {
       plugins: {
