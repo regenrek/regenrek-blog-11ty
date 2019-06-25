@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b966173-5f7a-422a-92af-ea0415d5fb51" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/posts/2019-06-06-how-to-nuxt-vuejs-side-navigation.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/posts/2019-06-06-how-to-nuxt-vuejs-side-navigation.md" afterDir="false" />
-    </list>
+    <list default="true" id="7b966173-5f7a-422a-92af-ea0415d5fb51" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +12,7 @@
     <session id="163128866">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="15" />
+          <entry key="project.closed" value="16" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.11" value="3" />
@@ -114,8 +111,8 @@
             <entry file="file://$PROJECT_DIR$/src/posts/2019-06-06-how-to-nuxt-vuejs-side-navigation.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="FIRST">
-                  <first_editor relative-caret-position="513">
-                    <caret line="17" column="82" selection-start-line="17" selection-start-column="82" selection-end-line="17" selection-end-column="82" />
+                  <first_editor relative-caret-position="729">
+                    <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
                   </first_editor>
                   <second_editor />
                 </state>
@@ -402,12 +399,12 @@
       <workItem from="1558630403970" duration="599000" />
       <workItem from="1558646721056" duration="38943000" />
       <workItem from="1559301689384" duration="1054000" />
-      <workItem from="1559333666455" duration="21000" />
+      <workItem from="1559333666455" duration="50000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="203041000" />
+    <option name="totallyTimeSpent" value="203070000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1113" extended-state="6" />
@@ -746,8 +743,8 @@
     <entry file="file://$PROJECT_DIR$/src/posts/2019-06-06-how-to-nuxt-vuejs-side-navigation.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="513">
-            <caret line="17" column="82" selection-start-line="17" selection-start-column="82" selection-end-line="17" selection-end-column="82" />
+          <first_editor relative-caret-position="729">
+            <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
           </first_editor>
           <second_editor />
         </state>
