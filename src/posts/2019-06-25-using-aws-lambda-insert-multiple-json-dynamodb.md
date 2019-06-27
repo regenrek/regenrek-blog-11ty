@@ -15,7 +15,8 @@ permalink: posts/using-aws-lambda-insert-multiple-json-dynamodb/
 
 Hey Everyone, 
 
-in this post I will guide you through some quick steps to prefill `DynamoDB` from a `json` file via `aws lambda` and `aws amplify`.
+
+in this post I will guide you through some quick steps to prefill `DynamoDB` from a `json` file with `aws lambda` and `aws amplify`.
 
 
 ## Table of contents
@@ -24,7 +25,7 @@ in this post I will guide you through some quick steps to prefill `DynamoDB` fro
 2. [Create new AWS Amplify project](#2-create-a-new-aws-amplify-project)
 3. [Create NoSQL DynamoDB Database](#3-create-a-nosql-dynamodb-database)
 4. [Build your first AWS Lambda function with Amplify](#4-build-your-first-aws-lambda-function-with-amplify)
-5. [Properly Test your lambda function with AWS Amplify](5-properly-test-your-lambda-function-with-aws-amplify)
+5. [Properly Test your lambda function with AWS Amplify](#5-properly-test-your-lambda-function-with-aws-amplify)
 6. [Insert JSON objects into DynamoDB](#6-insert-json-objects-into-dynamodb)
 7. [What about `amplify add api`](#7-what-about-amplify-add-api)
 8. [Source on Github](#8-source-on-github)
@@ -33,7 +34,7 @@ in this post I will guide you through some quick steps to prefill `DynamoDB` fro
 
 We're using `vue` to setup the project. But feel free to use whatever you like. You can also use `react` it doesn't matter.
 
-```
+```bash
 vue create aws-amplify-lambda-dynamodb
 ```
 
@@ -95,7 +96,7 @@ You can now add columns to the table.
 ? Do you want to add global secondary indexes to your table? (Y/n)
 ```
 
-Please keep in mind that your database is configured but not deployed yet. You always need to push your configuration if you finished with configuration.
+Please keep in mind that your database is configured but not deployed yet. You always need to push your configuration. 
 
 If you want to know whats going on like you want to see which services are already in the cloud and which needs to get provisioned you can always use the `amplify status` command. {.tip}
 
@@ -107,13 +108,12 @@ This is a one-liner.
 amplify push
 ```
 
-The amplify push command is used to provision all your local developments. There is also a `amplify publish` command which invokes `amplify push` plus additional publish static assets to Amazon S3 and Amazon Cloudfront {.tip}
-
+With `amplify push` we can provision our local backend configuration resources. There is also a `amplify publish` command which invokes `amplify push` plus additional publish static assets to Amazon S3 and Amazon Cloudfront {.tip}
 
 
 ## 4. Build your first AWS Lambda function with Amplify
 
-After configuring the database you can start to code your "insert my json data" function with aws lambda. Amplify CLI will guide us step by step.
+We will write some basic lambda function first and then finish it with our main use case. Amplify CLI will guide us step by step.
 
 ```bash
 amplify add function
@@ -141,9 +141,8 @@ var storageMystorageArn = process.env.STORAGE_MYSTORAGE_ARN
 ? Do you want to edit the local lambda function now? Yes
 ```
 
-We will write some basic lambda function first and then finish it with the main use case.
 
-* First import `aws-sdk` library which we will later to get access to `DynamoDB.DocumentClient`.
+* First import `aws-sdk` library which we will use later to get access to `DynamoDB.DocumentClient`.
 
 ```js
 const AWS = require("aws-sdk");
@@ -161,13 +160,13 @@ It's really easy to test your functions with aws amplify. Open your terminal and
 amplify invoke function insertdbbfunc
 ```
 
-If you have copy+paste the above code you will run into the following error:
+If you did copy+paste the above code you will run into the following error:
 
 ```bash
 Warning: Cannot find module 'aws-sdk'
 ```
 
-So we need to add `aws-sdk` to the lambda function. 
+So we need to add the `aws-sdk` package inside our lambda function.
 
 ```bash
 cd amplify/backend/function/insertdbbfunc/src/
@@ -191,7 +190,7 @@ After we have setup some basic lambda function we should know how to `invoke` an
 
 ### JSON test data
 
-*`amplify/backend/functions/insertdbbfunc/src/data/people.js`
+* Open `amplify/backend/functions/insertdbbfunc/src/data/people.js`
 ```json
 [
   {
@@ -215,7 +214,7 @@ After we have setup some basic lambda function we should know how to `invoke` an
 ### Insert multiple records with `batchWrite`
 
 * Open your function `amplify/backend/functions/insertdbbfunc/src/index.js`
-* We will use [`DynamoDB.DocumentClient`](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/dynamodb-example-document-client.html){target="_blank" rel="noopener"} library to handle CRUD scenarios. In our case to `create` data.
+* We will use [`DynamoDB.DocumentClient`](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/dynamodb-example-document-client.html){target="_blank" rel="noopener"} library to handle CRUD scenarios. In our case to `CREATE` data.
 * I found some pretty nice [answer @ StackOverflow](https://stackoverflow.com/a/49169600){target="_blank" rel="noopener"} which is using `dynamoDB.DocumentClient.batchWrite()` to handle multiple inserts in dynamoDB.
 
 
