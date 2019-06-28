@@ -14,27 +14,17 @@ image_alt: nuxt_algolia_search_breakfast_restaurant_locator
 
 ## Table of Contents
 
-- [Table of Contents](#Table-of-Contents)
-- [Demo](#Demo)
-- [1. Introduction](#1-Introduction)
-  - [1.1 nuxtjs + vue](#11-nuxtjs--vue)
-  - [1.2 leaflet](#12-leaflet)
-  - [1.3 algolia](#13-algolia)
-- [2. Project Setup](#2-Project-Setup)
-  - [2.1 Use `nuxtjs` with `leaflet`](#21-Use-nuxtjs-with-leaflet)
-    - [Option a) Use `nuxt-leaft`](#Option-a-Use-nuxt-leaft)
-    - [Option b) Setup manually](#Option-b-Setup-manually)
-- [3. Building a simple map with vue leaflet](#3-Building-a-simple-map-with-vue-leaflet)
-  - [3.1 Add markers to your leaflet map](#31-Add-markers-to-your-leaflet-map)
-- [4. Setup algolia](#4-Setup-algolia)
-  - [4.1 Create you first index](#41-Create-you-first-index)
-- [4.2 Import test data](#42-Import-test-data)
-- [4.3 Get an algolia search api key](#43-Get-an-algolia-search-api-key)
-- [5. Use `nuxt` with algolia instantsearch](#5-Use-nuxt-with-algolia-instantsearch)
-  - [5.1. Let `nuxt` communicate with `algolia`](#51-Let-nuxt-communicate-with-algolia)
-  - [5.2 Place markers from your algolia index](#52-Place-markers-from-your-algolia-index)
-- [Whats next?](#Whats-next)
-- [Source on github](#Source-on-github)
+- [Table of Contents](#table-of-contents)
+- [Demo](#demo)
+- [1. Introduction](#1-introduction)
+- [2. Project Setup](#2-project-setup)
+- [3. Building a simple map with vue leaflet](#3-building-a-simple-map-with-vue-leaflet)
+- [4. Setup algolia](#4-setup-algolia)
+- [4.2 Import test data](#42-import-test-data)
+- [4.3 Get an algolia search api key](#43-get-an-algolia-search-api-key)
+- [5. Use `nuxt` with algolia instantsearch](#5-use-nuxt-with-algolia-instantsearch)
+- [Whats next?](#whats-next)
+- [Source on github](#source-on-github)
 
 
 ## Demo
