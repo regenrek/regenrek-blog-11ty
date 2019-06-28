@@ -4,25 +4,50 @@ summary:
 date: 2019-06-26
 tags:
   - post
-  - vue
-  - aws-lambda
-  - aws-dynamodb
-  - aws-amplify
-image: 2019/04-post-amplify-lambda-dynamodb
-image_alt: 04-post-amplify-lambda-dynamodb
+  - nuxtjs
+  - algolia
+image: 2019/05-nuxt_algolia_search_breakfast_locator
+image_alt: nuxt_algolia_search_breakfast_restaurant_locator
 # permalink: posts/using-aws-lambda-insert-multiple-json-dynamodb/
 ---
 
 
 ## Table of Contents
 
-1. [Project Setup](#1-Project-Setup)
-2. [](#)
+- [Table of Contents](#Table-of-Contents)
+- [Demo](#Demo)
+- [1. Introduction](#1-Introduction)
+  - [1.1 nuxtjs + vue](#11-nuxtjs--vue)
+  - [1.2 leaflet](#12-leaflet)
+  - [1.3 algolia](#13-algolia)
+- [2. Project Setup](#2-Project-Setup)
+  - [2.1 Use `nuxtjs` with `leaflet`](#21-Use-nuxtjs-with-leaflet)
+    - [Option a) Use `nuxt-leaft`](#Option-a-Use-nuxt-leaft)
+    - [Option b) Setup manually](#Option-b-Setup-manually)
+- [3. Building a simple map with vue leaflet](#3-Building-a-simple-map-with-vue-leaflet)
+  - [3.1 Add markers to your leaflet map](#31-Add-markers-to-your-leaflet-map)
+- [4. Setup algolia](#4-Setup-algolia)
+  - [4.1 Create you first index](#41-Create-you-first-index)
+- [4.2 Import test data](#42-Import-test-data)
+- [4.3 Get an algolia search api key](#43-Get-an-algolia-search-api-key)
+- [5. Use `nuxt` with algolia instantsearch](#5-Use-nuxt-with-algolia-instantsearch)
+  - [5.1. Let `nuxt` communicate with `algolia`](#51-Let-nuxt-communicate-with-algolia)
+  - [5.2 Place markers from your algolia index](#52-Place-markers-from-your-algolia-index)
+- [Whats next?](#Whats-next)
+- [Source on github](#Source-on-github)
+
+
+## Demo
+
+* Here is a [CodeSandbox Demo](https://codesandbox.io/s/algolia-vue-instantsearch-v3-geosearch-updated-eqgwy){target="_blank" rel="noopener"} written with `vue`
+* [Github Source Code](https://github.com/regenrek/nuxt-leaflet-algolia){target="_blank" rel="noopener"} 
+
+**ATTENTION:** This example doesn't until you generate your own `App ID` and `Api Key` with algolia search.
 
 
 ## 1. Introduction
 
-It seems that dining in breakfast restaurants are the new cool thing in austria. There a restaurants which business model is to offer exclusively breakfast all day long. So this is the right time to  build a breakfast restaurant locator with nuxtjs and algolia search. To get started I try to exaplain some basic stuff about `nuxtjs`, `leaflet` library and `algolia` search.
+It seems that dining in breakfast restaurants are the new cool thing in austria. There restaurants which business model is to offer exclusively breakfast all day long. So this is the right time to  build a breakfast restaurant locator with nuxtjs and algolia search. To get started I try to exaplain some basic stuff about `nuxtjs`, `leaflet` library and `algolia` search.
 
 ### 1.1 nuxtjs + vue
 
@@ -155,8 +180,7 @@ If everyhing worked so far you should see a fresh new map in your browser window
 
 ### 3.1 Add markers to your leaflet map
 
-Lets quick add some test [map markers](https://korigan.github.io/Vue2Leaflet/#/components/l-marker/){target="_blank" rel="noopener"} inside the map which we will
-replace with **"real"** breakfast restaurant location **geodata** later.
+Lets quick add some test [map markers](https://korigan.github.io/Vue2Leaflet/#/components/l-marker/){target="_blank" rel="noopener"} inside the map which we will replace with **"real"** breakfast restaurant **geodata** locations later.
 
 
 ```diff
@@ -180,29 +204,22 @@ Voila we've added some test markers with a simple `v-for` loop.
 
 ![Nuxtjs + Algolia Search](/assets/images/2019-06-nuxtjs-algolia-with-marker.png){.shadow}
 
-Add 
-
-## 4 Setup algolia
+## 4. Setup algolia
 
 Algolia is a cloud service provider who offers search services. If you interested about `algolia search` you can read my short summary in the [introduction](#1-Introduction) or visit the official website and docs. They have tons of information about it.
 
-You need to [sign up](https://www.algolia.com/users/sign_up){target="_blank" rel="noopener"} for an test account. Don't worry you can develop and test for free with in the community edition. 
+You need to [sign up](https://www.algolia.com/users/sign_up){target="_blank" rel="noopener"} for a test account. Don't worry you can develop and test for free with in the community edition. 
 
 ### 4.1 Create you first index
 
-An `index` is a collection of records from which are search, filter and sortable. It's more or less a database table. 
+An `index` is a collection of records which you can searchable, filer and sort. It's more or less a database table. 
 
 ![01 - algolia search index add](/assets/images/2019-06/01_algolia_index.png){.shadow}
 
 
 ## 4.2 Import test data
 
-Here is some testdata I will use. To use algolia for as our datastore for our breakfast restaurants which will in the be shown as markers we need to setup our datastore first.
-
-
-There is a package around where you can import your `.csv` records easily. In case you need it:
-https://github.com/algolia/algolia-csv-js {.tip}
-
+Here is some testdata I will use. 
 
 ```bash
 [
@@ -239,31 +256,51 @@ https://github.com/algolia/algolia-csv-js {.tip}
 ]
 ```
 
+
+To use algolia as datastore for our breakfast locator we will need to setup our datastore, the index first.
+
+
+There is a package around where you can import your `.csv` records easily. In case you need it:
+https://github.com/algolia/algolia-csv-js {.tip}
+
+
+
 ![02 - algolia search add records](/assets/images/2019-06/02_algolia_add_records.png){.shadow}
+
 ![03 - algolia search add json records](/assets/images/2019-06/03_algolia_add_records_02.png){.shadow}
+
 ![04 - algolia search add searchable attributes](/assets/images/2019-06/04_algolia_save_searchable_attributes.png){.shadow}
 
-### Generate your API key
+![041 - algolia ](/assets/images/2019-06/041_algolia_save_searchable_attributes.png)
+{.shadow}
 
-search only key; app_idd, index_name
+![042 - algolia](/assets/images/2019-06/042_algolia_save_sortable_attr.png){.shadow}
+
+## 4.3 Get an algolia search api key
+
+We need to connect and authorize our application to use it with algolia search. You can find your api key in the algolia dashboard.
+
+![05 - algolia api key how to](/assets/images/2019-06/05_algolia_api_key.png){.shadow}
 
 
-[](){target="_blank" rel="noopener"}
+## 5. Use `nuxt` with algolia instantsearch
 
-Now you have setup your algolia indexes. We can start to build the frontend.
-
-## Algolia instantsearch and `nuxt`
-
-Now we are proceed to build our frontend. Before we can show the breakfast restaurants.
-To extend our frontend code we need some additional libraries to connect to the algolia api (algoliasearch) and we're also using `vue-instantsearch` to get predefined components.
+Now we are proceed to build our frontend. To use algolia services we need to install some additional libraries.
 
 ```bash
 yarn add algoliasearch vue-instantsearch instantsearch
 ```
 
-### 4. Setup algoliasearch
+### 5.1. Let `nuxt` communicate with `algolia` 
 
-Initialize algolia search with your `api_key` and `app_id`.
+Here are the steps 
+
+* Define `constants` with the necessary `api_key` and `app_id` from algolia search. Both of them are necessary to initialize `algoliasearch`. 
+* We use `vue-instantsearch` with `AisInstantSearch`. This component handles the communication between our application and algolia search. We have to wrap every `InstantSearch` widgets inside this component.
+* You also need the `index-name` which you have created in [the above step](#41-Create-you-first-index). This should be all to connect our application with `algolia search`.
+
+
+Where does `<mj-map>` come from? Sorry I skipped this step in the tutorial. I created a new component called `components/Map.vue` and put the `leaflet` map logic inside this component. If you confused about this please tell me in the comments.{.tip}
 
 ```html
 <template>
@@ -305,10 +342,82 @@ Initialize algolia search with your `api_key` and `app_id`.
 </script>
 ```
 
-### Place markers from your algolia index
+### 5.2 Place markers from your algolia index
 
-`vue-instantsearch`
+The next step is to replace the test marker positions with the `_geoloc` from algolia. To make this happen we need to adjust the `components/Map.vue` component.
+
+I need to explain one step a bit more: Since we're wrapping all our components inside the `AisInstantSearch` component we can make use of the `connectGeoSearch` connector. That means you don't need to fetch your algolia data manually with `$.axios` or something else. To achieve this step you have to do the following:
 
 ```html
+<script>
+import { createWidgetMixin } from 'vue-instantsearch';
+import { connectGeoSearch } from 'instantsearch.js/es/connectors';
+
+export default {
+  mixins: [createWidgetMixin({ connector: connectGeoSearch })],
+};
+</script>
+```
+
+With this code snippet a `state.items` object gets exposed to the component which gets filled with your records from algolia index. Honestly I was really confused in the first place how this works but in the "it just works".
+
+![algolia connectgeo search](/assets/images/2019-06/05_algolia_connectgeo.jpg){.shadow}
+
+Ok here is my update to `Map.vue` code. 
+
+
+* Open `components/Map.vue`
+
+
+```html
+<template>
+  <l-map
+    class="min-h-screen z-10"
+    :zoom="zoom"
+    :center="center"
+    :options="{ zoomControl: true }"
+  >
+    <l-tile-layer :url="url" />
+    <div v-if="state">
+      <l-marker
+        v-for="item in state.items"
+        :key="item.objectID"
+        :lat-lng="item._geoloc"
+      />
+    </div>
+  </l-map>
+</template>
+<script>
+import { LMap, LTileLayer, LMarker } from "vue2-leaflet";
+import { createWidgetMixin } from "vue-instantsearch";
+import { connectGeoSearch } from "instantsearch.js/es/connectors";
+
+export default {
+  name: "MjMap",
+  components: {
+    LMap,
+    LTileLayer,
+    LMarker
+  },
+  mixins: [createWidgetMixin({ connector: connectGeoSearch })],
+  data() {
+    return {
+      url: "http://{s}.tile.osm.org/{z}/{x}/{y}.png",
+      zoom: 12,
+      center: [47.5125, 16.03823]
+    };
+  }
+};
+</script>
 
 ```
+
+## Whats next? 
+
+This wasn't definitly not all. With this setup we can now implement restaurant search and many more. This is something I will adding in the next days. 
+
+## Source on github
+
+You can find the source on github [here](https://github.com/regenrek/nuxt-leaflet-algolia){target="_blank" rel="noopener"}
+
+Thanks for reading.

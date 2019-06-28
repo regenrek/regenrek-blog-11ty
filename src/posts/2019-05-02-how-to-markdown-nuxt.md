@@ -10,10 +10,31 @@ image: 2019/02-post-website-nuxt
 image_alt: 02-post-website-nuxt
 ---
 
+## Table of contents
+
+- [Table of contents](#Table-of-contents)
+- [Introduction](#Introduction)
+  - [Why I should use markdown?](#Why-I-should-use-markdown)
+- [1. Setup Project](#1-Setup-Project)
+  - [1.1 Create new nuxt project](#11-Create-new-nuxt-project)
+- [1.2 Enable `markdown`](#12-Enable-markdown)
+- [2. Lets create your first blog post with nuxt](#2-Lets-create-your-first-blog-post-with-nuxt)
+- [3. Configure your post url structure with nuxt router](#3-Configure-your-post-url-structure-with-nuxt-router)
+- [4 Create the template for a single post](#4-Create-the-template-for-a-single-post)
+- [5. List all your blogposts](#5-List-all-your-blogposts)
+- [6. Generate routes dynamically for Static Site hosting (SSG)](#6-Generate-routes-dynamically-for-Static-Site-hosting-SSG)
+- [7. Why nuxt?](#7-Why-nuxt)
+- [7.1 Isn't `vuepress` made for this kind of scenario?](#71-Isnt-vuepress-made-for-this-kind-of-scenario)
+- [8. Summary](#8-Summary)
+- [Whats next?](#Whats-next)
+
 
 Hey Everyone in this article we're going to create a simple blog with nuxt and markdown functionality. 
 
-## Why markdown?
+## Introduction
+
+
+### Why I should use markdown?
 
 I personally love the clean and foolproof way to write any content with markdown. You don't need to care about writing your posts with html and that means you avoid like missing closing tags or quotation marks. Even if you copy your text from another source like Microsoft Word you don't get improper styling and many more.
 
@@ -25,13 +46,17 @@ Before we start here are some cool things you get with frontmatter loader:
 *  [Optional] You can use your vue components inside markdown easily.
 *  [Optional] Use your own markdown compiler
 
-## Install
+## 1. Setup Project
+
+### 1.1 Create new nuxt project
 
 If you're starting from scratch you have to generate a new nuxt project.
 
 ```bash
 npx create-nuxt-app my-blog
 ```
+
+## 1.2 Enable `markdown`
 
 Start with adding `frontmatter-markdown-loader` to handle markdown file parsing in your project.
 
@@ -69,7 +94,7 @@ If you not familiar with webpack here is an explanation of the above snippet:
 * Finally we tell webpack that we want to use a custom loader called `frontmatter-markdown-loader`. This loader is like a predefined "task" which is **responsible** for **transforming** our **markdown code to json** so we can process and use it in our nuxt project.
 
 
-## Lets create your first blog post
+## 2. Lets create your first blog post with nuxt
 
 In the loader configuration above we defined that all our markdown files will be inside a `content` folder. So please create this folder now: 
 
@@ -90,9 +115,9 @@ the functionality of nuxt markdown blog.
 
 ```
 
-## The url structure
+## 3. Configure your post url structure with nuxt router
 
-Now ask yourself how you would like to call your blogpost(s)in the browser. I decided to go with the following structure:
+Now ask yourself how you would like to call your blogpost in the browser. I decided to go with the following structure:
 
 * **View all posts** `http://localhost:3000/posts` 
 * **View a single post** `http://localhost:3000/posts/yyyyy-mm-dd-my-post` 
@@ -118,7 +143,7 @@ http://localhost:3000/posts/2019-09-04-my-second-post-in-a-while
 http://localhost:3000/posts/2022-09-04-why-i-hate-blogging
 ```
 
-## Create the template for a single post  
+## 4 Create the template for a single post  
 
 Now we're going to build our template for our blogpost. This is done via [nuxt pages](https://nuxtjs.org/guide/views#pages){target="_blank" rel="noopener"} which is nothing more than a `vue component` with additional attributes and functions. 
 
@@ -150,7 +175,7 @@ Now we're going to build our template for our blogpost. This is done via [nuxt p
 </script>
 ```
 
-## List all your blogposts
+## 5. List all your blogposts
 
 Update your posts folder with a new file called `index.vue`. Again we're using dynamic routing here.
 
@@ -198,7 +223,7 @@ Test it:
 http://localhost:8080/posts/
 ```
 
-## Generate routes dynamically for Static Site hosting
+## 6. Generate routes dynamically for Static Site hosting (SSG)
 
 
 Since we're using dynamic routing we can't guess which routes are necessary. So we need to make this work on the live hosting server with the nuxt `generate` option. That means iif we're going deploy and compile the project on the server for example on netlify with `npm run generate` or `nuxt generate` it will handle dynamic post generation inside the content folder 
@@ -233,14 +258,11 @@ function getDynamicPaths(urlFilepathTable) {
 }
 ```  
 
-
-
-
-## Why nuxt?
+## 7. Why nuxt?
 
 Nuxt is great for creating simples websites, blogs and advanced web applications. In fact its a really well written framework for individual needs. It is still more [popular](https://www.npmtrends.com/nuxt-vs-vuepress-vs-gridsome){target="_blank" rel="noopener"} than gridsome or vuepress.  
 
-## Isn't `vuepress` made for this kind of scenario?
+## 7.1 Isn't `vuepress` made for this kind of scenario?
 
 [Vuepress](https://vuepress.vuejs.org/guide/#todo){target="_blank" rel="noopener"} is designed for static content websites and provide some fancy features for documentation focused websites. So in fact it's kind of the same what we're doing here - yes.
  
@@ -248,7 +270,7 @@ Nuxt is great for creating simples websites, blogs and advanced web applications
  
  If you really just need full blog functionality and nothing more you should look into [11ty.io](https://11ty.io/docs/){target="_blank" rel="noopener"} Static Site Generator too which is written in pure javascript. Also this blog regenrek.com is poweredy by eleventy ssg.
 
-## Summary
+## 8. Summary
 
 That's it we have written a simple blog with blog with nuxt markdown functionality. If you want to read more on this topic you can check out the author of the frontmatter-markdown-loader repository. So big credits to him [https://medium.com/haiiro-io/compile-front-matter-markdown-as-vue-template-9ccd55afb672](https://medium.com/haiiro-io/compile-front-matter-markdown-as-vue-template-9ccd55afb672){target="_blank" rel="noopener"}
 

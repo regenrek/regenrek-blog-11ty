@@ -36,11 +36,6 @@ permalink: posts/how-to-create-an-animated-vue-sidebar-menu-with-vue-observable/
 - [4. The Vue Sidebar Component](#4-The-Vue-Sidebar-Component)
 - [5. Build the final navigation UI (Burger + Sidebar)](#5-Build-the-final-navigation-UI-Burger--Sidebar)
 - [Summary](#Summary)
-6.1 [Creating the store with Vue.Observable](#61-creating-the-store-with-vueobservable)
-6.2 [Make use of the store inside the Burger Component](#62-make-use-of-the-store-inside-the-burger-component)
-6.3 [Make use of the store inside the Sidebar Component](#63-make-use-of-the-store-inside-the-sidebar-component)
-
-
 
 ## 1. Project Setup
 
