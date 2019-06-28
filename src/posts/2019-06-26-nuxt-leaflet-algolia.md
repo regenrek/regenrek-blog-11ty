@@ -42,7 +42,7 @@ image_alt: nuxt_algolia_search_breakfast_restaurant_locator
 * Here is a [CodeSandbox Demo](https://codesandbox.io/s/algolia-vue-instantsearch-v3-geosearch-updated-eqgwy){target="_blank" rel="noopener"} written with `vue`
 * [Github Source Code](https://github.com/regenrek/nuxt-leaflet-algolia){target="_blank" rel="noopener"} 
 
-**ATTENTION:** This example doesn't until you generate your own `App ID` and `Api Key` with algolia search.
+**ATTENTION:** This example doesn't work until you generate your own `App ID` and `Api Key` with algolia search.
 
 
 ## 1. Introduction
@@ -51,7 +51,7 @@ It seems that dining in breakfast restaurants are the new cool thing in austria.
 
 ### 1.1 nuxtjs + vue
 
-Basically `nuxtjs` is a [static site generator](https://www.staticgen.com/){target="_blank" rel="noopener"} like many others out there. Either you never heard about static site generators (and JAMStack) or you probably have been playing around with `gatsby`, `jekyll`, `hugo` or `next.js` (I'm going to stop here). If you can agree on the second argument you can just add `nuxtjs` to the list which is based on `vue` where others based on react like gatsby and nextjs or go like hugo. If you new to static site generators I have to slightly disappoint you. I don't have a tutorial yet. But if you into modern web development with possible wordpress background. Read some stuff about JAMStack and you will never go back. 
+Basically `nuxtjs` is a [static site generator](https://www.staticgen.com/){target="_blank" rel="noopener"} like many others out there. Either you never heard about static site generators (and JAMStack) or you probably have been playing around with `gatsby`, `jekyll`, `hugo` or `next.js` (I'm going to stop here). If you can agree on the second argument you can just add `nuxtjs` to the list which is based on `vue` where others based on react like gatsby and nextjs or go like hugo. If you new to static site generators I have to slightly disappoint you. I don't have a tutorial yet. But if you into modern web development with possible wordpress background. Read some stuff about JAMStack and you will never go back (i guess not). 
 
 Ok now to `nuxtjs`. The reason why I prefer `nuxtjs` above other frameworks is because it's build on `vue`. And `vue` is awesome. After `angularjs` went from v1 -> 2.0, I switch to `react`. But honestly I never felt comfortable with `jsx`. It's just not the way I think we should write code. After long wait I gave `vue` 
 a try and it was really awesome to develop with it. I'm just bit a afraid of [vue 3](https://dev.to/danielelkington/vue-s-darkest-day-3fgh#0){target="_blank" rel="noopener"} which seems to be more react than vue. But lets go on for now.
