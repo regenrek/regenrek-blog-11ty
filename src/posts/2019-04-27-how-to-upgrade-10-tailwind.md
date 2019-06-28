@@ -14,16 +14,16 @@ I would like to mention that there is already an official upgrade guide which yo
 
 ## Table of contents
 
-- [Table of contents](#Table-of-contents)
-- [1. Install Tailwind CSS 1.0.1](#1-Install-Tailwind-CSS-101)
-- [2. Rename your Tailwind Config file to `tailwind.config.js`](#2-Rename-your-Tailwind-Config-file-to-tailwindconfigjs)
-- [3. New default Config structure](#3-New-default-Config-structure)
-- [4. Configure `postcss` in `nuxt.config.js`](#4-Configure-postcss-in-nuxtconfigjs)
-- [5. Replace `@tailwind preflight` with `@tailwind base`](#5-Replace-tailwind-preflight-with-tailwind-base)
-- [[BONUS] Use `purgecss` to remove unused css in the production build](#BONUS-Use-purgecss-to-remove-unused-css-in-the-production-build)
-- [[BONUS] Use Google Fonts with nuxt js and Tailwind](#BONUS-Use-Google-Fonts-with-nuxt-js-and-Tailwind)
-- [[BONUS] How to use sass with Tailwind 1.0.1](#BONUS-How-to-use-sass-with-Tailwind-101)
-- [Summary](#Summary)
+- [Table of contents](#table-of-contents)
+- [1. Install Tailwind CSS 1.0.1](#1-install-tailwind-css-101)
+- [2. Rename your Tailwind Config file to `tailwind.config.js`](#2-rename-your-tailwind-config-file-to-tailwindconfigjs)
+- [3. New default Config structure](#3-new-default-config-structure)
+- [4. Configure `postcss` in `nuxt.config.js`](#4-configure-postcss-in-nuxtconfigjs)
+- [5. Replace `@tailwind preflight` with `@tailwind base`](#5-replace-tailwind-preflight-with-tailwind-base)
+- [[BONUS] Use `purgecss` to remove unused css in the production build](#bonus-use-purgecss-to-remove-unused-css-in-the-production-build)
+- [[BONUS] Use Google Fonts with nuxt js and Tailwind](#bonus-use-google-fonts-with-nuxt-js-and-tailwind)
+- [[BONUS] How to use sass with Tailwind 1.0.1](#bonus-how-to-use-sass-with-tailwind-101)
+- [Summary](#summary)
 
 ## 1. Install Tailwind CSS 1.0.1
 

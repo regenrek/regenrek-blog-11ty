@@ -12,21 +12,19 @@ image_alt: 02-post-website-nuxt
 
 ## Table of contents
 
-- [Table of contents](#Table-of-contents)
-- [Introduction](#Introduction)
-  - [Why I should use markdown?](#Why-I-should-use-markdown)
-- [1. Setup Project](#1-Setup-Project)
-  - [1.1 Create new nuxt project](#11-Create-new-nuxt-project)
-- [1.2 Enable `markdown`](#12-Enable-markdown)
-- [2. Lets create your first blog post with nuxt](#2-Lets-create-your-first-blog-post-with-nuxt)
-- [3. Configure your post url structure with nuxt router](#3-Configure-your-post-url-structure-with-nuxt-router)
-- [4 Create the template for a single post](#4-Create-the-template-for-a-single-post)
-- [5. List all your blogposts](#5-List-all-your-blogposts)
-- [6. Generate routes dynamically for Static Site hosting (SSG)](#6-Generate-routes-dynamically-for-Static-Site-hosting-SSG)
-- [7. Why nuxt?](#7-Why-nuxt)
-- [7.1 Isn't `vuepress` made for this kind of scenario?](#71-Isnt-vuepress-made-for-this-kind-of-scenario)
-- [8. Summary](#8-Summary)
-- [Whats next?](#Whats-next)
+- [Table of contents](#table-of-contents)
+- [Introduction](#introduction)
+- [1. Setup Project](#1-setup-project)
+- [1.2 Enable `markdown`](#12-enable-markdown)
+- [2. Lets create your first blog post with nuxt](#2-lets-create-your-first-blog-post-with-nuxt)
+- [3. Configure your post url structure with nuxt router](#3-configure-your-post-url-structure-with-nuxt-router)
+- [4 Create the template for a single post](#4-create-the-template-for-a-single-post)
+- [5. List all your blogposts](#5-list-all-your-blogposts)
+- [6. Generate routes dynamically for Static Site hosting (SSG)](#6-generate-routes-dynamically-for-static-site-hosting-ssg)
+- [7. Why nuxt?](#7-why-nuxt)
+- [7.1 Isn't `vuepress` made for this kind of scenario?](#71-isnt-vuepress-made-for-this-kind-of-scenario)
+- [8. Summary](#8-summary)
+- [Whats next?](#whats-next)
 
 
 Hey Everyone in this article we're going to create a simple blog with nuxt and markdown functionality. 

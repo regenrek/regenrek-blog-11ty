@@ -27,15 +27,15 @@ permalink: posts/how-to-create-an-animated-vue-sidebar-menu-with-vue-observable/
 
 ## Table of contents
 
-- [Demo](#Demo)
-- [Features](#Features)
-- [Table of contents](#Table-of-contents)
-- [1. Project Setup](#1-Project-Setup)
-- [2. Component Design](#2-Component-Design)
-- [3. The Vue Burger Menu Component](#3-The-Vue-Burger-Menu-Component)
-- [4. The Vue Sidebar Component](#4-The-Vue-Sidebar-Component)
-- [5. Build the final navigation UI (Burger + Sidebar)](#5-Build-the-final-navigation-UI-Burger--Sidebar)
-- [Summary](#Summary)
+- [Demo](#demo)
+- [Features](#features)
+- [Table of contents](#table-of-contents)
+- [1. Project Setup](#1-project-setup)
+- [2. Component Design](#2-component-design)
+- [3. The Vue Burger Menu Component](#3-the-vue-burger-menu-component)
+- [4. The Vue Sidebar Component](#4-the-vue-sidebar-component)
+- [5. Build the final navigation UI (Burger + Sidebar)](#5-build-the-final-navigation-ui-burger--sidebar)
+- [Summary](#summary)
 
 ## 1. Project Setup
 

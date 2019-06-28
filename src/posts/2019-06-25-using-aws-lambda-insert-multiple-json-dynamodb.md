@@ -25,18 +25,15 @@ Back to the topic: In this post I will guide you through some quick steps to pre
 
 ## Table of contents
 
-- [Table of contents](#Table-of-contents)
-- [1. Create a boilerplate vue Project](#1-Create-a-boilerplate-vue-Project)
-- [2. Create new AWS Amplify project](#2-Create-new-AWS-Amplify-project)
-- [3. Create NoSQL DynamoDB Database](#3-Create-NoSQL-DynamoDB-Database)
-  - [Deploy the NoSQL database](#Deploy-the-NoSQL-database)
-- [4. Build your first AWS Lambda function with Amplify](#4-Build-your-first-AWS-Lambda-function-with-Amplify)
-- [5. Properly Test your lambda function with AWS Amplify](#5-Properly-Test-your-lambda-function-with-AWS-Amplify)
-- [6. Insert JSON objects into DynamoDB](#6-Insert-JSON-objects-into-DynamoDB)
-  - [JSON test data](#JSON-test-data)
-  - [Insert multiple records with `batchWrite`](#Insert-multiple-records-with-batchWrite)
-- [7. What about `amplify add api`?](#7-What-about-amplify-add-api)
-- [Source on Github](#Source-on-Github)
+- [Table of contents](#table-of-contents)
+- [1. Create a boilerplate vue Project](#1-create-a-boilerplate-vue-project)
+- [2. Create new AWS Amplify project](#2-create-new-aws-amplify-project)
+- [3. Create NoSQL DynamoDB Database](#3-create-nosql-dynamodb-database)
+- [4. Build your first AWS Lambda function with Amplify](#4-build-your-first-aws-lambda-function-with-amplify)
+- [5. Properly Test your lambda function with AWS Amplify](#5-properly-test-your-lambda-function-with-aws-amplify)
+- [6. Insert JSON objects into DynamoDB](#6-insert-json-objects-into-dynamodb)
+- [7. What about `amplify add api`?](#7-what-about-amplify-add-api)
+- [Source on Github](#source-on-github)
 
 ## 1. Create a boilerplate vue Project
 
