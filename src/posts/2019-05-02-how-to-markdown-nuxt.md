@@ -10,6 +10,7 @@ image: 2019/02-post-website-nuxt
 image_alt: 02-post-website-nuxt
 ---
 
+
 Hey Everyone in this article we're going to create a simple blog with nuxt and markdown functionality. 
 
 ## Why markdown?

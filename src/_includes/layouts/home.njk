@@ -3,6 +3,8 @@ layout: layouts/base.njk
 section: home
 ---
 
+
+
 <div class="center contain mb0 mb5-ns relative">
     <section class="center ph3 ph0-l mw7-ns pt5-ns">
         <h1 class="">.regenrek</h1>
@@ -12,7 +14,7 @@ section: home
     </section>
 </div>
 
-<div class="center mw7-ns">
+<div class="center mw7-ns mb5">
 
     {{ layoutContent | safe }}
 
@@ -20,3 +22,21 @@ section: home
     {{ collection.posts }}
     {% include "components/postslist.njk" %}
 </div>
+
+<section class="mb5 contain center mw7-ns pl4 pr4">
+    <div>
+      <p class="f4 fw6 mb2 f6 mt0">
+        Sign up for my newsletter.
+      </p>
+      <form action="https://www.getrevue.co/profile/regenrek/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank">
+        <input placeholder="Your email address..." type="email" name="member[email]" id="member_email" class="revue-form-field mw-100 w-100 w5-ns f5 input-reset ba b--black-20 pv3 ph4 border-box">
+        <input type="submit" value="Subscribe" name="member[subscribe]" id="member_submit" class="input-reset w-100 w-auto-ns bg-black-80 white f5 pv2 pv3-ns ph4 ba b--black-80 bg-hover-mid-gray">
+      </form>
+    </div>
+    <div>
+    <p class="lh-copy measure">
+        Subscribe to my Newsletter to receive updates on everything <b>nuxtjs</b>, <b>aws amplify</b> and <b>sass</b> related.
+      </p>
+    </div>
+</section>
+

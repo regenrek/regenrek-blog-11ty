@@ -4,7 +4,7 @@ const markdownItFootnote = require('markdown-it-footnote');
 // const markdownItLinkAttributes = require('markdown-it-link-attributes');
 const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const installPrismLanguages = require('./prism-languages.js');
-
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginSyntaxHighlight, {
@@ -31,6 +31,8 @@ module.exports = function(eleventyConfig) {
       return item.inputPath.match(/^\.\/src\/posts\//) !== null;
     });
   });
+
+  eleventyConfig.addPlugin(pluginRss);
 
   /* Markdown Plugins */
   let markdownIt = require("markdown-it");

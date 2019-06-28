@@ -18,7 +18,7 @@ in this tutorial I would like to show you how you can develop really cool applic
 
 ## Table of contents
 
-1. [Project Setup](#1)
+1. [Project Setup](#)
 
 ## 1. Project Setup
 

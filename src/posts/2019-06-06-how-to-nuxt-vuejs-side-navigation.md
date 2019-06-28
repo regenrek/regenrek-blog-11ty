@@ -11,7 +11,7 @@ permalink: posts/how-to-create-an-animated-vue-sidebar-menu-with-vue-observable/
 ---
 
 
-![alt text](/assets/images/2019-05/sidebar_animation_vuejs_.gif "vuejs Sidebar Menu 2019"){.shadow}
+![vuejs Sidebar Menu 2019](/assets/images/2019-05/sidebar_animation_vuejs_.gif){.shadow}
 
 ## Demo
 
@@ -27,12 +27,15 @@ permalink: posts/how-to-create-an-animated-vue-sidebar-menu-with-vue-observable/
 
 ## Table of contents
 
-1. [Project Setup](#1-project-setup)
-2. [Component Design](#2-component-design)
-3. [The Vue Burger Menu Component](#3-the-vue-burger-menu-component)
-4. [The Vue Sidebar Component](#4-the-vue-sidebar-component)
-5. [Build the final UI Burger + Sidebar](#5-build-the-final-navigation-ui-burger--sidebar)
-6. [Sharing Data between sidebar and burger component with Vue.Observable](#6-sharing-data-between-sidebar-and-burger-component-with-vueobservable)
+- [Demo](#Demo)
+- [Features](#Features)
+- [Table of contents](#Table-of-contents)
+- [1. Project Setup](#1-Project-Setup)
+- [2. Component Design](#2-Component-Design)
+- [3. The Vue Burger Menu Component](#3-The-Vue-Burger-Menu-Component)
+- [4. The Vue Sidebar Component](#4-The-Vue-Sidebar-Component)
+- [5. Build the final navigation UI (Burger + Sidebar)](#5-Build-the-final-navigation-UI-Burger--Sidebar)
+- [Summary](#Summary)
 6.1 [Creating the store with Vue.Observable](#61-creating-the-store-with-vueobservable)
 6.2 [Make use of the store inside the Burger Component](#62-make-use-of-the-store-inside-the-burger-component)
 6.3 [Make use of the store inside the Sidebar Component](#63-make-use-of-the-store-inside-the-sidebar-component)
