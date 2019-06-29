@@ -4,7 +4,7 @@ summary:
 date: 2019-06-26
 tags:
   - post
-  - nuxtjs
+  - nuxt-js
   - algolia
 image: 2019/05-nuxt_algolia_search_breakfast_locator
 image_alt: nuxt_algolia_search_breakfast_restaurant_locator

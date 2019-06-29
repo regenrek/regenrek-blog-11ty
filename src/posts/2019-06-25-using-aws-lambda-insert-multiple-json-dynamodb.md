@@ -4,10 +4,9 @@ summary:
 date: 2019-06-25
 tags:
   - post
-  - vue
-  - aws-lambda
-  - aws-dynamodb
   - aws-amplify
+  - aws-dynamodb
+  - aws-lambda
 image: 2019/04-post-amplify-lambda-dynamodb
 image_alt: 04-post-amplify-lambda-dynamodb
 permalink: posts/using-aws-lambda-insert-multiple-json-dynamodb/

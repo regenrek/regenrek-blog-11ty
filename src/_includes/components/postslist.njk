@@ -11,7 +11,7 @@
 						<div class="tags dib">
 							{% if post.data.tags %}
 								<span>
-									{% for tag in post.data.tags %}
+									{% for tag in post.data.tags.slice(0, 3) %}
 										{%- if tag != "post" -%}
 											{% set tagUrl %}/tags/{{ tag }}/{% endset %}
 											<a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>

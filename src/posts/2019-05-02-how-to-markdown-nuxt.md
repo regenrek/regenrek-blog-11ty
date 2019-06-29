@@ -4,7 +4,7 @@ summary:
 date: 2019-05-10
 tags:
   - post
-  - nuxt
+  - nuxt-js
   - markdown
 image: 2019/02-post-website-nuxt
 image_alt: 02-post-website-nuxt

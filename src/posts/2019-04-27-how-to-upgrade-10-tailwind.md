@@ -4,8 +4,8 @@ summary: The final release of Tailwind CSS 1.0.1 is here. Time to integrate the 
 date: 2019-04-27
 tags:
   - post
-  - nuxt
-  - css
+  - nuxt-js
+  - tailwind-css
 image: 2019/02-post-tailwind-1_0_0-nuxt
 image_alt: tailwind-1.0.0-nuxt
 ---
