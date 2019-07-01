@@ -43,13 +43,13 @@ It seems that dining in breakfast restaurants are the new cool thing in austria.
 
 Basically `nuxtjs` is a [static site generator](https://www.staticgen.com/){target="_blank" rel="noopener"} like many others out there. Either you never heard about static site generators (and JAMStack) or you probably have been playing around with `gatsby`, `jekyll`, `hugo` or `next.js` (I'm going to stop here). If you can agree on the second argument you can just add `nuxtjs` to the list which is based on `vue` where others based on react like gatsby and nextjs or go like hugo. If you new to static site generators I have to slightly disappoint you. I don't have a tutorial yet. But if you into modern web development with possible wordpress background. Read some stuff about JAMStack and you will never go back (i guess not). 
 
-Ok now to `nuxtjs`. The reason why I prefer `nuxtjs` above other frameworks is because it's build on `vue`. And `vue` is awesome. After `angularjs` went from v1 -> 2.0, I switch to `react`. But honestly I never felt comfortable with `jsx`. It's just not the way I think we should write code. After long wait I gave `vue` 
-a try and it was really awesome to develop with it. I'm just bit a afraid of [vue 3](https://dev.to/danielelkington/vue-s-darkest-day-3fgh#0){target="_blank" rel="noopener"} which seems to be more react than vue. But lets go on for now.
+Ok now to `nuxtjs`. The reason why I prefer `nuxtjs` above other frameworks is because it's build on `vue`. And `vue` is awesome. After `angularjs` went from v1 to  2.0 I was looking for alternatives and found `react`. The modular component approach is great but honestly I never felt comfortable with `jsx`. So I gave `vue` a try which was a good decision since it has been my favourite frontend framework right now.
+I'm just bit a afraid of [vue 3](https://dev.to/danielelkington/vue-s-darkest-day-3fgh#0){target="_blank" rel="noopener"} which looks more than react.
 
 
 ### 1.2 leaflet
 
-If you ever wanted to build interactive maps you can build them on some super cool services like [mapbox](https://www.mapbox.com){target="_blank" rel="noopener"}, [google maps](https://developers.google.com/maps/documentation/javascript/tutorial){target="_blank" rel="noopener"} and many more. And there is [leaflet](https://github.com/Leaflet/Leaflet){target="_blank" rel="noopener"} which seems on the first sight a bit outdated in terms of their website but its open source and maintained. And on top of that there is an vuejs library called `vue2-leaflet` which we're going to use in this project. 
+If you ever wanted to build interactive maps you can build them on some super cool services like [mapbox](https://www.mapbox.com){target="_blank" rel="noopener"}, [https://openlayers.org/](https://openlayers.org/){target="_blank" rel="noopener"},  [google maps](https://developers.google.com/maps/documentation/javascript/tutorial){target="_blank" rel="noopener"} and many more. And there is [leaflet](https://github.com/Leaflet/Leaflet){target="_blank" rel="noopener"} which seems on the first sight a bit outdated in terms of their website but its open source and maintained. And on top of that there is an vuejs library called `vue2-leaflet` which we're going to use in this project.
 
 ### 1.3 algolia
 
