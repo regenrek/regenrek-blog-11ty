@@ -15,18 +15,18 @@ permalink: posts/using-aws-lambda-insert-multiple-json-dynamodb/
 Hey Everyone, 
 
 
-this time I won't write about nuxtjs here because recently I really needed to migrate some old database to dynamodb and tried to find a way how I could solve the task dynamicly instead of manually inserting it via the browser interface.
+this time I won't write about nuxtjs here because recently I really needed to migrate some old database to dynamodb and tried to find a way how I could solve the task dynamically instead of manually inserting it via the browser interface.
 
-Anyway the topic which I'm going to write about especially `aws amplify` is something you should look out for. If you like me who is more into frontend but needs to handle backend aswell you should give `aws amplify` a try. For example I built [www.gotbet.io](https://www.gotbet.io){target="_blank" rel="noopener"} with `nuxtjs` and `aws amplify`. {.tip}
+Anyway, the topic which I'm going to write about especially `aws amplify` is something you should look out for. If you like me who is more into frontend but needs to handle backend as well you should give `aws amplify` a try. For example, I built [www.gotbet.io](https://www.gotbet.io){target="_blank" rel="noopener"} with `nuxtjs` and `aws amplify`. {.tip}
 
-Back to the topic: In this post I will guide you through some quick steps to prefill `DynamoDB` from a `json` file with `aws lambda` and `aws amplify`.
+Back to the topic: In this post, I will guide you through some quick steps to prefill `DynamoDB` from a `json` file with `aws lambda` and `aws amplify`.
 
 
 ## Table of contents
 
 - [Table of contents](#table-of-contents)
 - [1. Create a boilerplate vue Project](#1-create-a-boilerplate-vue-project)
-- [2. Create new AWS Amplify project](#2-create-new-aws-amplify-project)
+- [2. Create a new AWS Amplify project](#2-create-a-new-aws-amplify-project)
 - [3. Create NoSQL DynamoDB Database](#3-create-nosql-dynamodb-database)
 - [4. Build your first AWS Lambda function with Amplify](#4-build-your-first-aws-lambda-function-with-amplify)
 - [5. Properly Test your lambda function with AWS Amplify](#5-properly-test-your-lambda-function-with-aws-amplify)
@@ -36,14 +36,14 @@ Back to the topic: In this post I will guide you through some quick steps to pre
 
 ## 1. Create a boilerplate vue Project
 
-We're using `vue` to setup the project. But feel free to use whatever you like. You can also use `react` it doesn't matter.
+We're using `vue` to set up the project. But feel free to use whatever you like. You can also use `react` it doesn't matter.
 
 ```bash
 vue create aws-amplify-lambda-dynamodb
 ```
 
 
-## 2. Create new AWS Amplify project
+## 2. Create a new AWS Amplify project
 
 ```bash
 amplify init
@@ -66,14 +66,14 @@ Please tell us about your project
 ## 3. Create NoSQL DynamoDB Database
 
 
-With Amplify CLI you can easily add a storage using Amazon DynamoDB.
+With Amplify CLI you can easily add storage using Amazon DynamoDB.
 
 ```bash
 amplify add storage
 ```
 
 ```bash
-? Please select from one of the below mentioned services NoSQL Database
+? Please select from one of the below-mentioned services NoSQL Database
 
 Welcome to the NoSQL DynamoDB database wizard
 This wizard asks you a series of questions to help determine how to set up your NoSQL database table.
@@ -112,7 +112,7 @@ This is a one-liner.
 amplify push
 ```
 
-With `amplify push` we can provision our local backend configuration resources. There is also a `amplify publish` command which invokes `amplify push` plus additional publish static assets to Amazon S3 and Amazon Cloudfront {.tip}
+With `amplify push` we can provide our local backend configuration resources. There is also a `amplify publish` command which invokes `amplify push` plus additional publish static assets to Amazon S3 and Amazon Cloudfront {.tip}
 
 
 ## 4. Build your first AWS Lambda function with Amplify
@@ -123,7 +123,7 @@ We will write some basic lambda function first and then finish it with our main 
 amplify add function
 ```
 
-For the following you should choose `yes` for accessing other resources created in this project. Select `storage` for the resource.
+For the following, you should choose `yes` for accessing other resources created in this project. Select `storage` for the resource.
 
 ```bash
 amplify add function
@@ -190,7 +190,7 @@ Done running invoke function.
 
 ## 6. Insert JSON objects into DynamoDB
 
-After we have setup some basic lambda function we should know how to `invoke` and `test` our functions. In the next step, we will extend the function to **insert multiple records in dynamodb** from a json object. 
+After we have set up some basic lambda function we should know how to `invoke` and `test` our functions. In the next step, we will extend the function to **insert multiple records in dynamodb** from a json object. 
 
 ### JSON test data
 
@@ -280,7 +280,7 @@ exports.handler = async function(event, context) {
 };
 ```
 
-Thats it thats all. Congrats you finished!
+That's it thats all. Congrats you finished!
 
 ## 7. What about `amplify add api`?
 
@@ -290,7 +290,7 @@ If you're already familiar with amplify you may have recognized that I didn't cr
 people-<apiKey>-<env>
 ```
 
-Unfortunately it's not possible to choose a table created with a `grapqhl @model type` from the amplify cli. But it's already being addressed here: [github/aws-amplify/issue#997](https://github.com/aws-amplify/amplify-cli/issues/997){target="_blank" rel="noopener"}
+Unfortunately, it's not possible to choose a table created with a `grapqhl @model type` from the amplify cli. But it's already being addressed here: [github/aws-amplify/issue#997](https://github.com/aws-amplify/amplify-cli/issues/997){target="_blank" rel="noopener"}
 
 
 ## Source on Github
