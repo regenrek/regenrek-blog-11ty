@@ -195,18 +195,17 @@ Voila we've added some test markers with a simple `v-for` loop.
 
 Algolia is a cloud service provider who offers search services. If you interested about `algolia search` you can read my short summary in the [introduction](#1-Introduction) or visit the official website and docs. They have tons of information about it.
 
-You need to [sign up](https://www.algolia.com/users/sign_up){target="_blank" rel="noopener"} for a test account. Don't worry you can develop and test for free with in the community edition. 
+You need to [sign up](https://www.algolia.com/users/sign_up){target="_blank" rel="noopener"} for a test account. Don't worry you can develop and test for free with in the community edition.
 
 ### 4.1 Create you first index
 
-An `index` is a collection of records which you can searchable, filer and sort. It's more or less a database table. 
+An `index` is a collection of records with some possible operations like search, filter and sort. It's more or less a database table.
 
 ![01 - algolia search index add](/assets/images/2019-06/01_algolia_index.png){.shadow}
 
-
 ## 4.2 Import test data
 
-Here is some testdata I will use. 
+Here is some testdata I will use.
 
 ```bash
 [
@@ -250,7 +249,8 @@ To use algolia as datastore for our breakfast locator we will need to setup our 
 There is a package around where you can import your `.csv` records easily. In case you need it:
 https://github.com/algolia/algolia-csv-js {.tip}
 
-
+Login to your algolia account and switch to the the `indices` page. Click on the `New..` button and choose `Index`. Type `breakfast_restaurant` for the index name.
+After you have created your index click on the `tasks completed` button to setup the index.
 
 ![02 - algolia search add records](/assets/images/2019-06/02_algolia_add_records.png){.shadow}
 
@@ -272,7 +272,7 @@ We need to connect and authorize our application to use it with algolia search. 
 
 ## 5. Use `nuxt` with algolia instantsearch
 
-Now we are proceed to build our frontend. To use algolia services we need to install some additional libraries.
+Now we can proceed to build our frontend. To use algolia services we need to install some additional libraries.
 
 ```bash
 yarn add algoliasearch vue-instantsearch instantsearch
@@ -331,7 +331,7 @@ Where does `<mj-map>` come from? Sorry I skipped this step in the tutorial. I cr
 
 ### 5.2 Place markers from your algolia index
 
-The next step is to replace the test marker positions with the `_geoloc` from algolia. To make this happen we need to adjust the `components/Map.vue` component.
+The next step is to replace the test marker positions with the `_geoloc` object from algolia. To make this happen we need to adjust the `components/Map.vue` component.
 
 I need to explain one step a bit more: Since we're wrapping all our components inside the `AisInstantSearch` component we can make use of the `connectGeoSearch` connector. That means you don't need to fetch your algolia data manually with `$.axios` or something else. To achieve this step you have to do the following:
 
@@ -346,7 +346,7 @@ export default {
 </script>
 ```
 
-With this code snippet a `state.items` object gets exposed to the component which gets filled with your records from algolia index. Honestly I was really confused in the first place how this works but in the "it just works".
+With this code snippet a `state.items` object gets exposed to the component which gets filled with your records from algolia index. Honestly I was really confused in the first place how this works but in the end "it just works".
 
 ![algolia connectgeo search](/assets/images/2019-06/05_algolia_connectgeo.jpg){.shadow}
 
@@ -401,7 +401,7 @@ export default {
 
 ## Whats next? 
 
-This wasn't definitly not all. With this setup we can now implement restaurant search and many more. This is something I will adding in the next days. 
+ With this setup we can now implement restaurant search and many more. This is something I will adding in the next days. Stay tuned.
 
 ## Source on github
 
