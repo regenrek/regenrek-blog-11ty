@@ -56,9 +56,6 @@ If you ever wanted to build interactive maps you can build them on some super co
 When I started to build search for applications I thought it will be really complex and exhausting. When I discovered [algolia](https://www.algolia.com){target="_blank" rel="noopener"} it seemed too easy for me (Ok I'm totally lying I already had my troubles with it). You start to configure your api, create your index and define what columns should be searchable. Thats it. And its really, really fast. Some of the biggest [companies](https://www.algolia.com/enterprise/customers/){target="_blank" rel="noopener"} around are using algolia successfully.
 
 
-Enough talking lets start coding.
-
-
 ## 2. Project Setup
 
 First we're going to create a new [nuxtjs](https://tailwindcss.com) project. I will use [TailwindCSS](https://regenrek.com/posts/how-to-use-tailwind-css-1.0.1-in-nuxt/) UI Framework to style the application but feel free to use whatever you feel comfortable. 
@@ -192,7 +189,7 @@ Lets quick add some test [map markers](https://korigan.github.io/Vue2Leaflet/#/c
 
 Voila we've added some test markers with a simple `v-for` loop.
 
-![Nuxtjs + Algolia Search](/assets/images/2019-06-nuxtjs-algolia-with-marker.png){.shadow}
+![Nuxtjs + Algolia Search](/assets/images/2019-06/nuxtjs-algolia-with-marker.png){.shadow}
 
 ## 4. Setup algolia
 
