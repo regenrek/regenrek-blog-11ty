@@ -8,6 +8,7 @@ tags:
   - tailwind-css
 image: 2019/02-post-tailwind-1_0_0-nuxt
 image_alt: tailwind-1.0.0-nuxt
+permalink: /posts/how-to-use-tailwind-css-1.0.1-in-nuxt/
 ---
 
 I would like to mention that there is already an official upgrade guide which you should follow too. So if you want to know in-depth changes especially for the new config file please look at the [official  upgrade documentation](https://next.tailwindcss.com/docs/upgrading-to-v1){target="_blank" rel="noopener"}. The following guide is written to use Tailwind with [nuxt.js](https://nuxtjs.org/guide/){target="_blank" rel="noopener"}.
