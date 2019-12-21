@@ -3,6 +3,11 @@
   command = "npm run prod"
 
 [[redirects]]
+    from = "https://regenrek.com/posts/create-a-frontmatter-markdown-powered-blog-with-nuxt-js-in-2019/"
+    to = "https://regenrek.com/posts/create-a-frontmatter-markdown-powered-blog-with-nuxt.js/"
+    status = 301
+
+[[redirects]]
     from = "/posts/how-to-use-tailwind-css-1.0.0-in-nuxt-today/"
     to = "https://regenrek.com/posts/how-to-use-tailwind-css-1.0.1-in-nuxt/"
     status = 301

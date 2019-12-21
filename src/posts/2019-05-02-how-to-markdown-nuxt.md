@@ -1,7 +1,7 @@
 ---
-title: Create a frontmatter Markdown powered Blog with nuxt js in 2019
+title: Create a frontmatter Markdown powered Blog with Nuxt.JS
 summary: 
-date: 2019-05-10
+date: 2019-12-21
 tags:
   - post
   - nuxt-js
@@ -9,6 +9,17 @@ tags:
 image: 2019/02-post-website-nuxt
 image_alt: 02-post-website-nuxt
 ---
+
+*Update: 2019-12-21*
+
+* Works with newest frontmatter-markdown 3.1.x version
+* Added optional permalink option  
+* Added The github source code
+
+
+## Demo
+
+[Source on Github](https://github.com/regenrek/nuxt-blog-frontmatter-markdown-loader){target="_blank" rel="noopener"}
 
 ## Table of contents
 
@@ -27,10 +38,10 @@ image_alt: 02-post-website-nuxt
 - [Whats next?](#whats-next)
 
 
-Hey Everyone in this article we're going to create a simple blog with nuxt and markdown functionality. 
 
 ## Introduction
 
+Hey Everyone in this article we're going to create a simple blog with nuxt.js and markdown functionality. 
 
 ### Why I should use markdown?
 
@@ -56,7 +67,7 @@ npx create-nuxt-app my-blog
 
 ## 1.2 Enable `markdown`
 
-Start with adding `frontmatter-markdown-loader` to handle markdown file parsing in your project.
+To parse markdown you need an appropiate loader so we add `frontmatter-markdown-loader` to our project.
 
 ```bash
 npm install frontmatter-markdown-loader
@@ -64,24 +75,33 @@ npm install frontmatter-markdown-loader
 yarn add frontmatter-markdown-loader
 ```
 
-To use it extend the webpack loader inside `config.nuxt.js` in the `build` section. 
+To use it extend the webpack loader inside `nuxt.config.js` in the `build` section
+and add the `path` package on top of the config
 
 ```js
-build: {
+const path = require("path");
+
+
+export default {
+
+
+  // more config ...
+  build: {
     extend(config, ctx) {
-        
-        // ... other code ...
-        
-        // add frontmatter-markdown-loader
-        config.module.rules.push(
-            {
-                test: /\.md$/,
-                include: path.resolve(__dirname, "content")
-                loader: "frontmatter-markdown-loader",
-            }
-        );
+      // add frontmatter-markdown-loader
+      config.module.rules.push({
+        test: /\.md$/,
+        include: path.resolve(__dirname, "content"),
+        loader: "frontmatter-markdown-loader",
+        options: {
+          mode: [Mode.VUE_COMPONENT, Mode.META]
+        }
+      });
     }
+  }
 }
+
+
 ```
 
 If you not familiar with webpack here is an explanation of the above snippet:
@@ -90,6 +110,9 @@ If you not familiar with webpack here is an explanation of the above snippet:
 * We only want to handle `.md` file extensions
 * inside the `content` folder. 
 * Finally we tell webpack that we want to use a custom loader called `frontmatter-markdown-loader`. This loader is like a predefined "task" which is **responsible** for **transforming** our **markdown code to json** so we can process and use it in our nuxt project.
+* Since we're using two different modes we get an markdown parsed vue component (`Mode.VUE_COMPONENT`) and with `Mode.META` we can get the filename easily. 
+
+If you need more info on frontmatter-markdown loader modes and options see [here](https://hmsk.github.io/frontmatter-markdown-loader/options.html){target="_blank" rel="noopener"}
 
 
 ## 2. Lets create your first blog post with nuxt
@@ -149,27 +172,26 @@ Now we're going to build our template for our blogpost. This is done via [nuxt p
 ```html
 <template>
   <div>
-    <div class="post-title">
-      <h1>{{ post.attributes.title }}</h1>
-    </div>
-    <div class="content" v-html="post.html"></div>
+    <h1>{{ title }}</h1>
+    <component :is="singlePostComponent" />
   </div>
 </template>
 <script>
-  export default {
-    async asyncData({ params }) {
-      try {
-        let post = await import(`~/content/${params.slug}.md`);
-        console.debug(post)
-        return {
-          post
-        }
-      } catch(err) {
-        console.debug(err)
-        return false
-      }
+export default {
+  async asyncData({ params }) {
+    try {
+      console.info(params.slug);
+      let post = await import(`~/content/${params.slug}.md`);
+      return {
+        title: post.attributes.title,
+        singlePostComponent: post.vue.component
+      };
+    } catch (err) {
+      console.debug(err);
+      return false;
     }
   }
+};
 </script>
 ```
 
@@ -192,25 +214,34 @@ Now lets read all blogposts in the `content` folder and output and loop through 
         <h1>My blog posts</h1>
         <ul>
             <li v-for="post in posts" :key="post.attributes.title">
-                <nuxt-link to="#">{{ post.attributes.title }}</nuxt-link>
+                <nuxt-link to="getPermalink(post)">{{ post.attributes.title }}</nuxt-link>
             </li>
         </ul>
-
     </div>
 </template>
 <script>
-  export default {
-    async asyncData() {
-      const resolve = require.context("~/content/", true, /\.md$/)
-      const imports = resolve.keys().map((key) => {
-        const [, name] = key.match(/\/(.+)\.md$/);
-        return resolve(key);
-      });
-      return {
-        posts: imports
-      }
-    },
+export default {
+  async asyncData() {
+    const resolve = require.context("~/content/", true, /\.md$/);
+    const imports = resolve.keys().map(key => {
+      const [, name] = key.match(/\/(.+)\.md$/);
+      return resolve(key);
+    });
+    return {
+      posts: imports
+    };
+  },
+  data() {
+    return {
+      prefix: 'posts'
+    }
+  },
+  methods: {
+    getPermalink(post) {
+        return  `${this.prefix}/${post.meta.resourcePath.split('\\').pop().split('/').pop().split('.')[0]}`;
+    }
   }
+};
 </script>
 ```
 
@@ -224,27 +255,17 @@ http://localhost:8080/posts/
 ## 6. Generate routes dynamically for Static Site hosting (SSG)
 
 
-Since we're using dynamic routing we can't guess which routes are necessary. So we need to make this work on the live hosting server with the nuxt `generate` option. That means iif we're going deploy and compile the project on the server for example on netlify with `npm run generate` or `nuxt generate` it will handle dynamic post generation inside the content folder 
+Since we're using dynamic routing we can't guess which routes are necessary. So we need to make this work on the live hosting server with the nuxt `generate` option. That means if we're going deploy and compile the project on the server for example on netlify (JAMStack) with `npm run generate` or `nuxt generate` it will handle dynamic post generation inside the content folder. 
 
-Add the following snippet to your `nuxt.config.js`
+* The `getDynamicPaths` will generate an url based on the prefix path given and the filename
+* The configs `export default` is now an  `export default async()` function so it can handle our dynamic Path generation
+* Finally call the `getDynamicPaths` function 
 
+* nuxt.config.js
 ```js
-var dynamicRoutes = getDynamicPaths({
- '/posts': 'posts/*.md'
-});
+var glob = require('glob');
 
-export default {
-    
-  // don't replace other code just add the
-  // generate attribute
-    
-  generate: {
-    routes: dynamicRoutes
-  }
-}
-
-/* https://github.com/jake-101/bael-template */
-function getDynamicPaths(urlFilepathTable) {
+async function getDynamicPaths(urlFilepathTable) {
   return [].concat(
     ...Object.keys(urlFilepathTable).map(url => {
       var filepathGlob = urlFilepathTable[url];
@@ -254,7 +275,19 @@ function getDynamicPaths(urlFilepathTable) {
     })
   );
 }
-```  
+
+export default async () => {
+  
+  // ... other code
+    
+  generate: {
+    routes:  await getDynamicPaths({
+      '/posts': 'posts/*.md'
+    })
+  }
+}
+```
+
 
 ## 7. Why nuxt?
 

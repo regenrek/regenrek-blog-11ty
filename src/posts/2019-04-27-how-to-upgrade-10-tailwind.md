@@ -1,5 +1,5 @@
 ---
-title: How to use Tailwind CSS 1.0.1 in Nuxt
+title: How to use Tailwind CSS >= 1.0.0 in Nuxt
 summary: The final release of Tailwind CSS 1.0.1 is here. Time to integrate the next Tailwind version into nuxt and vue.js 
 date: 2019-04-27
 tags:
