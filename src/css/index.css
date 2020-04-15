@@ -1,4 +1,9 @@
-@import 'tachyons';
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
 @import 'cookieconsent/build/cookieconsent.min.css';
 @import './_vars.css';
 @import './_prism.css';

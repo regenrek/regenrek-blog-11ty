@@ -1,10 +1,16 @@
 const { DateTime } = require("luxon");
 const markdownItAttrs = require('markdown-it-attrs');
 const markdownItFootnote = require('markdown-it-footnote');
-// const markdownItLinkAttributes = require('markdown-it-link-attributes');
 const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const installPrismLanguages = require('./prism-languages.js');
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const fs = require("fs");
+const path = require("path");
+
+const manifestPath = path.resolve(__dirname, "dist", "assets", "manifest.json");
+const manifest = JSON.parse(
+  fs.readFileSync(manifestPath, { encoding: "utf8" })
+);
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginSyntaxHighlight, {
@@ -14,6 +20,16 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
+  eleventyConfig.addLayoutAlias("default", "layouts/default.njk");
+
+  // Adds a universal shortcode to return the URL to a webpack asset. In Nunjack templates:
+  // {% webpackAsset 'main.js' %} or {% webpackAsset 'main.css' %}
+  eleventyConfig.addShortcode("webpackAsset", function(name) {
+    if (!manifest[name]) {
+      throw new Error(`The asset ${name} does not exist in ${manifestPath}`);
+    }
+    return manifest[name];
+  });
 
   // Date formatting (human readable)
   eleventyConfig.addFilter("readableDate", dateObj => {
@@ -54,27 +70,28 @@ module.exports = function(eleventyConfig) {
     .use(markdownItAnchor, opts)
   );
 
-  eleventyConfig.addPassthroughCopy("src/assets/");
-  eleventyConfig.addPassthroughCopy("src/admin");
+  // Copy all images directly to dist.
+  eleventyConfig.addPassthroughCopy({ "src/img": "img" });
+
+  // Copy external dependencies to dist.
+  eleventyConfig.addPassthroughCopy({ "src/vendor": "vendor" });
+
+  // Reload the page every time the JS/CSS are changed.
+  eleventyConfig.setBrowserSyncConfig({ files: [manifestPath] });
+
+  // A debug utility.
+  eleventyConfig.addFilter("dump", obj => {
+    return util.inspect(obj);
+  });
 
   return {
-    templateFormats: ["md", "njk", "html", "liquid"],
-
-    // If your site lives in a different subdirectory, change this.
-    // Leading or trailing slashes are all normalized away, so don’t worry about it.
-    // If you don’t have a subdirectory, use "" or "/" (they do the same thing)
-    // This is only used for URLs (it does not affect your file structure)
-    pathPrefix: "/",
-
-    markdownTemplateEngine: "liquid",
-    htmlTemplateEngine: "njk",
-    dataTemplateEngine: "njk",
-    passthroughFileCopy: true,
     dir: {
-      input: "src",
-      includes: "_includes",
-      data: "_data",
-      output: "dist"
-    }
+      input: "src/site",
+      includes: "_includes", // relative to dir.input
+      output: "dist",
+    },
+    htmlTemplateEngine: "njk",
+    markdownTemplateEngine: "njk",
+    passthroughFileCopy: true
   };
 };

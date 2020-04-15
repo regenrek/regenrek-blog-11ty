@@ -5,9 +5,9 @@ My personal blog.
 ## Under the hood
 
 * [11ty/eleventy](https://github.com/11ty/eleventy) Static site generator
-* [webpack 4](https://webpack.js.org/) Custom build process
-* [Tachyons](http://tachyons.io) CSS Toolkit
-* [postcss](https://postcss.org/) Static site generator
+* [webpack](https://webpack.js.org/) 
+* [Tailwind CSS](https://tailwindcss.com)
+* [postcss](https://postcss.org/)
 
 
 ## Install
