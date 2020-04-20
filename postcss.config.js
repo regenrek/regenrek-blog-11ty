@@ -17,12 +17,12 @@ const plugins = [
 // )
 
 if (process.env.NODE_ENV === "production") {
-  plugins.push(
-    require("@fullhuman/postcss-purgecss")({
-      content: ["./**/*.njk"],
-      defaultExtractor: content => content.match(/[\w-/.:]+(?<!:)/g) || [],
-    })
-  );
+  // plugins.push(
+  //   require("@fullhuman/postcss-purgecss")({
+  //     content: ["./**/*.njk"],
+  //     defaultExtractor: content => content.match(/[\w-/.:]+(?<!:)/g) || [],
+  //   })
+  // );
 
   plugins.push(
     require("cssnano")
