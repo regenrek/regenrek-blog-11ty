@@ -1,0 +1,41 @@
+---
+layout: layouts/base.njk
+section: post
+templateClass: tmpl-post
+---
+
+
+<div class="container-wide">
+  <figure data-aspect-ratio="16:9">
+    <img src="/assets/images/{{ image }}@2x.png" alt="{{ image_alt }}" />
+  </figure>
+</div>
+
+<article class="post-single">
+  <header class="bg-white sans-serif">
+    <div class="container pt-4 sm:pt-8">
+      <time datetime="{{ date | machineDate }}"><small>{{ date | readableDate }}</small></time>
+      <h1>{{ title }}</h1>
+    </div>
+  </header>
+
+  <div class="container pt-8 lg:pt-12">
+    <p>{{ summary }}</p>
+
+    <h2>Table of Contents</h2>
+    {{ content | toc | safe }}
+    {{ content | safe }}
+  </div>
+</article>
+
+<nav class="container">
+  <a href="{{ '/' | url }}">← Blog index</a>
+</nav>
+
+<div class="mx-auto container">
+  <div id="commento"></div>
+</div>
+
+x
+{% include "components/similar-posts.njk" %}
+x

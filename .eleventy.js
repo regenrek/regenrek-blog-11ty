@@ -6,11 +6,17 @@ const installPrismLanguages = require('./prism-languages.js');
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const fs = require("fs");
 const path = require("path");
+const pluginTOC = require('eleventy-plugin-nesting-toc');
+const pluginNavigation = require("@11ty/eleventy-navigation");
 
 const manifestPath = path.resolve(__dirname, "dist", "assets", "manifest.json");
 const manifest = JSON.parse(
   fs.readFileSync(manifestPath, { encoding: "utf8" })
 );
+
+const getSimilarCategories = function(categoriesA, categoriesB) {
+  return categoriesA.filter(Set.prototype.has, new Set(categoriesB)).length;
+}
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginSyntaxHighlight, {
@@ -18,9 +24,16 @@ module.exports = function(eleventyConfig) {
           installPrismLanguages(Prism);
       },
   });
+  eleventyConfig.addPlugin(pluginNavigation);
+
+  eleventyConfig.addPlugin(pluginTOC, {
+    tags: ['h2', 'h3']
+  });
 
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
   eleventyConfig.addLayoutAlias("default", "layouts/default.njk");
+
+  eleventyConfig.setDataDeepMerge(true);
 
   // Adds a universal shortcode to return the URL to a webpack asset. In Nunjack templates:
   // {% webpackAsset 'main.js' %} or {% webpackAsset 'main.css' %}
@@ -44,7 +57,7 @@ module.exports = function(eleventyConfig) {
   // only content in the `posts/` directory
   eleventyConfig.addCollection("posts", function(collection) {
     return collection.getAllSorted().filter(function(item) {
-      return item.inputPath.match(/^\.\/src\/posts\//) !== null;
+      return item.inputPath.match(/^\.\/posts\//) !== null;
     });
   });
 
@@ -71,23 +84,38 @@ module.exports = function(eleventyConfig) {
   );
 
   // Copy all images directly to dist.
-  eleventyConfig.addPassthroughCopy({ "src/img": "img" });
+  eleventyConfig.addPassthroughCopy({ "assets/images": "assets/images" });
 
   // Copy external dependencies to dist.
-  eleventyConfig.addPassthroughCopy({ "src/vendor": "vendor" });
+  eleventyConfig.addPassthroughCopy({ "assets/vendor": "assets/vendor" });
 
   // Reload the page every time the JS/CSS are changed.
   eleventyConfig.setBrowserSyncConfig({ files: [manifestPath] });
 
   // A debug utility.
-  eleventyConfig.addFilter("dump", obj => {
-    return util.inspect(obj);
+  eleventyConfig.addFilter("log", obj => {
+    console.log(obj)
+  });
+
+  eleventyConfig.addFilter("similarPosts", function(collection, path, tags){
+    return collection.filter((post) => {
+      console.log("TAGS", post.data.tags)
+        return getSimilarCategories(post.data.tags, tags) >= 1 && post.data.page.inputPath !== path;
+    })
+    // .sort((a,b) => {
+    //     return getSimilarCategories(b.data.categories, categories) - getSimilarCategories(a.data.categories, categories);
+    // });
+  });
+
+  eleventyConfig.addFilter('limit', function(arr, limit) {
+    return arr.slice(0, limit);
   });
 
   return {
     dir: {
-      input: "src/site",
+      input: ".",
       includes: "_includes", // relative to dir.input
+      data: "_data",
       output: "dist",
     },
     htmlTemplateEngine: "njk",

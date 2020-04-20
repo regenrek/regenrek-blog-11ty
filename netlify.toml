@@ -13,6 +13,11 @@
     status = 301
 
 [[redirects]]
+    from = "/posts/how-to-use-tailwind-css-1.0.1-in-nuxt/"
+    to = "https://regenrek.com/posts/how-to-use-tailwind-css-1.2.0-with-nuxt/"
+    status = 301    
+
+[[redirects]]
     from = "/blog/angularjs-schnelleinstieg-deutsch/"
     to = "https://legacy.regenrek.at/angularjs-schnelleinstieg-deutsch/"
     status = 301

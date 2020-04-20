@@ -9,8 +9,8 @@ const baseFilename = isDev ? "index" : "index.[contenthash]";
 module.exports = {
   mode: isDev ? "development" : "production",
   entry: [
-    path.resolve(__dirname, "src", "js", "index.js"),
-    path.resolve(__dirname, "src", "css", "index.css"),
+    path.resolve(__dirname, "assets", "scripts", "index.js"),
+    path.resolve(__dirname, "assets", "styles", "index.css"),
   ],
   output: {
     path: path.resolve(__dirname, "dist", "assets"),

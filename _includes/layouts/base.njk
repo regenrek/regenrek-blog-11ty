@@ -1,0 +1,28 @@
+<!doctype html>
+<html {% if section %} data-current="{{ section }}"{% endif %} lang="en">
+
+	{% include "components/head.njk" %}
+
+	<body>
+
+		<div class="container">
+			<div class="flex flex-row justify-between items-center py-6">
+				<h1 class=""><a href="{{ '/' | url }}">.regenrek{{ metadata.title }}</a></h1>
+				<div class="ml-12">
+				{%- for entry in collections.all | eleventyNavigation %}
+					<a class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}" href="{{ entry.url | url }}">{{ entry.title }}</a>
+				{%- endfor %}
+				</div>
+			</div>
+		</div>
+
+
+		<main>
+			{{ layoutContent | safe }}
+		</main>
+
+		{% include "components/footer.njk" %}
+
+	</body>
+
+</html>

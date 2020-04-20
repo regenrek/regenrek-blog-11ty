@@ -1,0 +1,24 @@
+---
+layout: layouts/home.njk
+eleventyNavigation:
+  key: Home
+  order: 1
+---
+
+<div class="sm:container-wide mx-auto mt-8 mb-24">
+    <section class="pxo-05 lg:pxo-0">
+        <p class="lh-copy max-w-measure-wide">
+            Hey! I write about my personal experiences and challenges building saas products with modern web technologies.
+        </p>
+    </section>
+</div>
+
+<div class="sm:container mx-auto">
+    <section class="">
+        {{ layoutContent | safe }}
+
+        {% set postslist = collections.posts %}
+        {{ collection.posts }}
+        {% include "components/postslist.njk" %}
+    </section>
+</div>

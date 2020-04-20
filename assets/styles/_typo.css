@@ -1,0 +1,47 @@
+/* headings */ 
+h1,.h1, h2,h3,h4,h5,h6,
+h3 > a{
+    font-family: interstate,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.logo {
+    font-size: 1.4rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+    letter-spacing: -.05em;
+    max-width: 20em;
+    @screen sm {
+        font-size: 2rem;
+    }
+    @screen lg {
+        font-size: 3rem;
+    }
+}
+
+h2 {
+    font-size: 1.25rem;
+    line-height: 1.25;
+    padding-top: 2rem;
+    padding-bottom: 0.75rem;
+    @screen sm {
+        font-size: 1.5rem;
+    }
+    @screen lg {
+        padding-top: 3rem;
+        font-size: 1.75rem;
+    }
+}
+
+h3 {
+    font-size: 1.45rem;
+    padding-top: .5rem;
+    padding-bottom: 0.35rem;
+}
+
+
+/* other */ 

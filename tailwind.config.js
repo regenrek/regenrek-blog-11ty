@@ -34,6 +34,7 @@ module.exports = {
         '9': '75%',
         '10': '83.333333%',
         '11': '91.666667%',
+        wrapper: '15%',
   
         '1vw': '8.333333vw',
         '2vw': '16.666667vw',
@@ -127,6 +128,10 @@ module.exports = {
           '7/12': '58.333333%'
         },
         screens: {
+          sm: '480px',
+          md: '768px',
+          lg: '1024px',
+          xl: '1280px',
           xxl: '1600px'
         }
       }
@@ -137,9 +142,9 @@ module.exports = {
       paddingOffset: ['responsive']
     },
     plugins: [
-      require('tailwind-plugins/aspect-ratio.js')(),
-      require('tailwind-plugins/margin-offset.js')(),
-      require('tailwind-plugins/padding-offset.js')()
+      require('./tailwind-plugins/aspect-ratio.js')(),
+      require('./tailwind-plugins/margin-offset.js')(),
+      require('./tailwind-plugins/padding-offset.js')()
     ]
   };
   

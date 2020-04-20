@@ -1,0 +1,37 @@
+<section>
+	{% for post in postslist | reverse %}
+		<article class="mbo-05 pbo-05 border-b border-gray-200" {% if post.url == url %} data-current="current item"{% endif %}>
+			<div class="grid grid-cols-1 sm:grid-cols-5 gap-4 ">
+				<div class="sm:col-span-2">
+					<img src="/assets/images/{{ post.data.image }}.png" class="w-100" alt="{{ post.data.image_alt }}" />
+				</div>
+				<div class="pxo-05 sm:pxo-05 sm:col-span-3">
+					<div class="meta mb-2">
+						{% if post.data.tags %}
+							<span>
+								{% for tag in post.data.tags.slice(0, 3) %}
+									{%- if tag != "post" -%}
+										{% set tagUrl %}/tags/{{ tag }}/{% endset %}
+										<a class="text-xs bg-gray-200 p-1 inline-block" href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
+									{%- endif -%}
+								{% endfor %}
+							</span>
+						{% endif %}
+						<time class="inline-block date dib gray" datetime="{{ post.date | machineDate }}">
+							{{ post.date | readableDate }}
+						</time>
+					</div>
+					<h3 class="text-xl leading-tight sm:text-2xl sm:leading-normal">
+						<a href="{{ post.url | url }}">
+                            {% if post.data.title %}
+                                {{ post.data.title }}
+                            {% else %}
+								Untitled
+                            {% endif %}
+						</a>
+					</h3>
+				</div>
+			</div>
+		</article>
+	{% endfor %}
+</section>

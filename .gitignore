@@ -4,3 +4,4 @@ package-lock.json
 src/_data/manifest.json
 yarn.lock
 src/posts-drafts/
+about
