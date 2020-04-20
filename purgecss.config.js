@@ -1,7 +1,8 @@
 module.exports = {
     content: ["./dist/**/*.html"],
     css: ["./dist/assets/*.css"],
-    whitelistPatterns: ['/^cc-/'],
+    whitelistPatterns: ['/cc-/', 'cookieconsent'],
+    whitelistPatternsChildren: ['/cc-/', 'cookieconsent'],
     extractors: [
       {
         extractor: content => {
