@@ -3,14 +3,15 @@
   "version": "2.0.0",
   "description": "regenrek.com - Minimalistic Eleventy (11ty) blog with webpack, PostCSS and Tailwind",
   "scripts": {
-    "build": "npm-run-all clean build:assets build:site",
+    "build": "npm-run-all clean build:assets build:site purge",
     "build:assets": "NODE_ENV=production webpack --mode=production",
     "build:site": "NODE_ENV=production eleventy",
     "clean": "rm -rf ./dist",
     "dev": "npm-run-all clean webpack:assets --parallel dev:*",
     "dev:assets": "yarn run webpack:assets --watch",
     "dev:site": "NODE_ENV=development eleventy --serve",
-    "webpack:assets": "NODE_ENV=development webpack --mode=development"
+    "webpack:assets": "NODE_ENV=development webpack --mode=development",
+    "purge": "purgecss --config purgecss.config.js --output dist/assets"
   },
   "repository": {
     "type": "git",
