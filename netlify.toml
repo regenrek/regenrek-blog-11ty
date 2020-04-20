@@ -1,6 +1,6 @@
 [build]
   publish = "dist"
-  command = "npm run prod"
+  command = "npm run build"
 
 [[redirects]]
     from = "https://regenrek.com/posts/create-a-frontmatter-markdown-powered-blog-with-nuxt-js-in-2019/"
