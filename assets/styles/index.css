@@ -1,6 +1,7 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+@import 'cookieconsent/build/cookieconsent.min.css';
 @import './_vars.css';
 @import './_prism.css';
 @import './_typo.css';
