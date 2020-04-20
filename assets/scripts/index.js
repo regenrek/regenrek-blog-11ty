@@ -1,5 +1,6 @@
 // import '../styles/style.css';
 import 'cookieconsent';
+import 'cookieconsent/build/cookieconsent.min.css';
 
 if(window.cookieconsent) {
     window.cookieconsent.initialise({
