@@ -305,6 +305,10 @@ Rename the prefix of your `.css` files to `.scss`. Update your nuxt.config.js to
   ],
 ```
 
+
+## Summary: `nuxt.config.js`
+
+
 ```js
 const path = require('path')
 
