@@ -1,14 +1,14 @@
 ---
-title: How to use Tailwind CSS 1.2.0 with Nuxt.js
+title: How to use Tailwind CSS with Nuxt.js
 summary: In this tutorial, we will integrate Tailwind CSS with PostCSS to Nuxt.js. I've been using TailwindCSS since early 2019 and I never regret to leave Bootstrap CSS behind.  In a nutshell TailwindCSS is a "utility-first" CSS framework which is easy to learn, lightweight and very flexible. 
-date: 2020-04-18
+date: 2020-04-27
 tags:
   - post
   - nuxt-js
   - tailwind-css
 image: 2019/02-post-tailwind-1_0_0-nuxt
 image_alt: tailwind-1.0.0-nuxt
-permalink: /posts/how-to-use-tailwind-css-1.2.0-with-nuxt/
+permalink: /posts/how-to-use-tailwind-css-with-nuxt/
 ---
 
 

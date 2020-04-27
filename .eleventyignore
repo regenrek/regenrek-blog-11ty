@@ -13,4 +13,4 @@ netlify.toml
 webpack
 ./clean.js
 posts/draft
-about
+about/*

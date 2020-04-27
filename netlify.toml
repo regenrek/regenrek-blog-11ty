@@ -9,13 +9,17 @@
 
 [[redirects]]
     from = "/posts/how-to-use-tailwind-css-1.0.0-in-nuxt-today/"
-    to = "https://regenrek.com/posts/how-to-use-tailwind-css-1.0.1-in-nuxt/"
+    to = "https://regenrek.com/posts/how-to-use-tailwind-css-with-nuxt/"
     status = 301
 
 [[redirects]]
     from = "/posts/how-to-use-tailwind-css-1.0.1-in-nuxt/"
-    to = "https://regenrek.com/posts/how-to-use-tailwind-css-1.2.0-with-nuxt/"
-    status = 301    
+    to = "https://regenrek.com/posts/how-to-use-tailwind-css-with-nuxt/"
+    status = 301  
+
+[[redirects]]
+    from = "/posts/how-to-use-tailwind-css-1.2.0-with-nuxt/"
+    to= "https://regenrek.com/posts/how-to-use-tailwind-css-with-nuxt/"
 
 [[redirects]]
     from = "/blog/angularjs-schnelleinstieg-deutsch/"
