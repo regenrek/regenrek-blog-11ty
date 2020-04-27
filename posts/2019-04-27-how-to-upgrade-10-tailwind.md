@@ -1,6 +1,6 @@
 ---
 title: How to use Tailwind CSS with Nuxt.js
-summary: In this tutorial, we will integrate Tailwind CSS with PostCSS to Nuxt.js. I've been using TailwindCSS since early 2019 and I never regret to leave Bootstrap CSS behind.  In a nutshell TailwindCSS is a "utility-first" CSS framework which is easy to learn, lightweight and very flexible. 
+summary: In this tutorial, we will integrate Tailwind CSS and PostCSS with Nuxt.js. I've been using TailwindCSS since early 2019 and I never regret to leave Bootstrap CSS behind.  In a nutshell, TailwindCSS is a "utility-first" CSS framework which is easy to learn, lightweight and very flexible. 
 date: 2020-04-27
 tags:
   - post
@@ -18,7 +18,7 @@ Don't be afraid of the long class names TailwindCSS generates like `bg-blue-500 
 
 ## 1. Quickstart TailwindCSS with the `@nuxtjs/tailwindcss` module
 
-The recommended approach is to install the official `@nuxtjs/tailwindcss` module. 
+In my opinion the recommended approach is to install the official `@nuxtjs/tailwindcss` module. 
 
 ### a) Start a new nuxt project
 
@@ -171,8 +171,7 @@ PurgeCSS will only run on `nuxt generate`, `nuxt build` or `nuxt start`.
 
 ## 3. Simple Demo - use TailwindCSS in your application
 
-This is what we've all waiting for - let's build a simple page with TailwindCSS
-to check if everything works as expected.
+This is what we've all waiting for - let's build a simple page with TailwindCSS to check if everything works as expected.
 
 pages/index.vue{.file}
 ```html
