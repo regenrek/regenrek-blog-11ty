@@ -8,6 +8,7 @@ const fs = require("fs");
 const path = require("path");
 const pluginTOC = require('eleventy-plugin-nesting-toc');
 const pluginNavigation = require("@11ty/eleventy-navigation");
+const codepenNjk = require('./codepen')
 
 const manifestPath = path.resolve(__dirname, "dist", "assets", "manifest.json");
 const manifest = JSON.parse(
@@ -21,14 +22,17 @@ const getSimilarCategories = function(categoriesA, categoriesB) {
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginSyntaxHighlight, {
       init: function({ Prism }) {
-          installPrismLanguages(Prism);
+          installPrismLanguages(Prism)
       },
   });
+
   eleventyConfig.addPlugin(pluginNavigation);
 
   eleventyConfig.addPlugin(pluginTOC, {
     tags: ['h2', 'h3']
   });
+
+  eleventyConfig.addNunjucksShortcode("codepen", codepenNjk);
 
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
   eleventyConfig.addLayoutAlias("default", "layouts/default.njk");
