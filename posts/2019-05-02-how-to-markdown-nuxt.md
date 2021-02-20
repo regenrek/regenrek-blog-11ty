@@ -6,6 +6,7 @@ tags:
   - post
   - nuxt-js
   - markdown
+  - vue-js
 image: 2019/02-post-website-nuxt
 image_alt: 02-post-website-nuxt
 ---

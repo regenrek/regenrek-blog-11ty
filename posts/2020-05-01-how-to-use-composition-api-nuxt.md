@@ -5,7 +5,7 @@ date: 2020-05-01
 tags:
   - post
   - nuxt-js
-  - vuejs-3
+  - vue-js
 image: 2020/vue-composition-api-nuxt
 image_alt: nuxt-composition-api
 permalink: /posts/how-to-use-vue-composition-api-with-nuxt/

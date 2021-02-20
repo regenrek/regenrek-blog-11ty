@@ -15,18 +15,18 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-	"{a.blank}": {
-		"prefix": [">a.blank"],
+	"{ablank}": {
+		"prefix": [">abl"],
 		"body": ["{target=\"_blank\" rel=\"noopener\"}"],
 		"description": "Adds target blank to links"
 	},
 	"{a}": {
-		"prefix": [">a.full"],
+		"prefix": [">afl"],
 		"body": ["[${1}](${2}){target=\"_blank\" rel=\"noopener\"}"],
 		"description": "Adds target blank to links"
 	},
 	"{extoc}": {
-		"prefix": [">toc.exclude"],
+		"prefix": [">tocexclude"],
 		"body": ["{data-toc-exclude}"],
 		"description": "Adds exclude toc"
 	},
