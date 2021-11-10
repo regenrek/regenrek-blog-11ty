@@ -13,7 +13,7 @@ image_alt:
 permalink: /posts/nuxt-js-storyblok-nujek-job-board-website-tutorial/
 ---
 
-This post is a work in progress. It's kind of a preview for early readers{.tip}  
+This post is a work in progress. It's kind of a preview for early readers. No grammar check. No review yet. {.tip}  
 
 ## Demo
 

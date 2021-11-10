@@ -13,7 +13,7 @@ image_alt:
 permalink: /posts/storyblok-lists-grids-and-relations/
 ---
 
-This post is a work in progress. It's kind of a preview for early readers{.tip}  
+This post is a work in progress. It's kind of a preview for early readers. No grammar check. No review yet. {.tip}  
 
 ## Demo
 
