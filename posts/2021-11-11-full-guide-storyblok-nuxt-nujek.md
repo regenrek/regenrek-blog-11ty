@@ -8,7 +8,7 @@ tags:
   - vue-js
   - nuxt-js
   - nujek
-image: 
+image: 2021/nuxt-storyblok-nujek
 image_alt: 
 permalink: /posts/nuxt-js-storyblok-nujek-job-board-website-tutorial/
 ---

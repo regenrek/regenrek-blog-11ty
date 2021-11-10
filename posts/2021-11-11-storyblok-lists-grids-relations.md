@@ -6,7 +6,9 @@ tags:
   - post
   - storyblok
   - vue-js
-image: 2020/vue-composition-api-nuxt
+  - nuxt-js
+  - nujek
+image: 2021/nuxt-storyblok-nujek
 image_alt: 
 permalink: /posts/storyblok-lists-grids-and-relations/
 ---
