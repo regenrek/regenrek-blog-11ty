@@ -18,9 +18,9 @@ permalink: /posts/nuxt-js-storyblok-nujek-job-board-website-tutorial/
 - [Table of Contents](#table-of-contents)
 - [Demo](#demo)
 - [1. Introduction](#1-introduction)
-- [2. Analyze the client use case](#2-analyze-the-client-use-case)
-- [3. Build a Storyblok scheme](#3-build-a-storyblok-scheme)
-- [4. Create Storyblok Content](#4-create-storyblok-content)
+- [2. Build a Storyblok scheme](#2-build-a-storyblok-scheme)
+- [3. Create Storyblok Content](#3-create-storyblok-content)
+- [4. Project Setup](#4-project-setup)
 Work in progress
 
 ## Demo
@@ -110,9 +110,9 @@ Our goal is to show some of our jobs on the job board later on. So we need to cr
 * - Just save scheme and lets deal with fields later here.
 
 
-## 4. Create Storyblok Content
+## 3. Create Storyblok Content
 
-### 4.1 Create jobs stories
+### 3.1 Create jobs stories
 
 Since we want to build some job board we will need some jobs to list on the board. 
 
@@ -158,7 +158,7 @@ Fill the homepage with some `bloks`.
 ![storyblok fill content](/assets/images/2021/07-fill-content-storyblok.png){.shadow}
 
 
-## 5. Build you frontend 
+## 4. Project Setup
 
 From now its probably better to build our website and lets see how our scheme looks in the frontend. We're going to build our frontend very straight forward with
 
@@ -167,7 +167,7 @@ From now its probably better to build our website and lets see how our scheme lo
 * [Nujek Framework](https://nujek-docs.vercel.app/)
 
 
-### 5.1 Project Setup
+### 4.1 Project Setup
 
 I won't go through all steps here since there is already a detailed tutorial on the nujek documentation how you can quickly build up your project.
 
@@ -193,7 +193,7 @@ git checkout boilerplate
 SB_CLIENT_ACCESS_TOKEN=<your-token>
 ```
 
-### 5.2 Run the application
+### 4.2 Run the application
 
 Welcome Back! If you run the application with the following command you should see something like this
 
@@ -222,7 +222,7 @@ The nujek module in the `nuxt.config.js` is acting as a bridge to Storyblok. Tha
 ```
 
 
-### 5.3 Build "Landingpage" component
+### 4.3 Build "Landingpage" component
 
 First we start with building the content types in our frontend (like we did before in Storyblok). 
 
@@ -256,7 +256,7 @@ Now we're going to start to implement our `BlokHero` to show some fancy hero tit
 
 ![nujeklandingpage blokcomponent](/assets/images/2021/12-nujek-preview.png){.shadow}
 
-### 5.4 Build "BlokHero" component
+### 4.4 Build "BlokHero" component
 
 Ok we're going to build each blok we've added to this landingpage as separeted vue component. 
 
