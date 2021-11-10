@@ -19,10 +19,6 @@ permalink: /posts/storyblok-lists-grids-and-relations/
 - [Demo](#demo)
 - [1. Introduction](#1-introduction)
 - [2. Analyze the client use case](#2-analyze-the-client-use-case)
-- [3. Build a Storyblok scheme](#3-build-a-storyblok-scheme)
-- [4. Create Storyblok Content](#4-create-storyblok-content)
-- [4. Create Storyblok Content](#4-create-storyblok-content)
-
 
 ## Demo
 
@@ -117,4 +113,4 @@ You can read more here on how you should scan and analyze the given UI Design
 [Nujek - Anatomy of a Website](https://nujek-docs.vercel.app/documentation/getting-started/anatomy-website)
 
 
-Read also: ()[/]
+Read more: [Full Guide to build a job board website app with Nuxt, Storyblok and Nujek](/posts/nuxt-js-storyblok-nujek-job-board-website-tutorial/)

@@ -231,7 +231,7 @@ If you look at your application and switch to the `Component` Tab then you can a
 ![nujeklandingpage blokcomponent](/assets/images/2021/11-nujek-landingpage-blok-component.png){.shadow}
 
 * content-types/Landingpage.vue
-```vue
+```html
 <template>
   <div>
     <!-- render dynamic bloks from `Landingpage` content type -->
@@ -266,7 +266,7 @@ Ok we're going to build each blok we've added to this landingpage as separeted v
 
 
 * bloks/BlokHero.vue
-```vue
+```html
 <template>
   <div v-editable="blok">
     <div class="relative">
@@ -310,3 +310,4 @@ export default {
 
 ![nujek storyblok nuxt hero design](/assets/images/2021/13-nujek-blok-hero.png){.shadow}
 
+Read more: [How to build Storyblok relations with lists and grids](/posts/storyblok-lists-grids-and-relations/)
