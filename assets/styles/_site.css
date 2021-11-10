@@ -61,6 +61,10 @@ ul {
     margin-bottom: 1.5rem;
 }
 
+ul > li > p {
+    margin: 0 !important;
+}
+
 article.post-single a, .content a, .link, footer a {
     position: relative;
     color: var(--link-color);

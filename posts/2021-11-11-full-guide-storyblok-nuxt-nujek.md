@@ -34,33 +34,36 @@ Personally I prefer a hands-on guide where you can see the progress of the app y
 
 We're going to start building the Storyblok CMS scheme first. Then we will create stories based on the scheme and will fill it with some sample data like job posts e.g.
 
+Lets start with a new demo space including some basic content-types and components.
 #### 2.1 Job Content Type
 
-Imagine content types are blueprints where you define the structure for your stories. 
+Content types are blueprints where you define the structure for your stories. 
 
-A typical job listing could be build with the following scheme:
-
-* Job title  (title|text)
-* Job Description -> (description|richtext)
-* Salary -> (salary|text)
-... many more
-
-Ok lets start with a new demo space including some basic content-types and components. Go to 
+To build this scheme do the following:
 
 * `Components -> New` 
-* **{1}** - Name for content type: `Job`
-* **{2}** - `Act as content type`
+* **{1}** - Name: `Job`
+* **{2}** - Tick `"Act as content type"`
 
 {% myCustomImage "/assets/images/2021/01-storyblok-new-component.png", "create new storyblok component" %}
 
+A typical job listing could like the follwing:
+
+* Job title | title | text
+* Job Description | description | richtext
+* Salary | salary | text)
+* ... and so on
+
+The next screen let you define the fields which the content type supports. 
+
 * **{1}** - Add some fields to it (title - Text, description - RichText, salary - Text)
-* Hit `Save`
+* Click **Save schema**
 
 {% myCustomImage "/assets/images/2021/02-storyblok-content-type-scheme-job-board.png", "storyblok content type scheme job board" %}
 
 #### 2.2 Default Content Type
 
-Since we have removed all default content types from the demo space we're going to create a new content type which will act as our base Landingpage type. 
+Since we have removed all default content types from the demo space we're going to create a new content type which will act as our base **Landingpage** type. 
 
 * `Components -> New`
 * **{1}** - Name for content type: `Landingpage`
