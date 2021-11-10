@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "regenrek.com - Minimalistic Eleventy (11ty) blog with webpack, PostCSS and Tailwind",
   "scripts": {
-    "build": "npm run clean && npm run build:assets && npm run build:site && npm run purge",
+    "build": "npm run clean && npm run eleventy && npm run purge",
     "build:assets": "NODE_ENV=production webpack --mode=production",
     "build:site": "NODE_ENV=production eleventy",
     "clean": "rm -rf ./dist",
