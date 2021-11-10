@@ -13,28 +13,21 @@ image_alt:
 permalink: /posts/nuxt-js-storyblok-nujek-job-board-website-tutorial/
 ---
 
-## Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [Demo](#demo)
-- [1. Introduction](#1-introduction)
-- [2. Build a Storyblok scheme](#2-build-a-storyblok-scheme)
-- [3. Create Storyblok Content](#3-create-storyblok-content)
-- [4. Project Setup](#4-project-setup)
-Work in progress
+This post is a work in progress. It's kind of a preview for early readers{.tip}  
 
 ## Demo
 
-Work in progress
+* [Github Source Code](https://github.com/regenrek/nujek-job-board){target="_blank" rel="noopener"} 
 
 ## 1. Introduction
 
-Personally I prefer a hands-on guide where you can see the progress of the app you like to build. So you will meet the following requirements to start.
+Personally I prefer a hands-on guide where you can see the progress of the app you like to build. So first get sure you prepare your workspace with the following tools.
 
-* Nuxt.js
+* [Nuxt.js](https://nuxtjs.org/)
 * NodeJS
 * Yarn
 * TailwindCSS
+* [Nujek framework](https://nujek-docs.vercel.app/){target="_blank" rel="noopener"} 
 * Storyblok Account with a fresh space
 
 ### 2. Build a Storyblok scheme
@@ -43,26 +36,27 @@ We're going to start building the Storyblok CMS scheme first. Then we will creat
 
 #### 2.1 Job Content Type
 
-Imagine content types like blueprints where you define the structure for it. 
-A tipical job listing includes for example 
+Imagine content types are blueprints where you define the structure for your stories. 
 
-* Job title -> (title|text)
+A typical job listing could be build with the following scheme:
+
+* Job title  (title|text)
 * Job Description -> (description|richtext)
 * Salary -> (salary|text)
 ... many more
 
-Ok lets start with a new demo space including with some basic content-types and components. Go to 
+Ok lets start with a new demo space including some basic content-types and components. Go to 
 
 * `Components -> New` 
 * **{1}** - Name for content type: `Job`
 * **{2}** - `Act as content type`
 
-![create new storyblok component](/assets/images/2021/01-storyblok-new-component.png){.shadow}
+{% myCustomImage "/assets/images/2021/01-storyblok-new-component.png", "create new storyblok component" %}
 
 * **{1}** - Add some fields to it (title - Text, description - RichText, salary - Text)
 * Hit `Save`
 
-![storyblok content type scheme job board](/assets/images/2021/02-storyblok-content-type-scheme-job-board.png){.shadow}
+{% myCustomImage "/assets/images/2021/02-storyblok-content-type-scheme-job-board.png", "storyblok content type scheme job board" %}
 
 #### 2.2 Default Content Type
 
@@ -72,12 +66,11 @@ Since we have removed all default content types from the demo space we're going 
 * **{1}** - Name for content type: `Landingpage`
 * **{2}** - `Act as content type`
 
-![02-storyblok-blok-dynamic](/assets/images/2021/01-storyblok-new-content-type.png){.shadow}
+{% myCustomImage "/assets/images/2021/01-storyblok-new-component.png", "how to create a new storyblok content type" %}
 
 * **{1}** - Add field title and a field named `bloks` with type `Blocks`
 
-![02-storyblok-blok-dynamic](/assets/images/2021/02-storyblok-blok-dynamic.png){.shadow}
-
+{% myCustomImage "/assets/images/2021/02-storyblok-blok-dynamic.png", "storyblok dynamic bloks" %}
 #### 2.3 Create Storyblok Component Bloks
 
 
@@ -92,12 +85,11 @@ Lets start with a simple `hero` component.
 * - **Don't** tick - `Act as content type` !
 
 
-![storyblok blok component scheme](/assets/images/2021/03-hero-blok.png){.shadow}
+{% myCustomImage "/assets/images/2021/03-hero-blok.png", "storyblok blok component scheme how to" %}
 
 * Add a title and a `assets` field with options `image`, `video` to it.
 
-![storyblok blok component fields](/assets/images/2021/04-hero-fields.png){.shadow}
-
+{% myCustomImage "/assets/images/2021/04-hero-fields.png", "storyblok blok component fields" %}
 
 ##### 2.3.2 Jobs Blok
 
@@ -121,12 +113,11 @@ Since we want to build some job board we will need some jobs to list on the boar
 * **{2}** - Choose the default content `Jobs` which we created earlier
 * Hit save
 
-![storyblok job board - create folder](/assets/images/2021/08-jobs-folder-creation.png){.shadow}
+{% myCustomImage "/assets/images/2021/08-jobs-folder-creation.png", "storyblok job board - create folder" %}
 
 * Open the `Job` folder and quickly add 3 jobs with `+Entry` Button in the right corner.
 
-![storyblok job board - create posts](/assets/images/2021/09-storyblok-job-board.png){.shadow}
-
+{% myCustomImage "/assets/images/2021/09-storyblok-job-board.png", "storyblok job board - create posts" %}
 
 #### 3.2 Create a homepage
 
@@ -137,16 +128,14 @@ As we have now defined our scheme we can start to create our stories based on th
 * Click on `+Entry` (In the right upper corner)
 * Add new story with Name and content Type `Landingpage`
 
-![storyblok create homepage](/assets/images/2021/05-create-home-page-storyblok.png){.shadow}
-
+{% myCustomImage "/assets/images/2021/05-create-home-page-storyblok.png", "storyblok create homepage" %}
 
 * **{1}** - Switch to preview urls and set to `https://localhost:3000/`
 * **{2}** - In the right tab menu click `Config` and then 
 * **{3}** - update the `Real Path` to `/`
 * Click on publish
 
-
-![storyblok create homepage settings](/assets/images/2021/06-home-page-settings-storyblok.png){.shadow}
+{% myCustomImage "/assets/images/2021/06-home-page-settings-storyblok.png", "storyblok create homepage settings" %}
 
 Fill the homepage with some `bloks`.
 
@@ -155,8 +144,7 @@ Fill the homepage with some `bloks`.
 * **{2}** - Add some 🖍️ fancy `title` and `image` to the hero component
 * Click on publish
 
-![storyblok fill content](/assets/images/2021/07-fill-content-storyblok.png){.shadow}
-
+{% myCustomImage "/assets/images/2021/07-fill-content-storyblok.png", "storyblok fill content" %}
 
 ## 4. Project Setup
 
@@ -200,8 +188,7 @@ Welcome Back! If you run the application with the following command you should s
 ```
 yarn dev
 ```
-
-![storyblok fill content](/assets/images/2021/10-nujek-intro.png){.shadow}
+{% myCustomImage "/assets/images/2021/10-nujek-intro.png", "storyblok fill content" %}
 
 What you see on this screen is your previously created content type called "Landingpage". If you wonder how this already working I can tell you.
 
@@ -228,7 +215,8 @@ First we start with building the content types in our frontend (like we did befo
 
 If you look at your application and switch to the `Component` Tab then you can already copy-paste the code you need for the landingpage. 
 
-![nujeklandingpage blokcomponent](/assets/images/2021/11-nujek-landingpage-blok-component.png){.shadow}
+{% myCustomImage "/assets/images/2021/11-nujek-landingpage-blok-component.png", "nujeklandingpage blokcomponent" %}
+
 
 * content-types/Landingpage.vue
 ```html
@@ -254,7 +242,7 @@ Ok hit save and reload your page (Sometimes you need to reload the dev server). 
 
 Now we're going to start to implement our `BlokHero` to show some fancy hero title.
 
-![nujeklandingpage blokcomponent](/assets/images/2021/12-nujek-preview.png){.shadow}
+{% myCustomImage "/assets/images/2021/12-nujek-preview.png", "nujeklandingpage blokcomponent" %}
 
 ### 4.4 Build "BlokHero" component
 
@@ -307,7 +295,6 @@ export default {
 }
 </script>
 ```
-
-![nujek storyblok nuxt hero design](/assets/images/2021/13-nujek-blok-hero.png){.shadow}
+{% myCustomImage "/assets/images/2021/13-nujek-blok-hero.png", "nujek storyblok nuxt hero design" %}
 
 Read more: [How to build Storyblok relations with lists and grids](/posts/storyblok-lists-grids-and-relations/)

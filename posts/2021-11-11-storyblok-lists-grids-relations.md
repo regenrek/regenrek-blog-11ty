@@ -13,12 +13,7 @@ image_alt:
 permalink: /posts/storyblok-lists-grids-and-relations/
 ---
 
-## Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [Demo](#demo)
-- [1. Introduction](#1-introduction)
-- [2. Analyze the client use case](#2-analyze-the-client-use-case)
+This post is a work in progress. It's kind of a preview for early readers{.tip}  
 
 ## Demo
 

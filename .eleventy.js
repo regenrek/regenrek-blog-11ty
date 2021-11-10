@@ -32,6 +32,10 @@ module.exports = function(eleventyConfig) {
     tags: ['h2', 'h3']
   });
 
+  eleventyConfig.addShortcode("myCustomImage", function (url, alt) {
+    return `<div class="fw pt-8 pb-8"><img class="shadow" src="${eleventyConfig.getFilter("url")(url)}" alt="${alt}"></div>`;
+  });
+
   eleventyConfig.addNunjucksShortcode("codepen", codepenNjk);
 
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");

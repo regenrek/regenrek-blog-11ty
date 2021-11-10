@@ -58,6 +58,7 @@ a, p, ul > li {
 ul {
     margin-left: 1.5rem;
     list-style-type: disc;
+    margin-bottom: 1.5rem;
 }
 
 article.post-single a, .content a, .link, footer a {
@@ -143,6 +144,11 @@ footer {
 
 .shadow {
   box-shadow: 0 3px 8px rgba(0,0,0,.35);
+}
+
+.pic {
+    box-shadow: 0 3px 8px rgba(0,0,0,.35);
+    max-width: 100%;
 }
 
 /**
