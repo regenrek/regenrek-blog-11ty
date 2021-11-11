@@ -217,7 +217,7 @@ We don't have any preview to see how our content looks like. We just built our C
 In the next part we will build the job board with Nuxt.Js and [Nujek](https://nujek.io){target="_blank" rel="noopener"} and connect it to Storyblok. 
 
 
-## 6. Building the Job board frontend
+## 6. Building the Job Board frontend
 
 ### 6.1 Project Setup
 
@@ -225,47 +225,53 @@ From now its probably better to build our website and lets see how our scheme lo
 
 * Nuxt.js
 * TailwindCSS
-* [Nujek Framework](https://nujek-docs.vercel.app/)
+* [Nujek](https://nujek.io/){target="_blank"}
 
-I won't go through all steps here since there is already a detailed tutorial on the nujek documentation how you can quickly build up your project.
+I won't go through all steps here since there is already a detailed tutorial on the nujek [documentation](https://nujek.io/documentation/getting-started/installation){target="_blank"} how you can quickly build up your project.
 
-Choose between `Manual Setup` or `Clone the repository` step. What you prefer...
+Choose between **Manual Setup** or **Clone the repository** step. What you prefer...
 
-**Manual Setup**
+**Start with Manual Setup...**
 
 Read the [install docs](https://nujek-docs.vercel.app/documentation/Installation/manual-install#quick-installation-with-nujekbundle) from nujek and come back later when you finished.
 
-**Clone the repository**
+**... or clone the repository**
 
-If you're really lazy like I'm and yo  don't want to setup the inital then just clone the repository here and checkout the `boilerplate`
+If you're really lazy like I'm and you don't want to install from scratch then just clone the repository here and checkout the **boilerplate** branch.
 
 ```bash
 git clone git@github.com:regenrek/nujek-job-board.git
 git checkout boilerplate
 ```
 
-**Important: ** Create a `.env` file and your Storyblok API Token to it
+**Important:** Create a `.env` file and add your Storyblok API Token to it{.tip}
 
-* .env
+* 📝 &nbsp;&nbsp;`.env`
 ```bash
 SB_CLIENT_ACCESS_TOKEN=<your-token>
 ```
 
+Install & run
+
+```bash
+yarn;yarn dev
+```
+
 ### 6.2 Run the application
 
-Welcome Back! If you run the application with the following command you should see something like this
+If you run the application with the following command you should see something like this
 
-```
+```bash
 yarn dev
 ```
 {% myCustomImage "/assets/images/2021/10-nujek-intro.png", "storyblok fill content" %}
 
-What you see on this screen is your previously created content type called "Landingpage". If you wonder how this already working I can tell you.
+What you see on this screen is your previously created content type called **"Landingpage"**. If you wonder how this already working I can tell you:
 
-The nujek module in the `nuxt.config.js` is acting as a bridge to Storyblok. Thats all! If you want to read more on nujek you can go to the [docs](https://nujek-docs.vercel.app/documentation/getting-started/why) later
+The nujek module in the `nuxt.config.js` is acting as a bridge to Storyblok. Thats all! If you want to read more on nujek you can dig into [nujek docs](https://nujek.io/documentation/){target="_blank"} later.
 
-* nuxt.config.js
-```
+* 📝 &nbsp;&nbsp;`nuxt.config.js`
+```js
   buildModules: [
     '@nujek/bundle',
     // other entries
@@ -279,16 +285,20 @@ The nujek module in the `nuxt.config.js` is acting as a bridge to Storyblok. Tha
 ```
 
 
-### 6.3 Build "Landingpage" component
+### 6.3 Build the "Landingpage" component
 
 First we start with building the content types in our frontend (like we did before in Storyblok). 
 
-If you look at your application and switch to the `Component` Tab then you can already copy-paste the code you need for the landingpage. 
+**Good to know:** Nujek gives you already prewritten code snippets. Click on the **Component** Tab and copy-paste the code you need for the Landinpage.{.tip}
 
 {% myCustomImage "/assets/images/2021/11-nujek-landingpage-blok-component.png", "nujeklandingpage blokcomponent" %}
 
+* The Slot `<slot name="bloks" />` is used to place it on the correct position within the Landingpage.
+* In our example we just use the slot to show underlying bloks.
 
-* content-types/Landingpage.vue
+<br />
+
+* 📝 &nbsp;&nbsp;`content-types/Landingpage.vue`
 ```html
 <template>
   <div>
@@ -308,22 +318,38 @@ export default {
 </script>
 ```
 
-Ok hit save and reload your page (Sometimes you need to reload the dev server). If all works you should get now the list of the used bloks which you created in storyblok.
+Save the file and reload your page (Sometimes you need to reload the dev server too). 
 
-Now we're going to start to implement our `BlokHero` to show some fancy hero title.
+If you open the **Home** Page in Storyblok you can see the relation between CMS and your frontend. This should now all make more sense. 🙌
 
 {% myCustomImage "/assets/images/2021/12-nujek-preview.png", "nujeklandingpage blokcomponent" %}
 
 ### 6.4 Build "BlokHero" component
 
-Ok we're going to build each blok we've added to this landingpage as separeted vue component. 
+Next we're going to `BlokHero` component to show some fancy hero title.
 
 * Create `bloks/BlokHero.vue` file
 * You will always get a `bloks` prop object where you filled fields are stored.
 * Use `blok` prop to fill components like for `<SbImage :src="blok.image" />` ([SbImage](https://nujek-docs.vercel.app/components/images))
 
 
-* bloks/BlokHero.vue
+The `blok` prop contains all your fields from Storyblok. It populates data to each of your `Blok` components. Earlier we have defined a `title` and a `image` for the `BlokHero` component. Now you can access them easily with
+
+{% raw %}
+
+
+```html
+<div>
+  <h1>{{ blok.title }}</h1>
+  <img src="{{ blok.image.filename }}" />
+</div>
+```
+{% endraw %}
+
+<br />
+
+
+* 📝 &nbsp;&nbsp;`bloks/BlokHero.vue`
 ```html
 <template>
   <div v-editable="blok">
