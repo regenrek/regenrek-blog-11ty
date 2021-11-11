@@ -1,4 +1,7 @@
 <div class="container">
+
+    <h3>Similar posts</h3>
+
     {% set similar = collections.posts | similarPosts(page.inputPath, tags) %}
     <ul>
         {% for post in similar | limit(3) %}
