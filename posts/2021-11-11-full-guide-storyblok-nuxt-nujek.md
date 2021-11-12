@@ -159,7 +159,7 @@ As we will build a job board we need a simple job listing blok for the frontpage
 * Just save scheme and lets deal with possible fields later here.
 
 
-I highly recommend to make use of the component groups to **organize** your **content-types/** and **bloks/**. The blok amount will grow quickly with a bigger website. Also you can constraint the Landinpage **bloks** Bloks field that it's only allowed to choose from a specific folder.{.tip}
+I highly recommend to make use of the component groups to **organize** your **content-types/** and **bloks/**. The blok amount will grow quickly with a bigger website. Also you can constraint the Landingpage **bloks** Bloks field that it's only allowed to choose from a specific folder.{.tip}
 
 ## 5. Pillar III - Create Storyblok Content
 
@@ -178,7 +178,7 @@ Since we want to build some job board we will need some jobs to list on the boar
 
 {% myCustomImage "/assets/images/2021/08-jobs-folder-creation.png", "storyblok job board - create folder" %}
 
-* Open the `Job` folder and quickly add 3 jobs with **+Entry**`** Button in the right-upper corner.
+* Open the **Jobs** folder and quickly add 3 jobs with **+Entry**`** Button in the right-upper corner.
 
 {% myCustomImage "/assets/images/2021/09-storyblok-job-board.png", "storyblok job board - create posts" %}
 
@@ -266,7 +266,7 @@ yarn dev
 ```
 {% myCustomImage "/assets/images/2021/10-nujek-intro.png", "storyblok fill content" %}
 
-What you see on this screen is your previously created content type called **"Landingpage"**. If you wonder how this already working I can tell you:
+What you see on this screen is your previously created content type **"Landingpage"**. If you wonder how this already working I can tell you:
 
 The nujek module in the `nuxt.config.js` is acting as a bridge to Storyblok. Thats all! If you want to read more on nujek you can dig into [nujek docs](https://nujek.io/documentation/){target="_blank"} later.
 
@@ -289,7 +289,7 @@ The nujek module in the `nuxt.config.js` is acting as a bridge to Storyblok. Tha
 
 First we start with building the content types in our frontend (like we did before in Storyblok). 
 
-**Good to know:** Nujek gives you already prewritten code snippets. Click on the **Component** Tab and copy-paste the code you need for the Landinpage.{.tip}
+**Good to know:** Nujek gives you already prewritten code snippets. Click on the **Component** Tab and copy-paste the code you need for the Landingpage.{.tip}
 
 {% myCustomImage "/assets/images/2021/11-nujek-landingpage-blok-component.png", "nujeklandingpage blokcomponent" %}
 
@@ -341,7 +341,7 @@ The `blok` prop contains all your fields from Storyblok. It populates data to ea
 ```html
 <div>
   <h1>{{ blok.title }}</h1>
-  <img src="{{ blok.image.filename }}" />
+  <img :src="blok.image.filename" />
 </div>
 ```
 {% endraw %}
@@ -393,4 +393,18 @@ export default {
 ```
 {% myCustomImage "/assets/images/2021/13-nujek-blok-hero.png", "nujek storyblok nuxt hero design" %}
 
+
+### 6.5 Build "BlokJobListing" component
+
+Below the hero we want to show the latest jobs available. 
+
+* We make use of [`<NjSection />`](https://nujek.io/components/sections){target="_blank" rel="noopener"} to build consistent container constraints
+
+```html
+
+```
+
+
+
 Read more: [How to build Storyblok relations with lists and grids](/posts/storyblok-lists-grids-and-relations/)
+
