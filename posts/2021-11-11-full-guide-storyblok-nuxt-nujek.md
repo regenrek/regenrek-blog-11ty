@@ -616,3 +616,20 @@ Before you push your project to vercel add a `vercel.json` file to the project r
   ]
 }
 ```
+
+## 7. Conclusion
+
+If you made it this far - big respect! It's a long tutorial but we just scratched surface of whats possible with these great tools. 
+
+For example we could extend this project with
+
+* Control which jobs you like to show in Storyblok (with relations).
+* Filter, sort and search Job Listings.
+* Show Job listings in a modal with SEO routing.
+* Build a navigation and footer. 
+
+And so much more...
+
+Love to get feedback! If you have any questions you can ask me in the comments section or on twitter [@kregenrek](https://twitter.com/regenrek){target="_blank" rel="noopener"}
+
+**Happy Coding!** 🙌🎉
