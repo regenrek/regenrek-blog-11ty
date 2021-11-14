@@ -20,7 +20,8 @@ This post is a work in progress. It's kind of a preview for early readers. No gr
 
 ## Demo
 
-* [Github Source Code](https://github.com/regenrek/nujek-job-board){target="_blank" rel="noopener"} 
+- 🎲 [Demo](https://nujek-job-board.vercel.app/){target="_blank" rel="noopener"} 
+- 🐱 [Github](https://github.com/regenrek/nujek-job-board){target="_blank" rel="noopener"} 
 
 ## 1. Introduction
 
