@@ -1,6 +1,6 @@
 ---
 title: Full Guide to build a Job Board website app with Nuxt, Storyblok and Nujek
-summary: This guide will help you to build your scheme, frontend and connect everything together to build a simple job board website with Storyblok, Nuxt and Nujek Framework
+summary: This guide will help you to build your scheme, frontend and connect everything together to build a simple job board website with Storyblok, Nuxt and Nujek Framework.
 date: 2021-11-10
 tags:
   - post
@@ -14,6 +14,9 @@ permalink: /posts/nuxt-js-storyblok-nujek-job-board-website-tutorial/
 ---
 
 This post is a work in progress. It's kind of a preview for early readers. No grammar check. No review yet. {.tip}  
+
+
+{% myCustomImage "/assets/images/2021/nuxt-storyblok-nujek-job-board.gif", "nuxt storyblok nujek job board" %}
 
 ## Demo
 
@@ -233,7 +236,7 @@ Choose between **Manual Setup** or **Clone the repository** step. What you prefe
 
 **Start with Manual Setup...**
 
-Read the [install docs](https://nujek-docs.vercel.app/documentation/Installation/manual-install#quick-installation-with-nujekbundle) from nujek and come back later when you finished.
+Read the [install docs](https://nujek.io/documentation/Installation/manual-install#quick-installation-with-nujekbundle){target="_blank"} from nujek and come back later when you finished.
 
 **... or clone the repository**
 
@@ -330,7 +333,7 @@ Next we're going to `BlokHero` component to show some fancy hero title.
 
 * Create `bloks/BlokHero.vue` file
 * You will always get a `bloks` prop object where you filled fields are stored.
-* Use `blok` prop to fill components like for `<SbImage :src="blok.image" />` ([SbImage](https://nujek-docs.vercel.app/components/images))
+* Use `blok` prop to fill components like for `<SbImage :src="blok.image" />` ([SbImage](https://nujek.io/components/images))
 
 
 The `blok` prop contains all your fields from Storyblok. It populates data to each of your `Blok` components. Earlier we have defined a `title` and a `image` for the `BlokHero` component. Now you can access them easily with
@@ -398,13 +401,217 @@ export default {
 
 Below the hero we want to show the latest jobs available. 
 
-* We make use of [`<NjSection />`](https://nujek.io/components/sections){target="_blank" rel="noopener"} to build consistent container constraints
+* We make use of [`<NjSection />`](https://nujek.io/components/sections){target="_blank"} to build consistent container constraints
+* To <strong>retrieve multiple stories</strong> from Storyblok (i.e. from `jobs/` folder) Nujek offers the [`<SbQuery />`](https://nujek.io/components/queries){target="_blank"} which we will use in the next example.
+* [`<SbQuery />`](https://nujek.io/components/queries){target="_blank"}: Limit posts per page `posts-per-page-client-only` to 1 and use `path` to filter stories by slug. Path is important to retrieve our story collection.
+* We use `#default` template to create custom single template for our job items. 
 
+<br />
+
+* 📝 &nbsp;&nbsp;`bloks/BlokJobListing.vue`
 ```html
+<template>
+  <NjSection
+    variant="constrained"
+    :fixed-classes="{ wrapper: 'pt-12 pb-24', container: 'max-w-3xl' }"
+  >
+    <div class="shadow overflow-hidden sm:rounded-md">
+      <ul role="list" class="divide-y divide-gray-200">
+        <SbQuery :posts-per-page-client-only="1" path="jobs" :filter-client-only="true">
+          <template #default="story">
+            <JobItem :title="story.content.title" :salary="story.content.salary" :link="story.full_slug" />
+          </template>
+        </SbQuery>
+      </ul>
+    </div>
+    </div>
+  </NjSection>
+</template>
+
+<script>
+export default {
+  props: {
+    bloks: {
+      type: Object,
+      default: () => ({})
+    }
+  }
+}
+</script>
+```
+
+Now lets create a reusable component to display a single job item.
+
+* 📝 &nbsp;&nbsp;`bloks/atoms/JobItem.vue`
+```html
+<template>
+  <li>
+    <nuxt-link :to="link" class="block hover:bg-gray-50">
+      <div class="px-4 py-4 sm:px-6">
+        <div class="flex items-center justify-between">
+          <p class="text-lg font-medium text-blue-500 truncate">
+            {{ title }}
+          </p>
+          <div class="ml-2 flex-shrink-0 flex">
+            <p class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+              {{ salary }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </nuxt-link>
+  </li>
+</template>
+
+<script>
+export default {
+  props:
+    {
+      title: {
+        type: String,
+        default: ''
+      },
+      salary: {
+        type: String,
+        default: ''
+      },
+      link: {
+        type: String,
+        default: ''
+      }
+    }
+}
+</script>
+```
+
+We should now see a single job listing. We set `posts-per-page-client-only` to a value of `1`. Nevermind we can try the infinite loader which get shipped with `<SbQuery>` and click on `Load more`.
+
+{% myCustomImage "/assets/images/2021/14-nujek-job-listing.png", "nujek storyblok nuxt blok job listing design" %}
+
+
+To show more jobs from the start, lets increase the `posts-per-page-client-only` prop to 5. 
+
+
+### 6.6 Add Richtext support
+
+As you might remember we used for the `Job` content type the `richtext` (Job description) field type. This field is more complex to render on frontend. Luckily a [package](https://github.com/MarvinRudolph/storyblok-rich-text-renderer/tree/master/packages/storyblok-rich-text-vue-renderer){target="_blank" rel="noopener"} exists which helps us here.
+
+To proceed we need to extend our application with a plugin and add the `VueRichTextRenderer`
+
+* 📝 &nbsp;&nbsp;`plugins/richtext.js`
+
+```js
+import Vue from 'vue'
+import VueRichTextRenderer from '@marvr/storyblok-rich-text-vue-renderer'
+
+Vue.use(VueRichTextRenderer)
 
 ```
 
+* Add the **plugin** to the config section
+* **Important:** Add the package to `transpile` section!
+&nbsp;
+* 📝 &nbsp;&nbsp;`nuxt.config.js`
+```js
+  plugins: [
+    { src: '~/plugins/richtext.js' }
+  ],
+
+  build: {
+    transpile: [
+      '@marvr/storyblok-rich-text-vue-renderer'
+    ]
+  }
+```
+### 6.7 Create the Job Detail page
+
+We achieved now to show a list of jobs on our homepage from Storyblok. With the help of nujek we already have saved us a ton of time to build our frontend. 
+
+<!-- {% myCustomImage "/assets/images/2021/15-nujek-job-detail-page.png", "nujek storyblok nuxt blok job listing detail design" %} -->
+
+{% myCustomImage "/assets/images/2021/16-nujek-board-single.png", "nujek storyblok nuxt blok job listing detail design" %}
 
 
-Read more: [How to build Storyblok relations with lists and grids](/posts/storyblok-lists-grids-and-relations/)
+* First rename `pages/index.vue` to `page/_.vue` to create a [catch all route](https://router.vuejs.org/guide/essentials/dynamic-matching.html#catch-all-404-not-found-route){target="_blank" rel="noopener"}. The catch all route matches any url you type in.
 
+```bash
+pages/
+  _.vue
+```
+
+Then add the content type template for `Job` content type.
+
+* 📝 &nbsp;&nbsp;`components/content-types/Job.vue`
+
+```html
+<template>
+  <NjSection
+    variant="constrained"
+    :fixed-classes="{ wrapper: 'pt-12 pb-24', container: 'max-w-3xl' }"
+  >
+    <nav aria-label="Back">
+      <nuxt-link to="/" class="py-2 text-sm font-medium">
+        Back to <b>Job Board</b>
+      </nuxt-link>
+    </nav>
+
+    <div v-if="blok" class="py-12">
+      <h1 class="text-3xl">
+        {{ blok.content.title }}
+      </h1>
+      <SbRichtext class="mt-8" :text="blok.content.description" />
+
+      <span class="block mt-4">
+        <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-sm font-medium bg-red-100 text-red-800">
+          💰 {{ blok.content.salary }} €
+        </span>
+      </span>
+
+      <button type="button" class="mt-8 inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+        Apply now
+      </button>
+    </div>
+  </NjSection>
+</template>
+
+<script>
+export default {
+  props: {
+    blok: {
+      type: Object,
+      default: () => ({})
+    }
+  }
+}
+</script>
+```
+
+
+{% myCustomImage "/assets/images/2021/nuxt-storyblok-nujek-job-board.gif", "nuxt storyblok nujek job board" %}
+
+
+
+If the job description doesn't display at all. Double check if you have added the vue-rich-text-renderer <a href="/posts/nuxt-js-storyblok-nujek-job-board-website-tutorial/#66-add-richtext-support">(6.6 Add richtext support)</a>{.tip}
+
+
+## 7. Deploy on vercel
+
+Personally I can recommend [vercel](https://vercel.com/){target="_blank" rel="noopener"}, [netlify](https://www.netlify.com/) and [AWS Amplify](https://docs.amplify.aws/guides/hosting/nextjs/q/platform/js/) for hosting your sites. 
+
+Always check which [rendering mode](link){target="_blank" rel="noopener"} you are targeting for.
+
+For this app we're targeting `ssr` mode and choose **vercel** as hosting provider.
+
+Before you push your project to vercel add a `vercel.json` file to the project root. Read more here: [nuxt/vercel-builder](https://github.com/nuxt/vercel-builder){target="_blank" rel="noopener"}.
+
+```json
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "nuxt.config.js",
+      "use": "@nuxtjs/vercel-builder"
+    }
+  ]
+}
+```
