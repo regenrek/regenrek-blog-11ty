@@ -3,7 +3,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   {% metagen
-		title=(title or metadata.title) + ' | Kevin Regenrek',
+		title=(title or metadata.title) + page.url | titlef,
 		desc=description or metadata.description,
 		url=page.url,
 		img=(image | absolute) or 'http://localhost:8080/assets/images/2019/02-post-tailwind-1_0_0-nuxt.png',

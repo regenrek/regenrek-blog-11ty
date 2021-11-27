@@ -54,6 +54,10 @@ module.exports = function(eleventyConfig) {
     return manifest[name];
   });
 
+  eleventyConfig.addFilter("titlef", url => {
+    return url !== '/' ? ' | Kevin Regenrek' : ''
+  });
+
   eleventyConfig.addFilter("absolute", image => {
     if (!image) {
       return false
