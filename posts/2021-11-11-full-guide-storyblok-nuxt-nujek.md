@@ -345,7 +345,11 @@ The `blok` prop contains all our fields from Storyblok. It populates data to eac
 <br />
 
 
+
 * 📝 &nbsp;&nbsp;`bloks/BlokHero.vue`
+
+{% raw %}
+
 ```html
 <template>
   <div v-editable="blok">
@@ -387,6 +391,9 @@ export default {
 }
 </script>
 ```
+
+{% endraw %}
+
 {% myCustomImage "/assets/images/2021/13-nujek-blok-hero.png", "nujek storyblok nuxt hero design" %}
 
 
@@ -402,6 +409,9 @@ Below the hero, we want to show the latest jobs available.
 <br />
 
 * 📝 &nbsp;&nbsp;`bloks/BlokJobListing.vue`
+
+{% raw %}
+
 ```html
 <template>
   <NjSection
@@ -433,9 +443,14 @@ export default {
 </script>
 ```
 
+{% endraw %}
+
 Now let's create a reusable component to display a single job item.
 
 * 📝 &nbsp;&nbsp;`bloks/atoms/JobItem.vue`
+
+{% raw %}
+
 ```html
 <template>
   <li>
@@ -477,6 +492,8 @@ export default {
 </script>
 ```
 
+{% endraw %}
+
 We should now see a single job listing. We set `posts-per-page-client-only` to a value of `1`. We can also try the infinite loader, which is included in `<SbQuery>` and click on `Load more`.
 
 {% myCustomImage "/assets/images/2021/14-nujek-job-listing.png", "nujek storyblok nuxt blok job listing design" %}
@@ -493,11 +510,15 @@ To proceed we need to extend our application with a plugin and add the `VueRichT
 
 * 📝 &nbsp;&nbsp;`plugins/richtext.js`
 
+{% raw %}
+
 ```js
 import Vue from 'vue'
 import VueRichTextRenderer from '@marvr/storyblok-rich-text-vue-renderer'
 Vue.use(VueRichTextRenderer)
 ```
+
+{% endraw %}
 
 * Add the **plugin** to the config section
 * **Important:** Add the package to `transpile` section!
@@ -532,6 +553,8 @@ pages/
 Then add the content type template for the `Job` content type.
 
 * 📝 &nbsp;&nbsp;`components/content-types/Job.vue`
+
+{% raw %}
 
 ```html
 <template>
@@ -576,6 +599,7 @@ export default {
 </script>
 ```
 
+{% endraw %}
 
 {% myCustomImage "/assets/images/2021/nuxt-storyblok-nujek-job-board.gif", "nuxt storyblok nujek job board" %}
 
