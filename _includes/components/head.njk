@@ -1,7 +1,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ title or metadata.title }}</title>
+
+  {% metagen
+		title=(title or metadata.title) + ' | Kevin Regenrek',
+		desc=description or metadata.description,
+		url=page.url,
+		img=(image | absolute) or 'http://localhost:8080/assets/images/2019/02-post-tailwind-1_0_0-nuxt.png',
+		img_alt=image_alt or "Regenrek Image",
+		name="Kevin Regenrek"
+  %}
+
   <link rel="stylesheet" href="https://use.typekit.net/cyr6vhw.css">
   <link rel="stylesheet" href="{% webpackAsset 'main.css' %}">
   <!-- Global site tag (gtag.js) - Google Analytics -->

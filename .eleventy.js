@@ -9,6 +9,8 @@ const path = require("path");
 const pluginTOC = require('eleventy-plugin-nesting-toc');
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const codepenNjk = require('./codepen')
+const metagen = require('eleventy-plugin-metagen');
+const Path = require('path')
 
 const manifestPath = path.resolve(__dirname, "dist", "assets", "manifest.json");
 const manifest = JSON.parse(
@@ -26,8 +28,8 @@ module.exports = function(eleventyConfig) {
       },
   });
 
+  eleventyConfig.addPlugin(metagen);
   eleventyConfig.addPlugin(pluginNavigation);
-
   eleventyConfig.addPlugin(pluginTOC, {
     tags: ['h2', 'h3']
   });
@@ -51,6 +53,16 @@ module.exports = function(eleventyConfig) {
     }
     return manifest[name];
   });
+
+  eleventyConfig.addFilter("absolute", image => {
+    if (!image) {
+      return false
+    }
+
+    const prefixedUrl = Path.join('https://regenrek.com/assets/images/', image);
+
+    return prefixedUrl + '.png';
+  })
 
   // Date formatting (human readable)
   eleventyConfig.addFilter("readableDate", dateObj => {

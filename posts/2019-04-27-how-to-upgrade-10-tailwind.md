@@ -25,7 +25,7 @@ In my opinion the recommended approach is to install the official `@nuxtjs/tailw
 If you start from scratch then you can choose Tailwind as your favorite UI framework during the `create-nuxt-app` scaffolding process.
 
 ```bash
-npx create nuxt-app my-cool-project
+npx create-nuxt-app my-cool-project
 # Choose your favorite UI framework
 * Tailwind
 ```

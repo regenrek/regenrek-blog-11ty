@@ -1,7 +1,7 @@
 ---
 title: Full Guide to build a Job Board website app with Nuxt, Storyblok and Nujek
 summary: This guide will help you build your scheme, frontend and connect everything together to build a simple job board website with Storyblok, Nuxt and Nujek Framework.
-date: 2021-11-10
+date: 2021-11-27
 tags:
   - post
   - storyblok
@@ -9,7 +9,7 @@ tags:
   - nuxt-js
   - nujek
 image: 2021/nuxt-storyblok-nujek
-image_alt: 
+image_alt: nuxt storyblok nujek
 permalink: /posts/nuxt-js-storyblok-nujek-job-board-website-tutorial/
 ---
 
