@@ -63,7 +63,7 @@ module.exports = function(eleventyConfig) {
       return false
     }
 
-    const prefixedUrl = Path.join('https://regenrek.com/assets/images/', image);
+    const prefixedUrl = 'https://regenrek.com/assets/images/'+ image
 
     return prefixedUrl + '.png';
   })
