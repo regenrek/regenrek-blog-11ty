@@ -322,3 +322,12 @@ table tr:last-child td:last-child {
 table tr:hover td {
 	background: #f0f0f0;
 }
+
+.tip2 {
+font-size: 0.9rem;
+  padding: 6px 6px 6px 15px;
+  margin: 1em 0 0 0;
+  background-color: #f8f8f8;
+  position: relative;
+  width: 100%;
+}
