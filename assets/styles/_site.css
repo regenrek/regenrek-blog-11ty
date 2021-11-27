@@ -45,10 +45,16 @@ body {
 
 a {
     color: #000;
-    text-decoration: none;
 }
 
-
+a.intext {
+    font-weight: 600;
+    position: relative;
+    text-decoration: underline;
+    text-decoration-skip-ink: auto;
+    text-decoration-skip: edges;
+    text-decoration-color: #999;
+}
 
 a, p, ul > li {
     font-weight: 300;

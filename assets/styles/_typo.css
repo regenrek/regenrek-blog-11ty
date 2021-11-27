@@ -6,6 +6,10 @@ h3 > a{
     font-style: normal;
 }
 
+b {
+    font-weight: 600;
+}
+
 .logo {
     font-size: 1.4rem;
 }
