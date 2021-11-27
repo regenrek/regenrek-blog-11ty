@@ -13,8 +13,6 @@ image_alt:
 permalink: /posts/nuxt-js-storyblok-nujek-job-board-website-tutorial/
 ---
 
-This post is a work in progress. It's kind of a preview for early readers. No grammar check. No review yet.{.tip}  
-
 
 {% myCustomImage "/assets/images/2021/nuxt-storyblok-nujek-job-board.gif", "nuxt storyblok nujek job board" %}
 
