@@ -511,7 +511,7 @@ Running 1 test using 1 worker
 ✨  Done in 2.55s.
 ```
 
-## 5 Automate testing
+## 5. Test automation
 
 I was always afraid of automate testing and CI/CD process. Thought it's super complicated and there is some rocket science behind it. But no it's easier than someone might think. 
 
