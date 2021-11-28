@@ -35,7 +35,7 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addShortcode("myCustomImage", function (url, alt) {
-    return `<div class="fw pt-8 pb-8"><img class="shadow" src="${eleventyConfig.getFilter("url")(url)}" alt="${alt}"></div>`;
+    return `<div class="cimage fw pt-8 pb-8"><img class="shadow" src="${eleventyConfig.getFilter("url")(url)}" alt="${alt}"></div>`;
   });
 
   eleventyConfig.addNunjucksShortcode("codepen", codepenNjk);

@@ -181,8 +181,11 @@ Since we want to build a job board, we will need jobs to list on the board.
 {% myCustomImage "/assets/images/2021/08-jobs-folder-creation.png", "storyblok job board - create folder" %}
 
 * Open the **Jobs** folder and quickly add 3 jobs with **+Entry**`** Button in the right-upper corner.
+
 {% myCustomImage "/assets/images/2021/09-storyblok-job-board.png", "storyblok job board - create posts" %}
+
 ### 5.2 Create the homepage
+
 Our homepage is the site that we will see first when we go to our url or in dev `http://localhost:3000`. We will make use of **Landingpage** now, with our flexible **bloks** Component to add multiple bloks to it.
 * Go to the `Content` folder on the left side and delete the default `Home` Story page.
 * Click on **+Entry** (In the right upper corner)
