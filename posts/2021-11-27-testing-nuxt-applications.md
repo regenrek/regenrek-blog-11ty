@@ -537,6 +537,7 @@ project/
 --------| e2e.yml
 ```
 
+Voila. You have now a pipeline running which always gets executed if you update your codebase. 🎉
 
 * 📝 &nbsp;&nbsp;`.github/workflows/e2e.yml`
 
