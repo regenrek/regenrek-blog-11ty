@@ -675,6 +675,6 @@ yarn test
     ✓ renders the index page and show title (316 ms)
 ```
 
-I love getting feedback! If you have any questions you can ask me in the comment section below or on twitter [@kregenrek](https://twitter.com/regenrek){target="_blank" rel="noopener"}
+I love getting feedback! If you have any questions you can ask me in the comment section below or on twitter [@kregenrek](https://x.com/kregenrek){target="_blank" rel="noopener"}
 
 **Happy Coding!** 🙌&nbsp;&nbsp;🎉
